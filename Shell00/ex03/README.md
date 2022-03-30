@@ -6,3 +6,5 @@ las claves se generan dentro de la carpeta .ssh que es oculta en la raiz del usu
 
     cd ~
     cd .ssh
+
+[Saber mas](https://www.stackscale.com/es/blog/configurar-llaves-ssh-servidor-linux/)
