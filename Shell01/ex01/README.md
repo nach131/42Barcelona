@@ -1,4 +1,4 @@
-# Shell01
+# ex01
 NAME
 
   id -- return user identity
@@ -29,4 +29,6 @@ DESCRIPTION
 
 Listar todos los grupos del usuario que ha relizado login en la maquina.
 
-     id -Gn
+     id -Gn | tr ' ' ','
+
+*si no se especifica ningún nombre de usuario lista los del usuario actual. 
