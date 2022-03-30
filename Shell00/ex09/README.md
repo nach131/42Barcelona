@@ -7,7 +7,7 @@ file -m ft_magic --> para comprobar
 
 
 ```
-42 string 42 magic 42 number found`
+42 string 42 magic 42 number found
 └┬┘└─┬──┘ └──┬───┘ └──────┬──────┘
  │   │       │            └─── Message
  │   │       └──────────────── Test
