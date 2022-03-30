@@ -1,6 +1,5 @@
 # Ex00
 
-NAME
 
      touch -- change file access and modification times
 
