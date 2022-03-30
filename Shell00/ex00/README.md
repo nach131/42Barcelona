@@ -27,7 +27,8 @@ DESCRIPTION
 This manual page briefly documents the nano command.
 
  nano is a small, free and friendly editor which aims to replace Pico, the default editor included in the non-free Pine package.  Rather than just copying Pico's look and feel, nano also implements some missing  (or disabled by default) features in Pico, such as "search and replace" and "go to line and column number".
-
+ 
+----
  **resolved**
 
     nano z

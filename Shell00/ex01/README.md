@@ -59,3 +59,10 @@ Vamos asignar todos los permisos al archivo dos.txt
 
 
 [Saber mas: Permisos_de_ficheros](https://wiki.enunpimpam.com/pimpamwiki/index.php/Permisos_de_ficheros)
+
+---
+ **resolved**
+
+    touch testShell00
+    chmod u-w testShell00
+    chmod go+x testShell00
