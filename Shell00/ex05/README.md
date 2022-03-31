@@ -15,7 +15,7 @@
  **resolved**
 
     #!/bin/sh
-    git log --format=format:%H -5
+    git log --format='%H' -n5
 
 
  >[!NOTA]
