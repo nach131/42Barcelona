@@ -17,6 +17,3 @@ patch takes a patch file patchfile containing a difference listing produced by t
 ---
  **resolved**
 
-    touch b
-    patch b sw.diff
-    patch -o b a sw.diff
