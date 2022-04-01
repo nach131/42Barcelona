@@ -4,6 +4,7 @@ int main()
 
 {
  //a es una tabla de enteros
+ 
   int a[10];
 
   a[0] =12;
