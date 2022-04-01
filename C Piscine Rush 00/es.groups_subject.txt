@@ -1,0 +1,15 @@
+Tome la primera letra del login de su líder de equipo, conviértala en un número siguiendo esta regla:
+A = 1
+B = 2
+C = 3
+D = 4
+...
+
+entonces tu sujeto es el número que obtuviste módulo 5:
+1 % 5 = 1 (su sujeto es 1)
+2 % 5 = 2 (su sujeto es 2)
+3 % 5 = 3 (su sujeto es 3)
+4 % 5 = 4 (su sujeto es 4)
+5 % 5 = 0 (su sujeto es 0)
+6 % 5 = 1 (su sujeto es 1)
+...
