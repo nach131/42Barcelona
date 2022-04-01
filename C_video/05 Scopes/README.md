@@ -9,5 +9,7 @@ Ambito global es lo que esta a fuera de toda función.
 ejemplo función:
   int manin()
   {
-    
+
   }
+
+  
