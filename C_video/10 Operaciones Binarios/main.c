@@ -1,18 +1,45 @@
 #include <stdio.h>
+#include "secret.h"
 
-// ++ incrementa
-// -- decrementa
 int main() 
 
 {
- int i;
+
+ char c;
+ char c2;
+
+c = 11 ;
+aff_bin(c);
+aff_bin(c2);
+printf("| \n");
+aff_bin(c | c2);
  
-
- i = 41;
-
-
-  printf("Valor i original: %d\n",i);
-  printf("Valor i incrementado: %d\n",++i);
-  printf("Valor i decrementar: %d\n",--i);
-  
 }
+
+// AND & 
+// 00000101
+// 00100100
+// --------
+// 00000100
+//===========================================================================================
+// OR |
+// 00000101
+// 00100100
+// --------
+// 00100101
+//===========================================================================================
+// oR exclusivo ^ solo 1 cuando uno de los dos es 1
+// 00000101
+// 00100100
+// --------
+// 00100001
+//===========================================================================================
+// Negacion ~
+// 00000101
+// --------
+// 11111010
+
+
+
+// COMPILAR
+// gcc -Wall -Werror -Wextra main.c secret.c && ./a/out
