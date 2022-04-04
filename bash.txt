@@ -1,0 +1,27 @@
+:syntax on
+echo "syntax on" >> ~/.vimrc
+
+
+
+# Tell ls to be colourful
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+#PROMPT='%F{magenta}${PWD/#$HOME/~} %F{green}${vcs_info_msg_0_} %F{cyan}$%F{reset_color} '
+
+
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+
+=======
+C
+Character	Description
+' '	space
+'\n'	newline
+'\t'	horizontal tab
+'\v'	vertical tab
+'\f'	form feed
+'\r'	Carraige return
