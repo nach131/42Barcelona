@@ -35,8 +35,12 @@ void	ft_print_comb(void)
 			while (unidades <= '9')
 			{
 				ft_putchar(centenas, decenas, unidades);
+				if(centenas != '7' || decenas != '8' || unidades != '9')
+				{
+				write(1, ", ", 2);
+				}	
 				unidades++;
-				write(1, " ,", 2);
+
 			}
 			decenas++;
 		}
