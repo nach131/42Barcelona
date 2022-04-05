@@ -16,5 +16,6 @@ https://www.atlassian.com/es/git/tutorials/git-alias
 ---
 
   -W
+  
 All, error, extra
   
