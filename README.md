@@ -19,3 +19,5 @@ https://www.atlassian.com/es/git/tutorials/git-alias
   
 All, error, extra
   
+
+[Tipos numéricos enteros ](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
