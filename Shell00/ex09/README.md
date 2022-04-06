@@ -21,4 +21,4 @@ file -m ft_magic --> para comprobar
 
     nano ft_magic
     
-    41 string 42 42 File Type
+    41 string 42 42 file
