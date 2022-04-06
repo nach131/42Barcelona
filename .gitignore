@@ -1,3 +1,5 @@
 esta_ignored
-*.DS_Store
-
+.DS_Store
+.swo
+.swp
+a.out
