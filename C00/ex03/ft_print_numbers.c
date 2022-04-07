@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.v	                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 19:11:35 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/04 08:42:59 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/07 12:28:35 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Asccii 0=48 9=57 */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
 	char	c;
 

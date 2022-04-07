@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 19:11:35 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/04 08:37:28 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/07 12:28:55 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Asccii a=97 z=122 */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
 	char	c;
 
@@ -24,4 +24,3 @@ c = 122;
 		c--;
 	}
 }
-

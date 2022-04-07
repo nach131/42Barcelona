@@ -1,34 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/03 19:11:35 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/03 19:35:05 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/04/05 16:33:27 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/04/07 12:15:03 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Asccii a=97 z=122 */
+
+// int 	De -2.147.483.648 a 2.147.483.647
 
 #include <unistd.h>
 
-void	ft_print_alphabet(){
-char c;
-c = 97;
-
-while (c<=122){
-write(1, &c, 1);
-c++;
-}
-
-/*write(1, &c, 1);*/
-}
-
-
-int	main()
+void	ft_putchar(char c)
 {
+	write(1, &c, 1);
+}
 
-ft_print_alphabet();
-
+void	ft_putnbr(int nb)
+{
+	if (nb < 0)
+	{
+		if (nb == -2147483648)
+		{
+			ft_putchar('-');
+			ft_putchar('2');
+			write(1, "147483648", 9);
+		}
+		else
+		{
+			ft_putchar('-');
+			nb = -nb;
+		}
+	}
+	if (nb > 9)
+		ft_putnbr(nb / 10);
+	if (nb != -2147483648)
+		ft_putchar ('0' + nb % 10);
 }

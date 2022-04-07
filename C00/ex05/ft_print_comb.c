@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 12:10:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/05 10:07:51 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/06 10:17:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Ascii 0=48 9=57*/
@@ -35,12 +35,11 @@ void	ft_print_comb(void)
 			while (unidades <= '9')
 			{
 				ft_putchar(centenas, decenas, unidades);
-				if(centenas != '7' || decenas != '8' || unidades != '9')
+				if (centenas != '7' || decenas != '8' || unidades != '9')
 				{
-				write(1, ", ", 2);
-				}	
+					write(1, ", ", 2);
+				}
 				unidades++;
-
 			}
 			decenas++;
 		}
