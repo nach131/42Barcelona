@@ -1,11 +1,11 @@
 
-void ft_strlen(char *str)
+int ft_strlen(char *str)
 {
-int caracter;
+ int caracter;
 caracter = 0;
-while(str[caracter])
-{
-caracter++;
-}
+	while(str[caracter])
+		{
+		caracter++;
+		}
 return (caracter);
 }
