@@ -1,0 +1,5 @@
+compilar 
+gcc main.c
+\n --> salto de linea 
+include <stdio.h> -->>> al principio de cada archivo
+ejecutar  igual que sh ./ 
