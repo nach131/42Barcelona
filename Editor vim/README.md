@@ -118,9 +118,9 @@ Nouns or movements are commands for moving within the document or representing a
 | gC       | toggles block comment, example `gCi` to comment out everything within parenthesis                                                                         |
 | ciw      | change inner word will change the whole word under the cursor                                                                                             |
 | cw       | change the word from the current cursor position                                                                                                          |
-| /        | enter regex search mode                                                                                                                                   |
-| n        | find the next instance of the search term                                                                                                                 |
-| N        | find the previous instance of the search term                                                                                                             |
+| **/**        | **enter regex search** mode                                                                                                                                   |
+| **n**        | **find the next instance of the search** term                                                                                                                 |
+| **N**        | **find the previous instance of the search** term                                                                                                             |
 | .        | repeat last change (extremely powerful)                                                                                                                   |
 | ^ or 0   | move to the beginning of the line                                                                                                                         |
 | Shift+0  | move to the end of the line                                                                                                                               |
@@ -144,6 +144,13 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 | "kp  | paste value of the register                                                           |
 | "+p  | paste from system clipboard on Linux                                                  |
 | "*p  | paste from system clipboard on Windows (or from "mouse highlight" clipboard on Linux) |
+
+## find and replace
+
+|      |                                                                                       |
+|------|---------------------------------------------------------------------------------------|
+| **%s/find/replace** | find and replace all the same words                                    |
+
 
 ## Others
 
