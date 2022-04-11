@@ -10,6 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int	indice; // declaracion de indice como unsigned
+
+	indice = 0;
+while (src[indice] && indice < n) mientras la celda "numero" indice > n pasada
+	{
+	dest[indice] = src[indice]; // copias la celda inice a la celda destino
+		indice++;
+	}
+	while (indice < n) mientras indice sea > 
+	{
+		dest[indice] = 0; poneas a cero la celda destino
+		indice++;
+	}	
+	return (dest);
+}*/
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	indice;
@@ -22,8 +40,8 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	while (indice < n)
 	{
-dest[indice] = 0;
-indice++;
+		dest[indice] = 0;
+		indice++;
 	}	
 	return (dest);
 }
