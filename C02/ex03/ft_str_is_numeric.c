@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 23:08:56 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/12 11:35:30 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/12 11:36:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// ascii a=97 z=122 65=A 90=Z
+// ascii 0=48 9=57 
 /*	
  * 
  *	if (str[indice] == 0) 
@@ -20,8 +20,8 @@
  *	while (str[indice] != '\0')
  *	{
  *	ascii = (int)str[indice]; asigno el numero ascii a ascii ;-)
- *	SI ES a-z y A-Z devuelve 0	
- *		if ((ascii < 97 || ascii > 122) && (ascii < 65 || ascii > 90))
+ *	SI ES 0-9 devuelve 0	
+ *		if ((ascii < 48 || ascii > 57))
  *		{	
  *			return (0);
  *		}
@@ -30,7 +30,7 @@
  *	return (1);
 */
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_numeric(char *str)
 
 {
 	int	indice;
@@ -44,7 +44,7 @@ int	ft_str_is_alpha(char *str)
 	while (str[indice] != '\0')
 	{
 	ascii = (int)str[indice];
-		if ((ascii < 97 || ascii > 122) && (ascii < 65 || ascii > 90))
+		if (ascii < 48 || ascii > 57)
 		{	
 			return (0);
 		}
