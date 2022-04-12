@@ -1,33 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/12 14:17:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/12 16:02:11 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/04/12 21:52:29 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/04/12 21:52:34 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// ascii 65=A 90=Z
-// +32 empieza las minusculas
-// while mientras encuentre Mayusculas
+//ascii 32=espacio 126=~ IMPRIMIBLES
 
-char	*ft_strlowcase(char *str)
+#include <unistd.h>
+
+void	ft_putchar(char c)
 {
-	int	indice;
-	int	ascii;
+	write(1, &c, 1);
+}
 
-	indice = 0;
-	while (str[indice] != '\0')
+void	ft_putstr_non_printable(char *str)
+{
+	char	*hexadecimal;
+
+	hexadecimal = "0123456789abcdef";
+	while (*str != '\0')
 	{
-		ascii = (int)str[indice];
-		if (ascii >= 65 && ascii <= 90)
+		if (*str >= 32 && *str <= 126)
+			ft_putchar(*str);
+		else
 		{
-			str[indice] += 32;
+			ft_putchar('\\');
+			ft_putchar(hexadecimal[*str / 16]);
+			ft_putchar(hexadecimal[*str % 16]);
 		}
-		indice++;
+		str++;
 	}
-	return (str);
 }
