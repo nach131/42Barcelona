@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// ascii 97=a 122=z 
+// -32 es la diferencia detre a y A
+// while se cumple mientras encuentre minisculas
+
 char	*ft_strupcase(char *str)
 {
 	int	indice;
