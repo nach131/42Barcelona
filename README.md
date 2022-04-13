@@ -31,6 +31,12 @@ main's corrections
 
 [C02](https://github.com/gonzimaster/C02_eval)
 
+[C03](https://github.com/gonzimaster/C03_eval)
+
+[C04](https://github.com/gonzimaster/C04_eval)
+
+[C05](https://github.com/gonzimaster/C05_eval)
+
 ---
 
 Diferent a vacio:
