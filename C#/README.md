@@ -13,3 +13,7 @@
 |\\r | Retorno de carro |
 |\\t | Tabulación horizontal |
 |\\v | Tabulación vertical |
+
+---
+
+[Librerias C#][https://conclase.net/c/librerias]
