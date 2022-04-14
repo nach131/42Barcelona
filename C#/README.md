@@ -1,3 +1,6 @@
+[debugger](https://pythontutor.com/visualize.html#mode=edit)
+
+
 ## Secuencia de escape
 
 | Secuencia de escape | Nombre de carácter |
