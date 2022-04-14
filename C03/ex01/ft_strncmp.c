@@ -5,36 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/14 12:45:49 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/14 15:38:34 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/04/14 21:59:37 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/04/14 21:59:39 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* while mientras caracter sea menor que "n", ADN diferencia de "diferente"
- * AND la posicion s1[caracter] no sea null '\0' AND s2[caracter] no se
- * null '\0' 
- *asgignar a diferencia s1[caracter] - s2[caracter]
- *
- *SI caracter menor n AND diferente a diferencia AND s1[caracter] es null
- * OR s2[caracter] igual a null 
- *
- * */
-
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int	caracter;
-	int				diferencia;
+	unsigned int	indice;
 
-	caracter = 0;
-	diferencia = 0;
-	while ((caracter < n) && !diferencia && (s1[caracter] != '\0')
-		&& (s2[caracter] != '\0'))
+	indice = 0;
+	while (indice < n && (s1[indice] != '\0' || s2[indice] != '\0'))
 	{
-		diferencia = (unsigned char)s1[caracter] - (unsigned char)s2[caracter];
-		caracter++;
+		if (s1[indice] != s2[indice])
+		{
+			return (s1[indice] - s2[indice]);
+		}
+	indice++;
 	}
-	if (caracter < n && !diferencia && (s1[caracter] == '\0'
-			|| s2[caracter] == '\0'))
-		diferencia = (unsigned char)s1[caracter] - (unsigned char)s2[caracter];
-	return (diferencia);
+	return (0);
 }
