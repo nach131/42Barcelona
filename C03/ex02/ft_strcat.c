@@ -10,15 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int 
-
-
 char *ft_strcat(char *dest, char *src)
 {
 
 	int longitud;
 	int	indice;
 
-	longitud =
+	longitud = 0;
+	indice = 0;
+	while (dest[indice] != '\0')
+		indice++;
+	while (src[longitud] != '\0')
+	{
+		dest[indice + longitud] = src[longitud];
+		longitud++;
+	}
+	dest[indice + longitud] = '\0';
+	return (dest);
 }
