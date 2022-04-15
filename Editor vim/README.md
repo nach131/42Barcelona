@@ -1,4 +1,15 @@
-# Vim Cheat Sheet 🤓
+# Vim Cheat Sheet
+
+editar .vimrc
+
+    syntax on
+    filetype plugin indent on
+    set tabstop=4
+    set shiftwidth=4
+    set ruler
+
+---
+
 
 Vim Cheat Sheet, useful commands compatible with [VSCodeVim](https://github.com/VSCodeVim/Vim) for Microsoft Visual Studio Code.
 
