@@ -6,9 +6,14 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 21:29:43 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/14 21:29:43 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/15 11:25:37 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// while mientras s1[indice] no sea null o s2[indice] no sea null
+// IF s1[indice] es diferente a s2[indice]
+// devolvera s1[indice] - s2[indice]
+//
 
 int	ft_strcmp(char *s1, char *s2)
 {

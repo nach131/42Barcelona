@@ -6,9 +6,17 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 21:59:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/14 21:59:39 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/15 11:30:33 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// unsigned Le indica a la variable que no va a llevar signo
+// (sin valores negativos).
+// while mientras indice sea menor de n AND s1[indice]
+// OR s2[indice] no sea NULL
+// IF s1[indice] sea diferenrte de s2[indice]
+// revuelve 
+// cuando salga de while devuelve 0
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
