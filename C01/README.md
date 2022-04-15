@@ -1,4 +1,5 @@
-# 42Barcelona
+# C01
+![C01](./C01.png)
 
 ## Relas de uso PUNTEROS
 
