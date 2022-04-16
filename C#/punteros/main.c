@@ -9,8 +9,6 @@ int intercambio(int x, int y)
 	y = z;
 }
 
-
-
 int intercambio_puntero(int *x, int *y) // para recibir la direccion de un puntero *
 {
 	int z;
@@ -18,7 +16,6 @@ int intercambio_puntero(int *x, int *y) // para recibir la direccion de un punte
 	*x = *y; //  el valor que hay en el puntero y se asigna al valor que hay en l puntero x
 	*y = z; // el valor de z se asigna al valor que hay en el puntero y
 }
-
 
 int	main(void)
 {
