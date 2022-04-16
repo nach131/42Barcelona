@@ -4,7 +4,7 @@ void	ft_putstr_non_printable(char *str);
 
 int	main(void)
 {
-	char	*str_1 = "Coucou\ntu vas bien ?";
+	char	*str_1 = "Coucou\ntu ■■bie   n ¢¢¢¢ ?";
 	char	*str_2 = "bb\vbgHHHc€€€€<' '&>'~'ej\tbveb";
 	char	*str_3 = "";
 
