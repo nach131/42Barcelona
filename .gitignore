@@ -1,4 +1,8 @@
 .DS_Store
-.swo
-.swp
+*.swo
+*.swp
 a.out
+*.swm
+*.swk
+*.swl
+*.swn

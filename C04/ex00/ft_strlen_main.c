@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/17 22:24:14 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/19 11:47:43 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/04/17 17:29:09 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/04/17 17:29:12 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include<stdio.h>
 
-void	ft_putchar(char c)
+int ft_strlen(char *str)
 {
-	write(1, &c, 1);
+	int indice;
+	while(str[indice] !='\0')
+	{
+	indice++;
+	}
+	return(indice);
 }
 
-void	ft_putnbr(int nb)
+
+
+int main(void)
 {
-	if (nb < 0)
-	{
-		if (nb == -2147483648)
-		{
-			write(1, "-2147483648", 11);
-		}
-		else
-		{
-			ft_putchar('-');
-			nb = -nb;
-		}
-	}
-	if (nb > 9)
-		ft_putnbr(nb / 10);
-	if (nb != -2147483648)
-		ft_putchar('0' + nb % 10);
+	char *str = "toma tomate";
+	int tomate;
+
+tomate = ft_strlen(str);
+printf("son %d caracteres", tomate);
+
 }

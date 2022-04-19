@@ -1,38 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/17 22:24:14 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/19 11:47:43 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/04/19 16:21:27 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/04/19 16:29:01 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+// https://parzibyte.me/blog/2019/07/12/numero-primo-c/
 
-void	ft_putchar(char c)
+#include<stdio.h>
+
+int	ft_is_prime(int nb)
 {
-	write(1, &c, 1);
+
+	int i;
+
+	i = 2;
+	if (nb <= 1)
+		return (0);
+	while (i * i <= nb)
+	{
+	if (nb % i == 0)
+		return (0);
+	i++;
+	}
+	return(1);
 }
 
-void	ft_putnbr(int nb)
+int main(void)
 {
-	if (nb < 0)
-	{
-		if (nb == -2147483648)
-		{
-			write(1, "-2147483648", 11);
-		}
-		else
-		{
-			ft_putchar('-');
-			nb = -nb;
-		}
-	}
-	if (nb > 9)
-		ft_putnbr(nb / 10);
-	if (nb != -2147483648)
-		ft_putchar('0' + nb % 10);
+	int	resultado;
+	
+	resultado = ft_is_prime(131);
+	printf("resultado %d\n", resultado);
 }
