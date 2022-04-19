@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 21:49:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/17 21:49:03 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/18 18:53:17 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	ft_putstr(char *str)
 {
 	int	indice;
 
+	indice = 0;
 	while (str[indice] != '\0')
 	{
 		ft_putchar(str[indice]);
