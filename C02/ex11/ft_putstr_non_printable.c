@@ -6,22 +6,26 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 21:52:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/13 14:47:01 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:02:14 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//ascii 32=espacio 126=~ IMPRIMIBLES
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
+
+// ascii 32=espacio 126=~ IMPRIMIBLES
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_putstr_non_printable(char *str)
+void ft_putstr_non_printable(char *str)
 {
-	char	*hexadecimal;
+	char *hexadecimal;
 
 	hexadecimal = "0123456789abcdef";
 	while (*str != '\0')

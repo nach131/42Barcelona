@@ -6,28 +6,32 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 21:49:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/18 18:53:17 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:02:21 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
+
 // while mientras str[indice] no se a null enviara a la funcion ft_putchar
-// uno a uno cada caracter que componga el string *str 
+// uno a uno cada caracter que componga el string *str
 
-#include<unistd.h>
+#include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_putstr(char *str)
+void ft_putstr(char *str)
 {
-	int	indice;
+	int indice;
 
 	indice = 0;
 	while (str[indice] != '\0')
 	{
 		ft_putchar(str[indice]);
-	indice++;
+		indice++;
 	}
 }

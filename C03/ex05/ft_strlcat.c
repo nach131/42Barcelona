@@ -6,15 +6,19 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 14:39:20 by yeselee           #+#    #+#             */
-/*   Updated: 2022/04/19 16:45:13 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:02:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-unsigned int	ft_strlen(char *str)
+#include <stdio.h>
+
+unsigned int ft_strlen(char *str)
 {
-	unsigned int	count;
+	unsigned int count;
 
 	count = 0;
 	while (*str != '\0')
@@ -25,11 +29,11 @@ unsigned int	ft_strlen(char *str)
 	return (count);
 }
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int	dest_len;
-	unsigned int	src_len;
-	unsigned int	indice;
+	unsigned int dest_len;
+	unsigned int src_len;
+	unsigned int indice;
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
@@ -45,7 +49,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (dest_len + src_len);
 }
 
-int	main(void)
+int main(void)
 {
 	char *s1_test1_o = "a";
 	char s2_test1_o[100] = "b";

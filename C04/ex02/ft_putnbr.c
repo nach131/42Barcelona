@@ -6,18 +6,22 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 22:24:14 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/19 11:47:43 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:02:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
+
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_putnbr(int nb)
+void ft_putnbr(int nb)
 {
 	if (nb < 0)
 	{

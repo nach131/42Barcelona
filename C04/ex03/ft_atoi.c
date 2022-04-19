@@ -6,15 +6,19 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 13:09:10 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/18 15:41:33 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:02:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
+
 // ascii 9 - 13 caracteres de control (tab horizontal...)
 
-#include<stdio.h>
+#include <stdio.h>
 
-int	cambiar(int menos, int numero)
+int cambiar(int menos, int numero)
 {
 	if (numero != 0)
 		if (menos % 2 == 1)
@@ -23,11 +27,11 @@ int	cambiar(int menos, int numero)
 	return (numero);
 }
 
-int	ft_atoi(char *str)
+int ft_atoi(char *str)
 {
-	int	i;
-	int	menos;
-	int	numero;
+	int i;
+	int menos;
+	int numero;
 
 	i = 0;
 	menos = 0;

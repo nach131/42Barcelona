@@ -6,9 +6,13 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 16:23:02 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/17 16:34:57 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/19 22:02:18 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 // IF si es  nullo devulve el str
 // while mientras str[indice_a] no se null
@@ -16,10 +20,10 @@
 // SI mientras to_find[indice_b +1] no sea null
 // return lo encontrado
 
-char	*ft_strstr(char *str, char *to_find)
+char *ft_strstr(char *str, char *to_find)
 {
-	int	indice_a;
-	int	indice_b;
+	int indice_a;
+	int indice_b;
 
 	indice_a = 0;
 	if (to_find[indice_a] == '\0')
