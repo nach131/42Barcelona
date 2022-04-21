@@ -14,29 +14,32 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-int	ft_is_prime(int nb)
+int ft_is_prime(long long nb)
 {
-	int	i;
+        long long i;
 
-	i = 2;
-	if (nb <= 1)
-		return (0);
-	while (i * i <= nb)
-	{
-		if (nb % i == 0)
-			return (0);
-		i++;
-	}
-	return (1);
+        i = 2;
+        if (nb <= 1)
+                return (0);
+        while (i * i <= nb)
+        {
+                if (nb % i == 0)
+                        return (0);
+                i++;
+        }
+        return (1);
 }
 
-int	ft_find_next_prime(int nb)
+int ft_find_next_prime(int nb)
 {
-	while (nb <= 2147483647)
-	{
-		if (ft_is_prime(nb) == 1)
-			return ((int)nb);
-		nb++;
-	}
-	return (0);
+        long long i;
+
+        i = (long long)nb;
+        while (i <= 2147483647)
+        {
+                if (ft_is_prime(i) == 1)
+                        return ((int)i);
+                i++;
+        }
+        return (0);
 }
