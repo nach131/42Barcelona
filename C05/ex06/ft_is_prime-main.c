@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 16:21:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/19 16:29:01 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/04/20 15:47:21 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,33 @@
 
 #include<stdio.h>
 
-int	ft_is_prime(int nb)
+int ft_is_prime(int nb)
 {
-
-	int i;
+	long long i;
+	long long num;
 
 	i = 2;
+	num = (long long)nb;
 	if (nb <= 1)
 		return (0);
 	while (i * i <= nb)
 	{
-	if (nb % i == 0)
-		return (0);
-	i++;
+		if (nb % i == 0)
+			return (0);
+		i++;
 	}
-	return(1);
+	return (1);
 }
 
 int main(void)
 {
+	int numero;
 	int	resultado;
 	
-	resultado = ft_is_prime(131);
-	printf("resultado %d\n", resultado);
+	numero = 131;
+	resultado = ft_is_prime(numero);
+	if (resultado == 1)
+	printf("%d si es primo \n", numero);
+	else
+		printf("Ohh %d no es primo\n", numero);
 }
