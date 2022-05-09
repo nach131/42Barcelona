@@ -12,6 +12,14 @@
 
 // ascii 9 - 13 caracteres de control (tab horizontal...)
 
+// La función atoi () se usa para convertir una cadena en un entero (int), y su prototipo es:
+// int atoi (const char * str);
+// atoi () escanea la cadena de parámetros, omite los caracteres en blanco anteriores (como espacios, sangría de tabulación, etc.), 
+// no inicia la conversión hasta que encuentra un número o un signo, y luego encuentra un non-number
+// O la conversión termina cuando la cadena termina ('\ 0'), y se devuelve el resultado.
+
+// [Valor de retorno] Devuelve el entero convertido; si str no se puede convertir a int o str es una cadena vacía, se devolverá 0.
+
 #include<stdio.h>
 #include<unistd.h>
 

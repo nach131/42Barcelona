@@ -6,17 +6,17 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 17:29:09 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/04/19 22:02:20 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/06 11:32:30 by nacho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╠════════════════════════════════════════════════════════════════════════╣ */
+/* ║ indice me vala para recorrer los caracteres del puntero y para         ║ */
+/* ║       devolver la suma de todos los caracteres... (o)(o)               ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-
-// indice me vala para recorrer los caracteres del puntero y para devolver
-// la suma de todos los caracteres... (o)(o)
-
+ 
 int ft_strlen(char *str)
 {
 	int indice;

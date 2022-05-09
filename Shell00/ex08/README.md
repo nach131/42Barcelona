@@ -3,4 +3,4 @@
 ---
  **resolved**
  
-    find . -name "*~" -print -delete -o -name "#*#" -print -delete
+    find .  -type f -name "*~" -print -delete  -o -type f -name "#*#" -print -delete
