@@ -7,7 +7,7 @@ int	main(void)
 	int	nb;
 
 	printf("-------------------------------TEST 1---------------------------------\n");
-	nb = -1;
+	nb = 131;
 	printf("nb = %d \n", nb);
 	if (ft_is_prime(nb) == 0)
 		printf("Test passed :D | %d is not a prime number", nb);
