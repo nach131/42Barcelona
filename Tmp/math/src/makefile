@@ -1,0 +1,33 @@
+TARGET = $(BIN_DIR)/myprog
+OBJ_DIR = ../obj
+BIN_DIR = ../bin
+INC_DIR = ../include
+SRC_DIR = .
+OBJS = $(OBJ_DIR)/dividir.o \
+				$(OBJ_DIR)/multiplicacion.o \
+				$(OBJ_DIR)/resta.o \
+				$(OBJ_DIR)/suma.o \
+				$(OBJ_DIR)/test_div.o
+
+CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
+
+$(TARGET) : $(OBJS)
+	mkdir -p $(BIN_DIR)
+	gcc $(CFLAGS) $(OBJS) -o $(TARGET)
+
+$(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
+	mkdir -p $(OBJ_DIR)
+	gcc -c $(CFLAGS) $< -o $@
+#para incluir los archivos  .h
+	 -include $(OBJ_DIR)/*.d
+
+.PHONY: clean
+clean : 
+	@rm -r $(OBJ_DIR) $(BIN_DIR)
+#borra los archivos
+#@rm -f *.o $(TARGET	)
+
+
+# cc cual es el compilador 
+# $< $@ sustitulle los nombres del target file y del source file
+# https://www.youtube.com/watch?v=0XlVyZAfQEM
