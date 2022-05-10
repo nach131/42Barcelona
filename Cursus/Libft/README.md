@@ -59,7 +59,7 @@ Y las funciones a libreria.c
         float dividir(float A,float B){
             return A/B;
         }
-compilamos libreria.c para generar el archivo objeto, y ya podremos utilixar las funciones multiplicacion y division en nuestro archivo principal.c
+compilamos libreria.c para generar el archivo objeto, y ya podremos utilizar las funciones multiplicacion y division en nuestro archivo principal.c
 
     printf("Resultado de %d*%d = %f\n", A,B,multiplicacion(A,B));;
     printf("Resultado de %d*%d = %f\n", A,B,dividir(A,B));
