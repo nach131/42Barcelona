@@ -1,8 +1,7 @@
 CC=/usr/bin/gcc
 AR=/usr/bin/ar
-HEADER = libreria.h
-TARGET = myProgramita
-NAME = libreria.a
+HEADER = libft.h
+NAME = libft.a
 RM = rm -f
 
 OBJS = $(SRCS:.c=.o)
@@ -22,8 +21,6 @@ CFLAGS = -Wall -Wextra -Werror
 %.o : %.c
 	$(CC) -c $(CFLAGS) $< -o $@
 	@echo "$(BLUE) ✓ Creando $(NAME)\n"	
-#para incluir los archivos  .h
-#  -include $(OBJ_DIR)/*.d
 
 all: $(OBJS) $(NAME)
 
@@ -38,7 +35,6 @@ bonus:  $(OBJS) $(OBJSBONUS) $(HEADER)
 
 clean : 
 				$(RM) $(OBJS) $(OBJSBONUS)
-# @printf "$(RED) Borrado de los archivos\n";
 	@echo "$(RED) ✗  Borrado de los archivos\n";
 	$(WHITE)
 
@@ -50,7 +46,3 @@ re: fclean all
 
 # Non-file targets
 .PHONY: all clean fclean re
-
-# cc cual es el compilador 
-# $< $@ sustitulle los nombres del target file y del source file
-# https://www.youtube.com/watch?v=0XlVyZAfQEMß
