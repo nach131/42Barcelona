@@ -6,7 +6,7 @@ RM = rm -f
 
 OBJS = $(SRCS:.c=.o)
 OBJSBONUS = $(SRCSBONUS:.c=.o)
-SRCS = dividir.c multiplicacion.c resta.c suma.c test_div.c
+SRCS = ft_isalpha.c ft_isdigit.c
 SRCSBONUS = exponencial.c
 
 # Colors
@@ -20,14 +20,14 @@ CFLAGS = -Wall -Wextra -Werror
 
 %.o : %.c
 	$(CC) -c $(CFLAGS) $< -o $@
-	@echo "$(BLUE) ✓ Creando $(NAME)\n"	
+	@echo "$(BLUE) ✓ Creado $(NAME)\n"	
 
 all: $(OBJS) $(NAME)
 
 $(NAME) : $(OBJS) $(HEADER)
 	$(AR) rcs $(NAME) $(OBJS)
 # $(CC) $(CFLAGS) $(OBJS) -o $(NAME)
-	@echo "$(GREEN) ✓ Creando $(NAME)\n"
+	@echo "$(GREEN) ✓ Creado $(NAME)\n"
 	$(WHITE)
 
 bonus:  $(OBJS) $(OBJSBONUS) $(HEADER)
