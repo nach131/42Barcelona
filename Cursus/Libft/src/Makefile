@@ -25,7 +25,8 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(OBJS) $(NAME)
 
 $(NAME) : $(OBJS) $(HEADER)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	$(AR) rcs $(NAME) $(OBJS)
+# $(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 	@echo "$(GREEN) ✓ Creando $(NAME)\n"
 	$(WHITE)
 
