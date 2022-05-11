@@ -4,27 +4,24 @@ HEADER = libreria.h
 TARGET = myProgramita
 NAME = libreria.a
 RM = rm -f
-# OBJ_DIR = ../obj
-# BIN_DIR = ../bin
-# INC_DIR = ../include
-# SRC_DIR = .
+
 OBJS = $(SRCS:.c=.o)
 OBJSBONUS = $(SRCSBONUS:.c=.o)
-SRCS = dividir.c multiplicacion.c resta.c suma.c test_div.c 
-
+SRCS = dividir.c multiplicacion.c resta.c suma.c test_div.c
 SRCSBONUS = exponencial.c
 
 # Colors
 GREEN=\033[0;32m
 BLUE=\033[0;34m
 RED=\033[0;31m
+# WHITE= @printf "\033[0;37m"
+WHITE= @echo "\033[0;37m"
 
-# CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
 CFLAGS = -Wall -Wextra -Werror
 
 %.o : %.c
 	$(CC) -c $(CFLAGS) $< -o $@
-# printf "$(BLUE) ✓ Creando $(NAME)\n"
+	@echo "$(BLUE) ✓ Creando $(NAME)\n"	
 #para incluir los archivos  .h
 #  -include $(OBJ_DIR)/*.d
 
@@ -32,15 +29,18 @@ all: $(OBJS) $(NAME)
 
 $(NAME) : $(OBJS) $(HEADER)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
-#@printf "$(GREEN) ✓ Creando $(NAME)\n"
+	@echo "$(GREEN) ✓ Creando $(NAME)\n"
+	$(WHITE)
 
 bonus:  $(OBJS) $(OBJSBONUS) $(HEADER)
 				$(CC) $(CFLAGS) $(OBJS) $(OBJSBONUS) -o $(NAME)
 				@touch $@
 
 clean : 
-				$(RM)  $(OBJS) $(OBJSBONUS)
-#@printf "$(RED) Borrado de los archivos\n";
+				$(RM) $(OBJS) $(OBJSBONUS)
+# @printf "$(RED) Borrado de los archivos\n";
+	@echo "$(RED) Borrado de los archivos\n";
+	$(WHITE)
 
 fclean : clean
 				 $(RM) $(NAME)
