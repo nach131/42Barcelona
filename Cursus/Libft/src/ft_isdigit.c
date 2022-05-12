@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 23:06:19 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/11 23:34:32 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/12 15:05:19 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/12 19:45:00 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,14 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include <stdio.h>
-//ascii 48-0 to 57-9
+// ascii 48-0 to 57-9
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
-	if(c >= 48 && c <= 57)
+	if (c >= 48 && c <= 57)
 		return (1);
 	else
 		return (0);
-}
-
-int main(void)
-{
-	int c;
-	c = '4';
-	printf("Resultado de '%c' es: %d\n",c,ft_isdigit(c));;
-	c = 's';
-	printf("Resultado de '%c' es: %d\n",c,ft_isdigit(c));
-
 }

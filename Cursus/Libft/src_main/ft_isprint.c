@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 19:09:10 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/11 20:10:57 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/12 20:33:55 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/12 21:16:51 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,21 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// ascii: 65-A to 90-Z; 97-a to 122-z
-
 #include "libft.h"
+#include <stdio.h>
 
-int	ft_isalpha(int c)
+int	ft_isprint(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-	{
-		return (1);
-	}
+	if (c >= 32 && c <= 126)
+	return (1);
 	else
 		return (0);
+}
+
+int	main(void)
+{
+	char c;
+	printf("Escribe un caracter para comprobar si es imprimible\n");
+	scanf("%c", &c);
+	printf("el caracter '%c': %d\n", c, ft_isprint(c));
 }

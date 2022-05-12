@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 19:09:10 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/11 20:10:57 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/12 19:45:57 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/12 20:06:16 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,22 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// ascii: 65-A to 90-Z; 97-a to 122-z
+// ascii 0 to 127
 
-#include "libft.h"
+#include <stdio.h>
 
-int	ft_isalpha(int c)
+int	ft_isascii(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-	{
+	if(c >= 0 && c <= 127)
 		return (1);
-	}
 	else
 		return (0);
+}
+
+int	main(void)
+{
+	char c;
+	printf("Escribe un caracter para saber si es Ascii\n");
+	scanf("%c", &c);
+	printf("El caracter '%c': %d\n", c, ft_isascii(c));;
 }
