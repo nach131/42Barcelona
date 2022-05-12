@@ -20,11 +20,11 @@
 int	main(){
 	int i;
 	i = 'W';
-	printf("Resultado isdigit de %c: %d\n",i, isalnum(i));
+	printf("Resultado isalnum de %c: %d\n",i, isalnum(i));
 	i = '5';
-	printf("Resultado isdigit de %c: %d\n",i, isalnum(i));
+	printf("Resultado isalnum de %c: %d\n",i, isalnum(i));
 	i = '@';
-	printf("Resultado isdigit de %c: %d\n",i, isalnum(i));
+	printf("Resultado isalnum de %c: %d\n",i, isalnum(i));
 
 }
 
