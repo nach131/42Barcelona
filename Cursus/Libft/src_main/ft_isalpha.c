@@ -34,7 +34,6 @@ int main(void)
 	int res;
 	printf("Escribe un caracter para comprobar si es Alfabeto: \n");
 	scanf("%c", &n);
-//	printf("toma %c\n", n); 
 	res = ft_isalpha(n);
 	printf("Resultado: %d\n",res);
 }
