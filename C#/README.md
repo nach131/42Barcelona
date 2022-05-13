@@ -37,7 +37,7 @@ En C los especificadores de formatos son los que le dicen a las funciones variad
 
 *: Estos especificadores pueden estar fuera de estándar.
 
-
+https://docs.microsoft.com/es-es/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170
 ---
 
 [Librerias C#](https://conclase.net/c/librerias)
