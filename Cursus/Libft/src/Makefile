@@ -6,7 +6,7 @@ RM = rm -f
 
 OBJS = $(SRCS:.c=.o)
 OBJSBONUS = $(SRCSBONUS:.c=.o)
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c
 SRCSBONUS = exponencial.c
 
 # Colors
