@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memset.c                                           :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 16:28:44 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/13 20:18:42 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/13 18:15:11 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/13 20:42:46 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,16 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// void *memset(void *str, int c, size_t n)
-//
-// str 	− Este es un puntero al bloque de memoria a llenar.
-// c 	− Este es el valor a configurar. El valor se pasa como un int, 
-// 		pero la función llena el bloque de memoria utilizando la conversión 
-// 		de caracteres sin firmar de este valor.
-// n 	− Este es el número de bytes que se establecerá en el valor.
+#include "libft.h"
 
-#include <stdio.h>
-#include <string.h>
+void	ft_memset(void *str, int c, size_t n)
+{
+	char	*ch;
 
-int main () {
-   char str[60];
-
-   strcpy(str,"42 Barcelona es el campus de programación más innovador.");
-   puts(str);
-
-   memset(str,'@',12);
-   puts(str);
-   
-   return(0);
+	ch = str;
+	while (n > 0)
+	{
+		ch[n -1] = c;
+		n--;
+	}
 }
-
-// 42 Barcelona es el campus de programación más innovador.
-// @@@@@@@@@@@@ es el campus de programación más innovador.
