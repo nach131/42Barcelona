@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 15:06:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/13 16:24:31 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/14 10:38:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 int	ft_strlen(const char *s)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
 	while(s[i] != '\0')

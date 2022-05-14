@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 18:15:11 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/14 10:31:10 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/14 09:36:50 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/14 10:57:00 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+// la función borra los datos en los n bytes de la memoria comenzando en la ubi-
+// cación señalada por s, escribiendo ceros (bytes que contiene '\0') a esa área
 
 #include "libft.h"
 
-void	ft_memset(void *str, int c, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	char	*ch;
 	size_t	i;
 
-	ch = str;
+	ch = s;
 	i = 0;
 	while (i < n)
 	{
-		ch[i] = c;
+		ch[i] = '\0';
 		i++;
 	}
 }

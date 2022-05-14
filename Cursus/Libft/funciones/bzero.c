@@ -6,13 +6,15 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 22:51:32 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/13 23:21:52 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/14 10:34:54 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+// la función borra los datos en los n bytes de la memoria comenzando en la ubi-
+// cación señalada por s, escribiendo ceros (bytes que contiene '\0') a esa área
 
 #include <stdio.h>
 #include <string.h>
@@ -32,3 +34,8 @@ int main () {
 
    return(0);
 }
+// 42 Barcelona es el campus de programación más innovador.
+// @@@@@@@@@@@@ es el campus de programación más innovador.
+// antes de bzero: @@@@@@@@@@@@ es el campus de programación más innovador.
+//size src: 60
+// bzero:
