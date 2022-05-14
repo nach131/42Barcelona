@@ -1,0 +1,36 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/14 12:35:37 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/14 20:52:31 by nmota-bu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
+//  void *memcpy(void *dest, const void *src, size_t n)
+//  copia n caracteres del área de memoria src al área de memoria dest.
+
+#include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	char	*de;
+	char	*sr;
+	size_t	i;
+
+	de = (char *)dest;
+	sr = (char *)src;
+	i = 0;
+	while (i < n)
+	{
+		de[i] = sr[i];
+		i++;
+	}
+	return (0);
+}
