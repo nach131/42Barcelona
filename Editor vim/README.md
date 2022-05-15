@@ -1,5 +1,8 @@
 # Vim Cheat Sheet
 
+### Añadir "// "
+Selecionamos todas las lineas con 'v' pulsamos : y escribimos :'<,'>s!^!// !
+
 editar .vimrc
 
     syntax on
