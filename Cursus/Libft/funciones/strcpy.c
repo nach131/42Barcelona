@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 11:12:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/15 11:57:46 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/15 12:11:33 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ void test(int size)
     int r;
 
     r = strlcpy(dst,src,size);
-	
+	//r = strlcat(dst,src,size);
+
 	printf("Size: %d\n", size);
     printf("Copiar: '%s'\n en: '%s'\n logitud string copiado: %d\n",
             src,
@@ -50,3 +51,26 @@ int main()
 
     return(0);
 }
+
+// Size: 19
+// Copiar: '42 Barcelona'
+//  en: '42 Barcelona'
+//  logitud string copiado: 12
+// -----------------
+// Size: 10
+// Copiar: '42 Barcelona'
+//  en: '42 Barcel'
+//  logitud string copiado: 12
+// -----------------
+// Size: 5
+// Copiar: '42 Barcelona'
+//  en: '42 B'
+//  logitud string copiado: 12
+// -----------------
+// Size: 0
+// Copiar: '42 Barcelona'
+//  en: '42 B'
+//  logitud string copiado: 12
+// ----------------
+
+
