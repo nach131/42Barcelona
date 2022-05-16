@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 10:16:10 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/15 10:48:35 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/16 09:44:01 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include<stdio.h>
-#include "libft.h"
+//#include "libft.h"
 
  void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -46,3 +46,13 @@ int	main(void)
 	ft_memmove(dst, src, n);
 	printf("main:\n dst: %s\n src: %s\n len: %zu\n", dst, src, n);
 }
+
+// 
+// ft_memmove:
+//  dst: 42 Barce destino.
+//  src: 42 Barcelona es el campus de programación más innovador.
+//  len: 7
+// main:
+//  dst: 42 Barce destino.
+//  src: 42 Barcelona es el campus de programación más innovador.
+//  len: 7

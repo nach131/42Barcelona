@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 16:28:44 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/13 20:18:42 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/16 12:53:25 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,14 @@ int main () {
    strcpy(str,"42 Barcelona es el campus de programación más innovador.");
    puts(str);
 
-   memset(str,'@',12);
+  // char tomate[60];
+	int tomate;
+
+   tomate =  memset(str,'@',12);
    puts(str);
    
+	printf("%d", tomate);
+
    return(0);
 }
 

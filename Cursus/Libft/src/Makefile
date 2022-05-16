@@ -8,13 +8,12 @@ OBJS = $(SRCS:.c=.o)
 OBJSBONUS = $(SRCSBONUS:.c=.o)
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c \
 	   ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c
-SRCSBONUS = exponencial.c
+//SRCSBONUS = exponencial.c
 
 # Colors
 GREEN=\033[0;32m
 BLUE=\033[0;34m
 RED=\033[0;31m
-# WHITE= @printf "\033[0;37m"
 WHITE= @echo "\033[0;37m"
 
 CFLAGS = -Wall -Wextra -Werror
@@ -31,7 +30,7 @@ $(NAME) : $(OBJS) $(HEADER)
 	@echo "$(GREEN) ✓ Creado $(NAME)\n"
 	$(WHITE)
 
-bonus:  $(OBJS) $(OBJSBONUS) $(HEADER)
+//bonus:  $(OBJS) $(OBJSBONUS) $(HEADER)
 				$(CC) $(CFLAGS) $(OBJS) $(OBJSBONUS) -o $(NAME)
 				@touch $@
 

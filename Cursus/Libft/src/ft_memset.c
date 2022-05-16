@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 18:15:11 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/14 10:31:10 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/16 12:54:02 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #include "libft.h"
 
-void	ft_memset(void *str, int c, size_t n)
+void	*ft_memset(void *str, int c, size_t n)
 {
 	char	*ch;
 	size_t	i;
@@ -28,4 +28,5 @@ void	ft_memset(void *str, int c, size_t n)
 		ch[i] = c;
 		i++;
 	}
+	return (ch);
 }
