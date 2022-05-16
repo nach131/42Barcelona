@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 12:35:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/14 20:52:31 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/16 15:36:01 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	de = (char *)dest;
 	sr = (char *)src;
 	i = 0;
-	while (i < n)
+	if (sr != NULL || de != NULL)
 	{
-		de[i] = sr[i];
-		i++;
+		while (i < n)
+		{
+			de[i] = sr[i];
+			i++;
+		}
+		return (de);
 	}
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 12:35:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/14 20:49:58 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/16 15:08:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //  copia n caracteres del área de memoria src al área de memoria dest.
 
 #include <stdio.h>
-#include "libft.h"
+//#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -28,14 +28,19 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	de = (char *)dest;
 	sr = (char *)src;
 	i = 0;
-	while (i < n)
+	if (sr != NULL)
 	{
-		de[i] = sr[i];	
-		i++;
+		while (i < n)
+		{
+			de[i] = sr[i];	
+  			i++;
+  		}
+		return(de);
 	}
 	printf("A copiar: %s\nsize_t: %zu\n", src, n);
 //	printf("destino: %s\n", dest);
-//	return (0);
+//	return (de);
+	return (NULL);
 }
 
 int	main(void)
@@ -46,6 +51,7 @@ int	main(void)
 
 	n = 7;
 	printf("dest inicial: %s\n",dest);
-	ft_memcpy(dest, src, n);
+//	ft_memcpy(dest, src, n);
+	ft_memcpy(((void *)0), ((void *)0), 3);
 	printf("dest despues ft_memcpy: %s\n",dest);
 }
