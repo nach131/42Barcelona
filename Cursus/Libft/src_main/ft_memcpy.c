@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 12:35:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/16 15:08:23 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/16 15:40:29 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 //  void *memcpy(void *dest, const void *src, size_t n)
 //  copia n caracteres del área de memoria src al área de memoria dest.
+//  retornar NULL en el caso de que los dos argumentos se han NULL
 
 #include <stdio.h>
 //#include "libft.h"
@@ -28,7 +29,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	de = (char *)dest;
 	sr = (char *)src;
 	i = 0;
-	if (sr != NULL)
+	if (sr != NULL || de !=NULL)
 	{
 		while (i < n)
 		{
@@ -39,7 +40,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	printf("A copiar: %s\nsize_t: %zu\n", src, n);
 //	printf("destino: %s\n", dest);
-//	return (de);
 	return (NULL);
 }
 

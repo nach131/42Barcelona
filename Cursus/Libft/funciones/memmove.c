@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 10:05:35 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/15 10:14:52 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/16 15:43:35 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ int main () {
    const char src[]  = "42 Barcelona es el campus de programación más innovador.";
 
    printf("ANTES de memmove.\n dest = %s\n src = %s\n", dest, src);
-   memmove(dest, src, 9);
+//   memmove(dest, src, 9);
+   memmove(((void *)0), ((void *)0), 5);
    printf("DESPUES DE  memmove.\n dest = %s\n src = %s\n", dest, src);
 
    return(0);
