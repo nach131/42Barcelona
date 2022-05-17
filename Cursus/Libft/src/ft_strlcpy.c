@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 12:13:15 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/16 17:26:46 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/17 20:52:25 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,21 @@
 
 #include "libft.h"
 
-size_t	ft_strlcpy	(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t 		i;
-	char 		*ds;
-	const char	*sr;
+	size_t	i;
 
-	ds = dst;
-	sr = src;
 	i = 0;
-
-	while (i < size)
+	if (size > 0)
 	{
-
-		ds[i] = sr[i];
-		i++;
+		while (src[i] && i < (size - 1))
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = 0;
 	}
-	return (ft_strlen(src));
+	while (src[i])
+		i++;
+	return (i);
 }
