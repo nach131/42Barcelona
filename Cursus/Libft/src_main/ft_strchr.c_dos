@@ -1,0 +1,53 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/19 22:19:52 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/20 11:52:34 by nmota-bu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* ╔════════════════════════════════════════════════════════════════════════╗ */
+/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ╚════════════════════════════════════════════════════════════════════════╝ */
+
+#include<stdio.h>
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
+{
+	int i;
+
+	i = 0;
+	while (s[i] != c && s[i] != '\0')
+		{
+		printf("Primer char: %c",s[i]);
+		i++;
+		}
+	printf("\nft: \n char: '%c'\n",c);
+
+//	return ((char *)s); // restorna todo
+		if (s[0] == c || s[1] == c)
+			return (&((char *)s)[i + 1]); // retorna despues del char c
+		else if (s[i] == c)
+			return (&((char *)s)[i]); // retorna despues del char c
+	return (NULL);
+	}
+
+
+int	main(void)
+{
+	const char str[] = "42 Barcelona. campus de programación más innovador";
+	const char ch = '2';
+//	const char str[] = "teste";
+//	const char ch = 'e';
+	char *res;
+
+
+	res = ft_strchr(str, ch);
+
+	printf("\nmain: \n res: %s\n", res);
+}
