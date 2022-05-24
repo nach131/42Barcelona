@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/21 11:40:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/21 19:18:26 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/24 14:19:42 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,11 @@
 #include <string.h>
 
 int main () {
-   const char str[] = "42 Barcelona. Campus de programación más innovador";
+
+	const char str[] = "";
+
+
+	//	const char str[] = "42 Barcelona. Campus de programación más innovador";
    const char ch = '.';
    char *res;
 
