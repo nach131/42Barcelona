@@ -1,0 +1,18 @@
+char	8	-128 a 127
+unsigned char	8	0 a 255
+signed char 	8	-128 a 127
+short 	16	-32768 a 32767
+int 	16	-32768 a 32767
+unsigned int 	16	0 a 65535
+signed int 	16	-32768 a 32767
+short int	16	-32768 a 32767
+unsigned short int	16	0 a 65535
+signed short int	16	-32768 a 32767
+long int	32	-2147483648 a 2147483647
+signed long int	32	-2147483648 a 2147483647
+unsigned long int	32	0 a 4294967295
+long	32	-2147483648 a 2147483647
+unsigned long	32	0 a 4294967295
+float	32	3.4E-38 a 3.4E+38
+double	64	1.7E-308 a 1.7E+308
+long double	64 ó 80 (según versión).	1.7E-308 a 1.7E+308   ó 3.4E-4932 a 1.1E+4932
