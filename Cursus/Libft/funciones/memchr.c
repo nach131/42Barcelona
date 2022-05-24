@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   memchr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/23 19:47:10 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/21 11:40:37 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/21 19:18:26 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,45 +14,28 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
+//	void *memchr(const void *str, int c, size_t n)
+//	busca la primera aparición del carácter c (un carácter sin signo)  en los 
+//	primeros n bytes de la cadena a la que apunta, mediante el argumento str.
+//	str - Este es el puntero al bloque de memoria donde se realiza la búsqueda.
+//	c 	- Este es el valor que se pasa como un int, pero la función realiza 
+//		una búsqueda byte por byte utilizando la conversión de caracteres
+//		sin firmar de este valor (unsigned)
+//	n	- Este es el número de bytes a analizar.
+
 #include <stdio.h>
-#include "../src/libft.h"
 #include <string.h>
 
-size_t ft_strlcat(char *dst, const char *src, size_t size)
-{
+int main () {
+   const char str[] = "42 Barcelona. Campus de programación más innovador";
+   const char ch = '.';
+   char *res;
 
-	size_t dst_len;
-	size_t src_len;
-	size_t i;
-	size_t j;
+   res = memchr(str, ch, strlen(str));
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	j = dst_len;
-	i = 0;
-	if (dst_len + 1 > size)
-		return (src_len + size);
-	if (dst_len <= size)
-	{
-		while (src[i] != '\0' && j < size - 1)
-		{
-			dst[j] = src[i];
-			i++;
-			j++;
-		}
-		dst[j] = '\0';
-	}
-	return (src_len + dst_len);
+   printf("String despues '%c' es: '%s'\n", ch, res);
+   printf("str original: %s\n", str);
+   return(0);
 }
-
-int main(void)
-{
-	char src[] = "123";
-	char dst[15] = "42 ";
-	size_t n;
-	int r;
-
-	n = 0;
-	r = ft_strlcat(dst, src, n);
-	printf("main: \n src: %s\n dst: %s\n size: %zu\nretorno: %d\n", src, dst, n, r);
-}
+// String despues '.' es: '. Campus de programación más innovador'
+// str original: 42 Barcelona. Campus de programación más innovador

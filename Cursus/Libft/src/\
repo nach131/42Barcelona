@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/19 18:30:45 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/21 12:04:13 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/21 14:09:56 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,59 +15,38 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include<stdio.h>
-#include "libft.h"
-#include <string.h>
+#include"libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+void *ft_memchr(const void *str, int c, size_t n)
 {
-	
-	size_t	dst_len;
-	size_t	src_len;
+	unsigned char	*s;
+	size_t			i;
 
-	dst_len = strlen(dst);
-	src_len = strlen(src);
-	size_t	i;
-	size_t 	j;
+	s = (unsigned char *)str;
 
-	j = dst_len;
+
 	i = 0;
-	if (dst_len >= size)
-		return (src_len + size);
-	else if (dst_len < size)
+	while ( i < n)
 	{
-		while (j > size -1 && src[i] != 0)
-		{
-		dst[j] = src[i];
-		i++;
-		j++;
-		}
-		dst[j] = 0;
-	}
-	return (src_len + dst_len);
-//	if	(size > 0 && dst_len < size - 1)
-//	{
-//		while (src[i] && dst_len + i < size - 1)
-//		{
-//			dst[dst_len] = src[i];
-//			i++;
-//			j++;
-//		}
-//		dst[j] = 0;
-//	}
-//	if (dst_len >= size)
-//		dst_len = size;
-//	return (dst_len + src_len);
+		if (s == (unsigned char *)c)
+				return (s);
+				i++;
+				printf("%zu %s,",i, s);
+}
+	
+	printf("\nft:\n str: %s\n c: '%c'\n n: %zu\n", str, c, n);
+
+	return (NULL);
 }
 
-//int	main(void)
-//{
-//	char	src[] = "Barcelona";
-//	char	dst[15] = "42 ";
-//	size_t	n;
-//	int		r;
-//
-//	n = 5;
-//	r = ft_strlcat(dst, src, n);
-//	printf("main: \n src: %s\n dst: %s\n size: %zu\nretorno: %d\n", src, dst, n,r);
-//}
+int	main(void)
+{
+	const char	str[] = "42 Barcelona. Campus de programación más innovador";
+	int			ch = '.';
+	char		*res;
 
+	res = ft_memchr(str, ch, ft_strlen(str));
+	
+	printf("res: %s\n", res);
+	return (0);
+}

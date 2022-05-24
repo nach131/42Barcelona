@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/23 19:43:12 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/21 12:04:13 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/21 14:17:53 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,39 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "libft.h"
+#include<stdio.h>
+#include"libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+void *ft_memchr(const void *str, int c, size_t n)
 {
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	i;
-	size_t	j;
+	unsigned char	*s;
+	size_t			i;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	j = dst_len;
+	s = (unsigned char *)str;
+
+
 	i = 0;
-	if (dst_len + 1 > size)
+	while ( i < n)
 	{
-		return (src_len + size);
-	}
-	if (dst_len <= size)
-	{
-		while (src[i] != '\0' && j < size - 1)
-		{
-			dst[j] = src[i];
-			i++;
-			j++;
-		}
-		dst[j] = '\0';
-	}
-	return (src_len + dst_len);
+		if (s == (unsigned char *)c)
+				return (s);
+				i++;
+				printf("%zu %s,",i, s);
+}
+	
+	printf("\nft:\n str: %s\n c: '%c'\n n: %zu\n", str, c, n);
+
+//	return (NULL);
+}
+
+int	main(void)
+{
+	const char	str[] = "42 Barcelona. Campus de programación más innovador";
+	int			ch = '.';
+	char		*res;
+
+	res = ft_memchr(str, ch, ft_strlen(str));
+	
+	printf("res: %s\n", res);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/23 19:43:12 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/19 18:58:48 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	src_len = ft_strlen(src);
 	j = dst_len;
 	i = 0;
-	if (dst_len + 1 > size)
-	{
+	if (dst_len > size)
 		return (src_len + size);
-	}
-	if (dst_len <= size)
+	else if (dst_len <= size)
 	{
 		while (src[i] != '\0' && j < size - 1)
 		{

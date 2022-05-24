@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 22:19:52 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/20 12:26:04 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/24 08:26:55 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	while (s[i] != c && s[i] != '\0')
+	while (s[i] != (char)c && s[i] != '\0')
 		i++;
-	if (s[i] == c)
+	if (s[i] == (char)c)
 		return ((char *)(s + i));
 	return (NULL);
 }

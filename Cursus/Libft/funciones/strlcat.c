@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 20:57:39 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/17 22:13:37 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/23 19:28:00 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@
 
 int	main(void)
 {
-	char	src[] = "Barcelona";
+	char	src[] = "123";
 	char	dst[15]	= "42 ";
 	size_t	r;
 
-	r = strlcat(dst, src, 13);
+	r = strlcat(dst, src, 0);
 
 	printf(" r: %zu\n src: %s\n dst: %s\n", r, src, dst);
 }
