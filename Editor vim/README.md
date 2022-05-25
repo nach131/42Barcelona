@@ -3,7 +3,8 @@
 ### Añadir "// "
 Selecionamos todas las lineas con 'v' pulsamos : y escribimos :'<,'>s!^!// !
 
-Quitar // 
+Quitar //
+
         :s%//
 
 editar .vimrc
@@ -15,7 +16,12 @@ editar .vimrc
     set ruler
 
 ---
+:set list
 
+:set ruler
+
+:set nu
+---
 
 Vim Cheat Sheet, useful commands compatible with [VSCodeVim](https://github.com/VSCodeVim/Vim) for Microsoft Visual Studio Code.
 
