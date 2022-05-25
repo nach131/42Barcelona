@@ -3,6 +3,9 @@
 ### Añadir "// "
 Selecionamos todas las lineas con 'v' pulsamos : y escribimos :'<,'>s!^!// !
 
+Quitar // 
+        :s%//
+
 editar .vimrc
 
     syntax on
