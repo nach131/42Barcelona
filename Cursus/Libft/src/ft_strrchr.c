@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 17:37:11 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/26 15:20:40 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/26 19:34:57 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,49 +14,18 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include<stdio.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*sr;
-	int		i;
-	sr = (char *)s;
-	i = ft_strlen(s);
+	int	i;
 
-	printf("i: %d\n", i);
-	while (i)
+	i = ft_strlen(s);
+	while (i >= 0)
 	{
-		if (*sr == (unsigned char)c)
-		{
-			printf("if: %c\n", *sr);
-			return (sr);
-		}
-		else
-			sr++;
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
 		i--;
 	}
 	return (NULL);
-
 }
-
-//int	main(void)
-//{
-//	const	char str[] = "42 Barcelona. campus. de programación más innovador";
-//	const	char ch = '.';
-//	char *res;
-//
-//	res = ft_strrchr(str, ch);
-//	printf("\nmain:\n str: %s\n res: %s\n", str, res);
-//}
-
-//0,1,2,3,4,5,6,7,8,9,10,11,12,
-//IF:
-// 13,14,15,16,17,18,19,20,
-//IF:
-// 21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,
-//j: 21
-//
-//main:
-// str: 42 Barcelona. campus. de programación más innovador
-// res: . de programación más innovador

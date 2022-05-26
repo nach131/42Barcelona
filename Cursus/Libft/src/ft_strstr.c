@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 13:22:19 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/26 14:10:49 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/26 19:39:09 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include<stdio.h>
 #include"libft.h"
 char	*ft_strstr(const char *haystack, const char *needle)
 {

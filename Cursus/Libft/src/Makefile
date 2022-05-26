@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2022/05/25 21:48:45 by nmota-bu         ###   ########.fr        #
+#    Updated: 2022/05/26 19:59:34 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ BLUE=\033[0;34m
 RED=\033[0;31m
 WHITE= @echo "\033[0;37m"
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c99
 
 %.o : %.c
 	$(CC) -c $(CFLAGS) $< -o $@
