@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 17:37:11 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/20 18:44:17 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/26 15:00:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,46 +15,62 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include<stdio.h>
-#include "libft.h"
+#include "../src/libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
-	int	j;
-
-	i = 0;;
-	j = 0;
-	while ( s[i] != '\0')
-	{
-		printf("%d,",i);
-		if (s[i] == c)
-		{	
-			j = i + 1;
-			printf("\nIF: \n " );
-
-		}
-		i++;
-	}
-	if (j)
-	{
-		printf("\nj: %d\n", j);
-		return ((char *)(s + j - 1));
-	}
-	else if (s[i] == c)
-		return ((char *)(s + i));
-	return (NULL);
-}
-//			return ((char *)(s + i));
-
-//int	main(void)
-//{
-//	const	char str[] = "42 Barcelona. campus. de programación más innovador";
-//	const	char ch = '.';
-//	char *res;
+//	int	i;
+//	int	j;
 //
-//	res = ft_strrchr(str, ch);
-//	printf("\nmain:\n str: %s\n res: %s\n", str, res);
-//}
+//	i = 0;;
+//	j = 0;
+//	while ( s[i] != '\0')
+//	{
+//		printf("%d,",i);
+//		if (s[i] == c)
+//		{	
+//			j = i + 1;
+//			printf("\nIF: \n " );
+//
+//		}
+//		i++;
+//	}
+//	if (j)
+//	{
+//		printf("\nj: %d\n", j);
+//		return ((char *)(s + j - 1));
+//	}
+//	else if (s[i] == c)
+//		return ((char *)(s + i));
+//	return (NULL);
+// //-------
+	char *sr;
+	size_t	i;
+	sr = (char *)s;
+	i = ft_strlen(s);
+
+	printf("i: %zu\n", i);
+	while (i)
+	{
+		if (*sr == (char)c)
+			return (sr);
+		else
+			sr++;
+		i--;
+	}
+	return (NULL);
+
+}
+
+int	main(void)
+{
+	const	char str[] = "42 Barcelona. campus. de programación más innovador";
+	const	char ch = '.';
+	char *res;
+
+	res = ft_strrchr(str, ch);
+	printf("\nmain:\n str: %s\n res: %s\n", str, res);
+}
 
 //0,1,2,3,4,5,6,7,8,9,10,11,12,
 //IF:
