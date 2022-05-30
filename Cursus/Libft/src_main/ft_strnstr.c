@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strnstr.c                                          :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/26 21:01:18 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/26 21:09:29 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/26 13:22:19 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/30 11:03:20 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,38 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// char *strnstr(const char *haystack, const char *needle, size_t len)
-// La función encuentra la primera aparición de la subcadena needle en la
-// cadena haystack. Los caracteres finales '\0' no se comparan.
-// 
+#include"libft.h"
 
-#include<string.h>
-#include<stdio.h>
-int main () {
-   const char haystack[50] = "42Barcelona es la mejor";
-   const char needle[10] = "mejor";
-   char *ret;
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t	i;
+	size_t	j;
 
-   ret = strnstr(haystack, needle, 30);
-
-   printf("La subcadena es: %s\n", ret);
-
-   return(0);
+	i = 0;
+	if (*needle == '\0')
+		return ((char *)haystack);
+	while (i < len && haystack[i] != '\0')
+	{
+		j = 0;
+		printf("%zu:%c, ",i, haystack[i]);
+		while (needle[j] == haystack[i + j] && (i + j) < len)
+		{
+				printf("aki-%zu:%c, ", j, needle[j]);
+			if (needle[j + 1] == '\0')
+				return (&((char *)haystack)[i]);
+			j++;
+		}
+		i++;
+	}
+	return (NULL);
 }
 
-// La subcadena es: mejor
-// si size_t es menor que la posicion donde se encuentra el string a buscar 
-// devuelve (null)
+int main(void)
+{
+    const char  hays[50] = "42Barcelona es la mejor";
+    const char  need[10] = "mejor";
+    char *res;
+
+    res = ft_strnstr(hays, need, 30);
+    printf("\nmain: %s\n", res);
+}

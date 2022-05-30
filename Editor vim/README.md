@@ -8,6 +8,9 @@ Selecionamos todas las lineas con 'v'
 **Quitar "//"**
 
     :s%//
+**Buscar y remplazar**
+
+    :%s/buscar/remplazar/g
 
 editar .vimrc
 

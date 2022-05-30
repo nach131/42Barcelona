@@ -41,3 +41,16 @@ https://docs.microsoft.com/es-es/cpp/c-runtime-library/format-specification-synt
 ---
 
 [Librerias C#](https://conclase.net/c/librerias)
+
+
+***ft_strnstr.c***
+
+Hace lo mismo
+
+    *(const char *)(haystack +1)
+    haystack[1]
+pasar resultado de una opecacion de dos size_t a integer
+    
+    (int)(len - lent_dos)
+
+---

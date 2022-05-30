@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/26 13:22:19 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/26 19:39:09 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/05/30 11:46:28 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/05/30 22:12:36 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,40 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
+#include<stdio.h>
 #include"libft.h"
-char	*ft_strstr(const char *haystack, const char *needle)
+
+int	ft_atoi(const char *str)
 {
+	int	i;
+	int	menos;
+	int	numero;
 
-	return ("toma");
+	i = 0;
+	menos = 1;
+	numero = 0;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
+		i++;
+	while (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+			menos = -1;
+		//			menos++;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		numero = numero * 10 + str[i] - '0';
+		i++;
+	}
+	return (menos * numero);
 }
-
 int	main(void)
 {
-	const char	hays[50] = "42Barcelona es la mejor";
-	const char	need[10] = "mejor";
-	char *res;
+	int 	numero;
+//	char	string[20] = "+42 Barcelona";
+	char	string[20] = "--123";
 
-	res = ft_strstr(hays, need);
-	printf("main: %s\n", res);
+	numero = ft_atoi(string);
+	printf("\nnumero: %d\n", numero);
 }
-
