@@ -34,6 +34,8 @@ En C los especificadores de formatos son los que le dicen a las funciones variad
 | %x     | Especifica un valor hexadecimal.
 | %%     | Muestra un literal de porcentaje.
 | %f     | Imprime un float o double.
+| %zu    | Imprime un size_t.
+| %.2f   | Imprime un float.
 
 *: Estos especificadores pueden estar fuera de estándar.
 
