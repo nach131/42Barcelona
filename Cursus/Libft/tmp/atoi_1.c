@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 23:30:46 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/30 23:38:04 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/31 08:56:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,39 +19,66 @@
 #include<string.h>
 #include<stdlib.h>
 
-int cambiar(int menos, int numero)
-{
-	if (numero != 0)
-		if (menos % 2 == 1)
-			if (numero != -2147483648)
-				numero *= -1;
-	return (numero);
-}
+//int cambiar(int menos, int numero)
+//{
+//	if (numero != 0)
+//		if (menos % 2 == 1)
+//			if (numero != -2147483648)
+//				numero *= -1;
+//	return (numero);
+//}
+//
+//int ft_atoi(char *str)
+//{
+//	int i;
+//	int menos;
+//	int numero;
+//
+//	i = 0;
+//	menos = 0;
+//	numero = 0;
+//	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
+//		i++;
+//	while (str[i] == '+' || str[i] == '-')
+//	{
+//		if (str[i] == '-')
+//			menos++;
+//		i++;
+//	}
+//	while (str[i] >= '0' && str[i] <= '9')
+//	{
+//		numero = numero * 10 + str[i] - '0';
+//		i++;
+//	}
+//	numero = cambiar(menos, numero);
+//	return (numero);
+//}
 
-int ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int menos;
-	int numero;
+	int	res;
+	int	negative;
 
-	i = 0;
-	menos = 0;
-	numero = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
-		i++;
-	while (str[i] == '+' || str[i] == '-')
+	negative = 1;
+	res = 0;
+	while (*str && (*str == ' ' || *str == '\n' || *str == '\t'
+			|| *str == '\v' || *str == '\f' || *str == '\r'))
+		str++;
+	if (*str == '-')
 	{
-		if (str[i] == '-')
-			menos++;
-		i++;
+		negative = -1;
+		str++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	else if (*str == '+')
+		str++;
+	while (*str)
 	{
-		numero = numero * 10 + str[i] - '0';
-		i++;
+		if (!(*str >= '0' && *str <= '9'))
+			break ;
+		res = res * 10 + (*str - 48);
+		str++;
 	}
-	numero = cambiar(menos, numero);
-	return (numero);
+	return (res * negative);
 }
 
 int	main(void)
