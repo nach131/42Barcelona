@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 11:46:28 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/30 22:12:36 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/05/31 15:48:58 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include<stdio.h>
 #include"libft.h"
 
 int	ft_atoi(const char *str)
@@ -28,26 +27,17 @@ int	ft_atoi(const char *str)
 	numero = 0;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
 		i++;
-	while (str[i] == '+' || str[i] == '-')
+	if (str[i] == '-')
 	{
-		if (str[i] == '-')
-			menos = -1;
-		//			menos++;
+		menos = -1;
 		i++;
 	}
+	else if (str[i] == '+')
+		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		numero = numero * 10 + str[i] - '0';
+		numero = numero * 10 + (str[i] - 48);
 		i++;
 	}
 	return (menos * numero);
-}
-int	main(void)
-{
-	int 	numero;
-//	char	string[20] = "+42 Barcelona";
-	char	string[20] = "--123";
-
-	numero = ft_atoi(string);
-	printf("\nnumero: %d\n", numero);
 }
