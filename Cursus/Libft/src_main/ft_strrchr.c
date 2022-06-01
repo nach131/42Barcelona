@@ -15,7 +15,7 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include<stdio.h>
-#include "libft.h"
+#include "../src/libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

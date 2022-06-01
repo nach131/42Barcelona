@@ -1,44 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   strdup.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/14 09:36:50 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/01 10:49:41 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/01 16:47:21 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/01 18:20:28 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// la función borra los datos en los n bytes de la memoria comenzando en la ubi-
-// cación señalada por s, escribiendo ceros (bytes que contiene '\0') a esa área
 
+//  char *strdup(const char *s1)
+//  función asigna memoria suficiente para una copia del string s1,
+//   hace la copia y le devuelve un puntero.
+//   el puntero posteriormente puede usarse como argumento de la función free(3).
+//   para liberar la mememoria.
+
+#include <string.h>
 #include <stdio.h>
-#include "../src/libft.h"
-
-void ft_bzero(void *s, size_t n)
-{
-	char	*ch;
-	size_t	i;
-
-	ch = s;
-	i = 0;
-	while (i < n)
-	{
-		ch[i] = '\0';
-//		printf("bzero: %s\n", ch);
-		i++;
-	}
-printf("aki: %s\n", ch);
-}
+#include <stdlib.h>
 
 int	main(void)
 {
-	char s[60] = "42 Barcelona es el campus de programación más innovador.";
-	printf("main: %s\n",s);
-	ft_bzero(s, 5);
+	char str[] = "42 Barcelona";
+	char *res = strdup(str);
+	
+	printf("str: %s, puntero: %p\n", str, str);
+	printf("res: %s, puntero: %p\n", res, res);
+	printf("----Libereando el puntero res----\n");
+	free(res);
+	printf("res: %s, puntero: %p\n", res, res);
 }
-
+//str: 42 Barcelona, puntero: 0x7ffee75eb8cb
+//res: 42 Barcelona, puntero: 0x7fcc7b4002e0
+//----Libereando el puntero res----
+//res: 42 Barcelona, puntero: 0x7fcc7b4002e0

@@ -1,44 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/14 09:36:50 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/01 10:49:41 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/01 10:33:32 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/01 16:21:48 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// la función borra los datos en los n bytes de la memoria comenzando en la ubi-
-// cación señalada por s, escribiendo ceros (bytes que contiene '\0') a esa área
 
-#include <stdio.h>
-#include "../src/libft.h"
+#include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void *ft_calloc(size_t count, size_t size)
 {
-	char	*ch;
-	size_t	i;
+	void *puntero;
 
-	ch = s;
+	printf("Puntero address: a:%p:\n", puntero);
+	//	puntero = (void *)malloc(count * size);
+	puntero = malloc(count * size);
+	if (!puntero)
+		return (NULL);
+	ft_bzero(puntero, count * size);
+	return (puntero);
+}
+
+int main(void)
+{
+	size_t num;
+	size_t size;
+	int *a;
+
+	num = 10;
+	size = 5;
+
+	a = ft_calloc(num, size);
+
+	int i;
 	i = 0;
-	while (i < n)
+	while (a[i] == 0)
 	{
-		ch[i] = '\0';
-//		printf("bzero: %s\n", ch);
+		printf("i:%d, ", a[i]);
 		i++;
 	}
-printf("aki: %s\n", ch);
-}
 
-int	main(void)
-{
-	char s[60] = "42 Barcelona es el campus de programación más innovador.";
-	printf("main: %s\n",s);
-	ft_bzero(s, 5);
+	printf("\nPuntero address: a:%p:\n", a);
 }
-

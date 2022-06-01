@@ -1,44 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/14 09:36:50 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/01 10:49:41 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/01 10:33:32 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/01 16:46:26 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// la función borra los datos en los n bytes de la memoria comenzando en la ubi-
-// cación señalada por s, escribiendo ceros (bytes que contiene '\0') a esa área
 
-#include <stdio.h>
-#include "../src/libft.h"
+#include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	*ft_calloc(size_t count, size_t size)
 {
-	char	*ch;
-	size_t	i;
+	void	*puntero;
 
-	ch = s;
-	i = 0;
-	while (i < n)
-	{
-		ch[i] = '\0';
-//		printf("bzero: %s\n", ch);
-		i++;
-	}
-printf("aki: %s\n", ch);
+	puntero = malloc(count * size);
+	if (!puntero)
+		return (NULL);
+	ft_bzero(puntero, count * size);
+	return (puntero);
 }
-
-int	main(void)
-{
-	char s[60] = "42 Barcelona es el campus de programación más innovador.";
-	printf("main: %s\n",s);
-	ft_bzero(s, 5);
-}
-
