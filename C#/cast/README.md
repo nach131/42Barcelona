@@ -25,7 +25,8 @@ Si dividimos dos enteros y queremos optener el resultado en float (decimales) te
 
     res = (float)a / b;
 
-    printf("resultado: %.2f\n", res);
+    printf("res: %.2f\n", res);
     
 **resultado:**
-    resultado: 2.50
+
+    res: 2.50
