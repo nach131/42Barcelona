@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cast.c                                             :+:      :+:    :+:   */
+/*   cast_div.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/02 09:11:24 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/02 09:29:46 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/02 09:33:04 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/02 09:37:02 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,12 @@
 
 int	main(void)
 {
-	int	a = 65;
+	float	res;
+	int a=5, b=2;
 
-	printf("\n a:%d \n(float) a:%.3f \n(double) a:%.3f \n(char) a:%c \n",\
-			a, (float)a, (double)a, (char)a);
+	res = (float)a / b;
+
+	printf("resultado: %.2f\n", res);
 }
 
-// a:65
-//(float) a:65.000
-//(double) a:65.000
-//(char) a:A
+//resultado: 2.50
