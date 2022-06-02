@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 16:55:57 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/17 19:58:48 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/02 12:10:43 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
@@ -17,7 +17,7 @@
 //	copia size char de una array de char a otra array 
 
 // dst 	- Este el el puntero a la matriz de destino dende se copiaran los char's
-// src 	- Es es el puntero a la funete de datos que se va a copia.
+// src 	- Es es el puntero original de datos que se va a copia.
 // size - Este es el número de bytes a copiar.
 
 #include <stdio.h>

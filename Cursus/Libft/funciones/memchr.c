@@ -15,10 +15,10 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 //	void *memchr(const void *str, int c, size_t n)
-//	busca la primera aparición del carácter c (un carácter sin signo)  en los 
+//	busca la primera aparición del carácter c (un carácter sin signo)  en los
 //	primeros n bytes de la cadena a la que apunta, mediante el argumento str.
 //	str - Este es el puntero al bloque de memoria donde se realiza la búsqueda.
-//	c 	- Este es el valor que se pasa como un int, pero la función realiza 
+//	c 	- Este es el valor que se pasa como un int, pero la función realiza
 //		una búsqueda byte por byte utilizando la conversión de caracteres
 //		sin firmar de este valor (unsigned)
 //	n	- Este es el número de bytes a analizar.
@@ -26,7 +26,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int test (size_t n)
+int test(size_t n)
 {
    const char str[] = "42 Barcelona. Campus de programación más innovador";
    const char ch = '.';
@@ -38,22 +38,22 @@ int test (size_t n)
    return (0);
 }
 
-
-int main () {
-	test(5);
-   	test(20);
-   	test(70);
-	return(0);
+int main()
+{
+   test(5);
+   test(20);
+   test(70);
+   return (0);
 }
-//str original: 42 Barcelona. Campus de programación más innovador
-// char: '.'
-// n: 5
-//String despues '.' es: '(null)'
-//str original: 42 Barcelona. Campus de programación más innovador
-// char: '.'
-// n: 20
-//String despues '.' es: '. Campus de programación más innovador'
-//str original: 42 Barcelona. Campus de programación más innovador
-// char: '.'
-// n: 70
-//String despues '.' es: '. Campus de programación más innovador'
+// str original: 42 Barcelona. Campus de programación más innovador
+//  char: '.'
+//  n: 5
+// String despues '.' es: '(null)'
+// str original: 42 Barcelona. Campus de programación más innovador
+//  char: '.'
+//  n: 20
+// String despues '.' es: '. Campus de programación más innovador'
+// str original: 42 Barcelona. Campus de programación más innovador
+//  char: '.'
+//  n: 70
+// String despues '.' es: '. Campus de programación más innovador'
