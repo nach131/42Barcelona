@@ -17,6 +17,7 @@ Para realizar un cast solo tenemos que poner el timpo de datos delante de la exp
     (char) a:A
 
 **Castear resultado operación**
+
 Si dividimos dos enteros y queremos optener el resultado en float (decimales) tendremos que castear el resultado
 
     float   res;
