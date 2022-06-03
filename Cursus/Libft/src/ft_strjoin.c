@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 13:22:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/03 10:56:30 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/03 11:33:31 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-# include "libft.h"
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *res;
+	char	*res;
 	size_t	len_s1;
 	size_t	len_s2;
 
 	len_s1 = ft_strlen(s1);
 	len_s2 = ft_strlen(s2);
-
-	if (!(res = (char*)malloc(sizeof(*res) * (len_s1 + len_s2 + 1))))
+	res = (char *)malloc(sizeof(*res) * (len_s1 + len_s2 + 1));
+	if (!res)
 		return (0);
 	ft_memcpy(res, s1, len_s1);
-	ft_memcpy(res + len_s1, s2, len_s2);	
+	ft_memcpy(res + len_s1, s2, len_s2);
 	res[len_s1 + len_s2] = '\0';
 	return (res);
 }
