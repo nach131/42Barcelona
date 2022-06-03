@@ -6,13 +6,21 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 10:19:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/03 13:33:03 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/03 20:12:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+//
+//  Reserva con malloc(3) memoria para devolver una string nueva basada 
+//  en la string ’s’. La nueva string empieza en el índice ’start’ y
+//  tiene una longitud máxima ’len’.
+
+// *s		- La string de la que formar la nueva.
+// start	- El índice de la string por el que empezar la nueva string.
+// len		- La longitud máxima de la nueva string.
 
 #include "libft.h"
 
