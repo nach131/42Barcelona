@@ -18,6 +18,7 @@ editar .vimrc
     filetype plugin indent on
     set tabstop=4
     set shiftwidth=4
+    set listchars=tab:\┊\ ,trail:·,extends:>,precedes:<,space:·
     set ruler
 
 ---
