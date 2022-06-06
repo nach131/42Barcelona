@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 13:22:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/03 21:06:03 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/06 16:18:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 // *s1 - La string prefijo.
 // *s2 - La string sufijo.
 
-# include "libft.h"
+#include "../src/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -36,20 +36,22 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res[len_s1 + len_s2] = '\0';
 	return (res);
 }
-//
-//int	main(void)
-//{
-//	char	str1[] = "42";
-////	char	str2[5] ={'\0','\0'};
-//	char	str2[] = " Barcelona";
-//	char	*res;
-//
+
+int	main(void)
+{
+	char	str1[] = "42";
+//	char	str2[5] ={'\0','\0'};
+	char	str2[] = " Barcelona";
+	char	*res;
+
 //	str1[0] = '\0';
-////	str2[0] = '\0';
-//		
-//	res = ft_strjoin(str1, str2);
-//	printf("res: %s\n", res);
-////	int	x;
-////	x = sizeof(res);
-////	printf("size res: %i\n", x);
-//}
+//	str2[0] = '\0';
+		
+	res = ft_strjoin(str1, str2);
+	printf("res: %s\n", res);
+//	int	x;
+//	x = sizeof(res);
+//	printf("size res: %i\n", x);
+}
+
+// res: 42 Barcelona

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 18:50:53 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/01 20:23:15 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/06 17:52:53 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,13 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "libft.h"
+//  char *strdup(const char *s1)
+//  función asigna memoria suficiente para una copia del string s1,
+//   hace la copia y le devuelve un puntero.
+//   el puntero posteriormente puede usarse como argumento de la función free(3).
+//   para liberar la mememoria.
+
+#include "../src/libft.h"
 
 char	*ft_strdup(const char *s1)
 {
@@ -41,10 +47,12 @@ char	*ft_strdup(const char *s1)
 
 int	main(void)
 {
-	char	str[20] ="42 Barcelona";
+	char	str[] ="42 Barcelona";
 	char	*res = ft_strdup(str);
 
 	printf("str: %s, puntero: %p\n", str, str);
 	printf("res: %s, puntero: %p\n", res, res);
 }
 
+// str: 42 Barcelona, puntero: 0x7ffee6e4f950
+// res: 42 Barcelona, puntero: 0x7fef3d405790

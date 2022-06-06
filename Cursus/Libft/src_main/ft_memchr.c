@@ -6,13 +6,21 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 13:06:45 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/26 15:02:09 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/06 16:56:05 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+
+//	busca la primera aparición del carácter c (un carácter sin signo)  en los
+//	primeros n bytes de la cadena a la que apunta, mediante el argumento str.
+//	str - Este es el puntero al bloque de memoria donde se realiza la búsqueda.
+//	c 	- Este es el valor que se pasa como un int, pero la función realiza
+//		una búsqueda byte por byte utilizando la conversión de caracteres
+//		sin firmar de este valor (unsigned)
+//	n	- Este es el número de bytes a analizar.
 
 #include <stdio.h>
 #include "../src/libft.h"

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 10:33:32 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/01 16:21:48 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/06 17:43:47 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,15 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "libft.h"
+//    void *calloc(size_t count, size_t size)
+//    Asigna la memoria solicitada y devuelve un puntero a ella. La diferencia 
+//    entre malloc y calloc es que malloc no establece la memoria en cero, 
+//    mientras que calloc establece la memoria asignada en cero.
+//	count	- This is the number of elements to be allocated.
+//	size	- Este es el tamaño de los elementos.
+
+
+#include "../src/libft.h"
 
 void *ft_calloc(size_t count, size_t size)
 {
