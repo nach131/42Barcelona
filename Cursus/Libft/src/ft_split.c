@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/19 18:58:48 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/07 21:07:09 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,66 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "libft.h"
+#include"libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char	**ft_split(char const *s, char c)
 {
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	i;
-	size_t	j;
+  	char	**words;
+//  
+//    	words = (char **)malloc(2 * sizeof(*words));
+//  	words[0] = "42";
+//  	words[1] = "Barcelona";
+//  	int	j;
+//  	int i;
+//  	i = 0;
+//  	while (i < 2)
+//  	{
+//  		j = 0;
+//  		while(*(words[i] + j) != '\0'){
+//  			printf("%c", *(words[i] + j ));
+//  			j++;
+//  		}
+//  		printf("\n");
+//  		i++;
+//  	}
+//  
+//  }
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	j = dst_len;
+	int	i;
+	int	j;
+	int z;
+	int len;
+	int	inicio;
+
+	len = strlen(s);
 	i = 0;
-	if (dst_len > size)
-		return (src_len + size);
-	else if (dst_len <= size)
+	z = 1;
+	while (i < len && s[i] != '\0')
 	{
-		while (src[i] != '\0' && j < size - 1)
+		j = 0;
+		printf("%i\n",i);
+		if ( s[i] == c)
 		{
-			dst[j] = src[i];
-			i++;
-			j++;
+//  			printf("\t%d\n",i);
+			j = i;
+			inicio=0;
+			inicio = (inicio++  - z) ;
+			z++;
+			printf("\tj:%d len: %d\n",j,  (len - j));
+			printf("\tword numero:  z:%d\n",z);
+			printf("\tinicio: %d\n", inicio);
 		}
-		dst[j] = '\0';
-	}
-	return (src_len + dst_len);
+		i++;
+	}	
+	return (words);
+}
+
+int	main(void)
+{
+	char	str[]="42 Barcelona is the best";
+	char	ch;
+	ch = ' ';
+	ft_split(str, ch);
+
+	printf("main: %c, ascii: %i\n", ch, ch);
 }

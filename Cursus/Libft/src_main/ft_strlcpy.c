@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 12:13:15 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/17 20:32:56 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/07 16:30:47 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include <stdio.h>
 #include "../src/libft.h"
 
 size_t  ft_strlcpy  (char *dst, const char *src, size_t size)
@@ -52,3 +51,7 @@ int	main(void)
 	printf("main: \n src: '%s'\n dst: '%s'\n lenght src: %lu\n", src, dst, sizeof(src));
 return (0);
 }
+//  main:
+//   src: '42 Barcelona'
+//   dst: '42 B'
+//   lenght src: 13

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 11:46:28 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/31 15:17:03 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/07 15:21:05 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include<stdio.h>
-#include"libft.h"
+#include"../src/libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -30,40 +29,27 @@ int	ft_atoi(const char *str)
 		i++;
 	if (str[i] == '-')
 	{
-
 		menos = -1;
 		i++;
 	}
 	else if (str[i] == '+')
 		i++;
-	while (str[i])
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (!(str[i] >= '0' && str[i] <= '9'))
-			break;
-		numero = numero * 10 + str[i] - '0';
+		numero = numero * 10 + (str[i] - 48);
 		i++;
 	}
-
-//	while (str[i] == '+' || str[i] == '-')
-//	{
-//		if (str[i] == '-')
-//			menos = -1;
-//		//			menos++;
-//		i++;
-//	}
-//	while (str[i] >= '0' && str[i] <= '9')
-//	{
-//		numero = numero * 10 + str[i] - '0';
-//		i++;
-//	}
 	return (menos * numero);
 }
-//int	main(void)
-//{
-//	int 	numero;
-////	char	string[20] = "+42 Barcelona";
+
+int	main(void)
+{
+	int 	numero;
+	char	string[20] = "+42 Barcelona";
 //	char	string[20] = "--123";
-//
-//	numero = ft_atoi(string);
-//	printf("\nnumero: %d\n", numero);
-//}
+
+	numero = ft_atoi(string);
+	printf("\nnumero: %d\n", numero);
+}
+
+// numero: 42

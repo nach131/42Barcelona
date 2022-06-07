@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   charArrayPTR.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/20 19:40:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/20 22:52:34 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/07 11:40:53 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/07 12:22:32 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,37 +15,48 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include<stdio.h>
-#include "libft.h"
+#include<stdlib.h>
 
-int	ft_strncmp(const char *s1, const char *s2)
+void	charPtr(char **str)
 {
-	int	i;
-	int	sum;
-
-	i = 0;
-	while (s1[i] != '\0')
-	{
-		sum = sum + (unsigned char)s1[i];
-		printf("%d:%d,", i, s1[i]);
-		i++;
+//  	for (int i = 0; i < 5; i++){
+//  		printf("%s\n",str[i]);
+//  	}
+  	int j;
+	for (int i = 0; i < 5; i++){
+	j = 0;
+	while (*(str[i] + j) != '\0'){
+		printf("%c", *(str[i] + j));
+		j++;
 	}
-	i = 0;
-	while (s2[i] != '\0')
-	{
-		sum = sum - (unsigned char)s2[i];
-		printf("%d:%d,", i, s2[i]);
-		i++;
+  	printf(": size: %d\n", j);
 	}
-	printf("\nsum: %d\n", sum);
-	return (sum);
+	
 }
 
 int	main(void)
 {
-	char 	str1[] = "AB";
-	char 	str2[] = "Ab";
-	int		res;
+	char	**words;
 
-	res = ft_strncmp(str1, str2);
-	printf("\nmain:\n res: %d\n", res);
+	words = (char **)malloc(5 *sizeof(*words));
+	words[0] = "42";
+	words[1] = "Barcelona";
+	words[2] = "is";
+	words[3] = "the";
+	words[4] = "best";
+	
+	charPtr(words);
+	printf("\n------main------\n");
+	for (int i =  0; i < 5; i++){
+		printf("%s ",words[i]);
+	}
+	printf("\n");
 }
+//  42: size: 2
+//  Barcelona: size: 9
+//  is: size: 2
+//  the: size: 3
+//  best: size: 4
+//  
+//  ------main------
+//  42 Barcelona is the best

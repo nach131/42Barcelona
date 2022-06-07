@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 18:50:53 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/01 20:23:15 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/07 16:19:08 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "libft.h"
+#include "../src/libft.h"
 
 char	*ft_strdup(const char *s1)
 {
@@ -41,10 +41,11 @@ char	*ft_strdup(const char *s1)
 
 int	main(void)
 {
-	char	str[20] ="42 Barcelona";
+	char	str[] ="42 Barcelona";
 	char	*res = ft_strdup(str);
 
-	printf("str: %s, puntero: %p\n", str, str);
-	printf("res: %s, puntero: %p\n", res, res);
+	printf("str original: %s, puntero: %p,%u\n", str, str);
+	printf("res copiada: %s, puntero: %p,%u\n", res, res);
 }
-
+//  str original: 42 Barcelona, puntero: 0x7ffee57c88cb
+//  res copiada: 42 Barcelona, puntero: 0x7f8215400350

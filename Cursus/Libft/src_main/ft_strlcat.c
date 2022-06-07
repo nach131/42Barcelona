@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/23 19:47:10 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/07 16:28:45 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include <stdio.h>
 #include "../src/libft.h"
-#include <string.h>
 
 size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -47,12 +45,17 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 
 int main(void)
 {
-	char src[] = "123";
+	char src[] = "Barcelona";
 	char dst[15] = "42 ";
 	size_t n;
 	int r;
 
-	n = 0;
+	n = 13;
 	r = ft_strlcat(dst, src, n);
 	printf("main: \n src: %s\n dst: %s\n size: %zu\nretorno: %d\n", src, dst, n, r);
 }
+//  main:
+//   src: Barcelona
+//   dst: 42 Barcelona
+//   size: 13
+//  retorno: 12 // suma de len src + dst

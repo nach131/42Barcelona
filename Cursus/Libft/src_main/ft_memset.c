@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 18:15:11 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/14 10:33:43 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/07 15:57:48 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include <stdio.h>
-//#include "libft.h"
+#include "../src/libft.h"
 
-void ft_memset(void *str, int c, size_t n)\
+void *ft_memset(void *str, int c, size_t n)\
 {
 	char	*ch;
 	ch = str;
@@ -32,13 +31,19 @@ void ft_memset(void *str, int c, size_t n)\
 	}
 	printf("ch la copia del str: %s\n", ch);
 	printf("str original: %s, %c, %zu\n\n", str, c, n);
+	return (ch);
 }
 
 int main(void)
 {
-	char str[20] = "esta es la frase";
+	char str[] = "esta es la frase";
 
-//	ft_memset(str, '@', 5);
-	ft_memset(str, '@', sizeof(str));
+	ft_memset(str, '@', 5);
+//	ft_memset(str, '@', sizeof(str));
 	printf("main %s\n", str);
 }
+
+//  ch la copia del str: @@@@@es la frase
+//  str original: @@@@@es la frase, @, 5
+//  
+//  main @@@@@es la frase
