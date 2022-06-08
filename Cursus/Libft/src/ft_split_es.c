@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/08 20:35:08 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/08 11:58:44 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "libft.h"
+#include"libft.h"
 
-int	ft_count_words(char const *s, char c)
+int	count_words(char const *s, char c)
 {
 	int	i;
 	int	w;
-	int	len;
+	int len;
 
 	len = strlen(s);
 	i = 0;
@@ -31,67 +31,77 @@ int	ft_count_words(char const *s, char c)
 			w++;
 		i++;
 	}
-	return (w);
-}
-
-int	ft_len_words(char const *s, char c)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0' && s[len] != c)
-		len++;
-	return (len);
+	return(w);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**words;
-	int		i;
-	int		len_word;
-
-	words = (char **)ft_calloc((ft_count_words(s, c)) + 1, sizeof(*words));
+  	char	**words;
+	int		n_words;
+	int		len_s;
+	
+	len_s = strlen(s);	
+	n_words = count_words(s, c);
+//	printf("n_words: %d\n",n_words);
+   	words = (char **)malloc(n_words * sizeof(*words));
+//    	words[0] = "42";
+//    	words[1] = "Barcelona";
+//    	words[2] = "tomate";
+//    	int	j;
+//    	int i;
+//    	i = 0;
+//    	while (i < n_words)
+//    	{
+//    		j = 0;
+//    		while(*(words[i] + j) != '\0'){
+//    			printf("%c", *(words[i] + j ));
+//    			j++;
+//    		}
+//    		printf("\n");
+//    		i++;
+//    	}
+	int	i;
+	int j;
+	
 	i = 0;
-	while (*s)
+	while (i < len_s && s[i] != '\0')
 	{
-		while (*s == c)
-			s++;
-		if (*s)
+		if (s[i] == c)
 		{
-			len_word = ft_len_words(s, c);
-			words[i] = (char *)ft_calloc((len_word + 1), sizeof(char));
-			if (!words[i])
-				return (NULL);
-			ft_memcpy(words[i], s, (size_t)len_word);
-			s += len_word;
-			i++;
+			printf("i:%d\n",i);
 		}
+
+ //   			printf("i:%d\n",i);
+		i++;
 	}
+  
+
 	return (words);
 }
 
- // int main(void)
- // {
- // 	char str[] = "42 Barcelona is the best";
- // 	char ch;
- // 	char **res;
- // 	ch = ' ';
- //
- // 	res = ft_split(str, ch);
- // 	printf("main: %c, ascii: %i\n", ch, ch);
- //
- // 	int j;
- // 	int i;
- // 	i = 0;
- // 	while (i < 5)
- // 	{
- // 		j = 0;
- // 		while (*(res[i] + j) != '\0')
- // 		{
- // 			printf("%c", *(res[i] + j));
- // 			j++;
- // 		}
- // 		printf("\n");
- // 		i++;
- // 	}
- // }
+int	main(void)
+{
+	char	str[]="42 Barcelona is the best";
+	char	ch;
+	char	**res;
+	ch = ' ';
+
+	res = ft_split(str, ch);
+	printf("main: %c, ascii: %i\n", ch, ch);
+
+//    	int	j;
+//    	int i;
+//  	i = 0;
+//    	while (i < 3)
+//    	{
+//    		j = 0;
+//    		while(*(res[i] + j) != '\0'){
+//    			printf("%c", *(res[i] + j ));
+//    			j++;
+//    		}
+//    		printf("\n");
+//    		i++;
+//    	}
+
+
+}
