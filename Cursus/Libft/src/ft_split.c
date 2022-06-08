@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/08 20:35:08 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/08 20:46:16 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,28 +70,28 @@ char	**ft_split(char const *s, char c)
 	return (words);
 }
 
- // int main(void)
- // {
- // 	char str[] = "42 Barcelona is the best";
- // 	char ch;
- // 	char **res;
- // 	ch = ' ';
- //
- // 	res = ft_split(str, ch);
- // 	printf("main: %c, ascii: %i\n", ch, ch);
- //
- // 	int j;
- // 	int i;
- // 	i = 0;
- // 	while (i < 5)
- // 	{
- // 		j = 0;
- // 		while (*(res[i] + j) != '\0')
- // 		{
- // 			printf("%c", *(res[i] + j));
- // 			j++;
- // 		}
- // 		printf("\n");
- // 		i++;
- // 	}
- // }
+// int main(void)
+// {
+// 	char str[] = "42 Barcelona is the best";
+// 	char ch;
+// 	char **res;
+// 	ch = ' ';
+//
+// 	res = ft_split(str, ch);
+// 	printf("main: %c, ascii: %i\n", ch, ch);
+//
+// 	int j;
+// 	int i;
+// 	i = 0;
+// 	while (i < 5)
+// 	{
+// 		j = 0;
+// 		while (*(res[i] + j) != '\0')
+// 		{
+// 			printf("%c", *(res[i] + j));
+// 			j++;
+// 		}
+// 		printf("\n");
+// 		i++;
+// 	}
+// }
