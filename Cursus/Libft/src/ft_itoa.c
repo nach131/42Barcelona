@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 08:40:22 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/09 23:00:26 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/09 23:14:43 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_num_digitos(int n)
 	return (i);
 }
 
-void numeros(char *s, int nd, int n)
+void numeros(char *s, int nd, long n)
 {
 	if (n == 0)
 	{
@@ -66,11 +66,11 @@ char	*ft_itoa(int n)
 	return (res);
 }
 
- int	main(void)
- {
- // 	char	res;
- //  	res = ft_itoa(4343);
- 
- 	printf("main : %s\n", ft_itoa(-1234567));	
- 	printf("main : %s\n", ft_itoa(-2147483647 -1));	
- }
+// int	main(void)
+// {
+// // 	char	res;
+// //  	res = ft_itoa(4343);
+// 
+// 	printf("main : %s\n", ft_itoa(-1234567));	
+// 	printf("main : %s\n", ft_itoa(-2147483647 -1));	
+// }
