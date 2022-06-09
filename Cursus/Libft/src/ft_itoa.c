@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 08:40:22 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/09 23:14:43 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/09 23:19:47 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ char	*ft_itoa(int n)
 	int		n_digitos;
 
 	n_digitos =	ft_num_digitos(n);
-   	res = (char *)ft_calloc((ft_num_digitos(n)) + 1, sizeof(char));
+   	res = (char *)ft_calloc(n_digitos + 1, sizeof(char));
 	numeros(res, n_digitos, n);
 
 	if(!res)
