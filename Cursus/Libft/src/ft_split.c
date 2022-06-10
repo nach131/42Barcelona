@@ -5,13 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-<<<<<<< HEAD
-/*   Created: 2022/06/06 12:52:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/06 18:03:42 by nmota-bu         ###   ########.fr       */
-=======
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/08 20:46:16 by nmota-bu         ###   ########.fr       */
->>>>>>> e82524fb9c7da551dbf65524813dda93404b2237
+/*   Updated: 2022/06/10 16:49:54 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,60 +14,13 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-<<<<<<< HEAD
-#include"libft.h"
-
-char	**ft_split(char const *s, char c)
-{	
-	char	**words;
-
-	words = (char **)malloc(5 * sizeof(*words));
-	words[0] = "42";
-	words[1] = "Barcelona";
-	words[2] = "is";
-	words[3] = "the";
-	words[4] = "best";
-
-	char	new[] = "88";
-	char	*res = strdup(new);
-//	printf("res: %s\n", res);
-	words[4] = res;
-
-	for (int i; i < 5; i++){
-		printf("%s\n", words[i]);
-	}
-	free(words);
-
-
-	return (words);
-}
-
-
-int	main(void)
-{
-	char	str[] = "42 Barcelona is the best";
-	char	c = ' ';
-	
-	ft_split(str, c);
-
-
-	printf("str: %s\nchar: '%c', ascii: %i\n", str, c, c);
-
-}
-
-// memcpy --> copia n caracteres desde desde un area de memoria a otro
-//
-
-
-
-=======
 #include "libft.h"
 
-int	ft_count_words(char const *s, char c)
+int ft_count_words(char const *s, char c)
 {
-	int	i;
-	int	w;
-	int	len;
+	int i;
+	int w;
+	int len;
 
 	len = strlen(s);
 	i = 0;
@@ -86,9 +34,9 @@ int	ft_count_words(char const *s, char c)
 	return (w);
 }
 
-int	ft_len_words(char const *s, char c)
+int ft_len_words(char const *s, char c)
 {
-	size_t	len;
+	size_t len;
 
 	len = 0;
 	while (s[len] != '\0' && s[len] != c)
@@ -96,13 +44,21 @@ int	ft_len_words(char const *s, char c)
 	return (len);
 }
 
-char	**ft_split(char const *s, char c)
+void	ft_free_words(char	**s)
 {
-	char	**words;
-	int		i;
-	int		len_word;
+
+}
+
+
+char **ft_split(char const *s, char c)
+{
+	char **words;
+	int i;
+	int len_word;
 
 	words = (char **)ft_calloc((ft_count_words(s, c)) + 1, sizeof(*words));
+	if (!words)
+		return (NULL);
 	i = 0;
 	while (*s)
 	{
@@ -114,11 +70,14 @@ char	**ft_split(char const *s, char c)
 			words[i] = (char *)ft_calloc((len_word + 1), sizeof(char));
 			if (!words[i])
 				return (NULL);
+			// hacer free de words[i]
+			ft_free_words( /// AQUI ME HE QUEDADO
 			ft_memcpy(words[i], s, (size_t)len_word);
 			s += len_word;
 			i++;
 		}
 	}
+//	free(words);
 	return (words);
 }
 
@@ -147,4 +106,3 @@ char	**ft_split(char const *s, char c)
 // 		i++;
 // 	}
 // }
->>>>>>> e82524fb9c7da551dbf65524813dda93404b2237

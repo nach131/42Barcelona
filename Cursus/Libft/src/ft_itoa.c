@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 08:40:22 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/09 23:19:47 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/10 12:27:43 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@
 
 int	ft_num_digitos(int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (n == 0)
 		return (1);
-	if ( n < 0)
+	if (n < 0)
 		i = 1;
 	while (n)
 	{
@@ -33,19 +33,19 @@ int	ft_num_digitos(int n)
 	return (i);
 }
 
-void numeros(char *s, int nd, long n)
+void	numeros(char *s, int nd, long n)
 {
 	if (n == 0)
 	{
- 		s[0] = '0';
- 		s[1] = '\0';
+		s[0] = '0';
+		s[1] = '\0';
 	}
 	if (n < 0)
 	{
 		s[0] = '-';
 		n *= -1;
 	}
-	while(n > 0)
+	while (n > 0)
 	{
 		s[--nd] = n % 10 + '0';
 		n /= 10;
@@ -57,12 +57,11 @@ char	*ft_itoa(int n)
 	char	*res;
 	int		n_digitos;
 
-	n_digitos =	ft_num_digitos(n);
-   	res = (char *)ft_calloc(n_digitos + 1, sizeof(char));
-	numeros(res, n_digitos, n);
-
-	if(!res)
+	n_digitos = ft_num_digitos(n);
+	res = (char *)ft_calloc(n_digitos + 1, sizeof(char));
+	if (!res)
 		return (NULL);
+	numeros(res, n_digitos, n);
 	return (res);
 }
 

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 10:19:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/03 13:34:04 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/10 11:53:08 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res = (char *)malloc(sizeof(*s) * (len + 1));
 	if (!res)
 		return (NULL);
-	strlcpy(res, &((char *)s)[start], (len + 1));
+	ft_strlcpy(res, &((char *)s)[start], (len + 1));
 	return (res);
 }
