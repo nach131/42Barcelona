@@ -32,3 +32,7 @@ main's corrections, cortesia de [gonzimaster](https://github.com/gonzimaster)
 Diferent a vacio:
 
  !='\0'
+ 
+ ---
+ 
+ nm -u libft.a
