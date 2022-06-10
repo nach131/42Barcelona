@@ -1,16 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   charArrayPTR.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/30 11:46:28 by nmota-bu          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/06/06 16:55:34 by nmota-bu         ###   ########.fr       */
-=======
-/*   Updated: 2022/06/07 15:21:05 by nmota-bu         ###   ########.fr       */
->>>>>>> e82524fb9c7da551dbf65524813dda93404b2237
+/*   Created: 2022/06/07 11:40:53 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/07 12:22:32 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,45 +14,49 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include"../src/libft.h"
+#include<stdio.h>
+#include<stdlib.h>
 
-int	ft_atoi(const char *str)
+void	charPtr(char **str)
 {
-	int	i;
-	int	menos;
-	int	numero;
-
-	i = 0;
-	menos = 1;
-	numero = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
-		i++;
-	if (str[i] == '-')
-	{
-		menos = -1;
-		i++;
+//  	for (int i = 0; i < 5; i++){
+//  		printf("%s\n",str[i]);
+//  	}
+  	int j;
+	for (int i = 0; i < 5; i++){
+	j = 0;
+	while (*(str[i] + j) != '\0'){
+		printf("%c", *(str[i] + j));
+		j++;
 	}
-	else if (str[i] == '+')
-		i++;
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		numero = numero * 10 + (str[i] - 48);
-		i++;
+  	printf(": size: %d\n", j);
 	}
-	return (menos * numero);
+	
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> e82524fb9c7da551dbf65524813dda93404b2237
 int	main(void)
 {
-	int 	numero;
-	char	string[20] = "+42 Barcelona";
-//	char	string[20] = "--123";
+	char	**words;
 
-	numero = ft_atoi(string);
-	printf("\nnumero: %d\n", numero);
+	words = (char **)malloc(5 *sizeof(*words));
+	words[0] = "42";
+	words[1] = "Barcelona";
+	words[2] = "is";
+	words[3] = "the";
+	words[4] = "best";
+	
+	charPtr(words);
+	printf("\n------main------\n");
+	for (int i =  0; i < 5; i++){
+		printf("%s ",words[i]);
+	}
+	printf("\n");
 }
-
-// numero: 42
+//  42: size: 2
+//  Barcelona: size: 9
+//  is: size: 2
+//  the: size: 3
+//  best: size: 4
+//  
+//  ------main------
+//  42 Barcelona is the best

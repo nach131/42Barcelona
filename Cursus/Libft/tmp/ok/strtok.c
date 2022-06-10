@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   strtok.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/19 22:19:52 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/20 11:52:34 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/07 12:37:57 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/07 12:38:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,36 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include<stdio.h>
-#include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+int main()
 {
-	int i;
+	char str[] = "42 Barcelona is the best";
+	int init_size = strlen(str);
+	char delim[] = " ";
 
-	i = 0;
-	while (s[i] != c && s[i] != '\0')
-		{
-		printf("Primer char: %c",s[i]);
-		i++;
-		}
-	printf("\nft: \n char: '%c'\n",c);
+	char *ptr = strtok(str, delim);
 
-//	return ((char *)s); // restorna todo
-		if (s[0] == c || s[1] == c)
-			return (&((char *)s)[i + 1]); // retorna despues del char c
-		else if (s[i] == c)
-			return (&((char *)s)[i]); // retorna despues del char c
-	return (NULL);
+	while(ptr != NULL)
+	{
+		printf("'%s'\n", ptr);
+		ptr = strtok(NULL, delim);
 	}
 
+	/*  Este bucle mostrará que hay ceros en la cadena después de tokenizar */
+	for (int i = 0; i < init_size; i++)
+	{
+		printf("%d ", str[i]); /* Convierta el carácter a entero, en este caso
+							   el equivalente ASCII del carácter */
+	}
+	printf("\n");
 
-int	main(void)
-{
-	const char str[] = "42 Barcelona. campus de programación más innovador";
-	const char ch = '2';
-//	const char str[] = "teste";
-//	const char ch = 'e';
-	char *res;
-
-
-	res = ft_strchr(str, ch);
-
-	printf("\nmain: \n res: %s\n", res);
+	return 0;
 }
+ //  '42'
+ //  'Barcelona'
+ //  'is'
+ //  'the'
+ //  'best'
+ //  52 50 0 66 97 114 99 101 108 111 110 97 0 105 115 0 116 104 101 0 98 101 115 116

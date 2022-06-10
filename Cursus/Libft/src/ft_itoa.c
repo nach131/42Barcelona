@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/19 18:58:48 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/09 08:40:22 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/09 23:19:47 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,28 +16,61 @@
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+int	ft_num_digitos(int n)
 {
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	i;
-	size_t	j;
+	int i;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	j = dst_len;
 	i = 0;
-	if (dst_len > size)
-		return (src_len + size);
-	else if (dst_len <= size)
+	if (n == 0)
+		return (1);
+	if ( n < 0)
+		i = 1;
+	while (n)
 	{
-		while (src[i] != '\0' && j < size - 1)
-		{
-			dst[j] = src[i];
-			i++;
-			j++;
-		}
-		dst[j] = '\0';
+		n /= 10;
+		i++;
 	}
-	return (src_len + dst_len);
+	return (i);
 }
+
+void numeros(char *s, int nd, long n)
+{
+	if (n == 0)
+	{
+ 		s[0] = '0';
+ 		s[1] = '\0';
+	}
+	if (n < 0)
+	{
+		s[0] = '-';
+		n *= -1;
+	}
+	while(n > 0)
+	{
+		s[--nd] = n % 10 + '0';
+		n /= 10;
+	}
+}
+
+char	*ft_itoa(int n)
+{
+	char	*res;
+	int		n_digitos;
+
+	n_digitos =	ft_num_digitos(n);
+   	res = (char *)ft_calloc(n_digitos + 1, sizeof(char));
+	numeros(res, n_digitos, n);
+
+	if(!res)
+		return (NULL);
+	return (res);
+}
+
+// int	main(void)
+// {
+// // 	char	res;
+// //  	res = ft_itoa(4343);
+// 
+// 	printf("main : %s\n", ft_itoa(-1234567));	
+// 	printf("main : %s\n", ft_itoa(-2147483647 -1));	
+// }
