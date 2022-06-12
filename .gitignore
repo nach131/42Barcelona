@@ -7,3 +7,5 @@ a.out
 *.swk
 *.swl
 *.swn
+
+*.o
