@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 10:19:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/10 11:53:08 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/12 20:12:06 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = len_s - start;
 	if (start > len_s)
 		return (ft_strdup(""));
-	res = (char *)malloc(sizeof(*s) * (len + 1));
+	res = (char *)ft_calloc((len + 1), sizeof(*s));
 	if (!res)
 		return (NULL);
 	ft_strlcpy(res, &((char *)s)[start], (len + 1));

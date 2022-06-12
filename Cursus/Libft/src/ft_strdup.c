@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 18:50:53 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/01 20:30:17 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/12 20:08:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strdup(const char *s1)
 	len = ft_strlen(s1) + 1;
 	if (!s1)
 		return (NULL);
-	res = (char *)malloc(sizeof(*s1) * len);
+	res = (char *)ft_calloc(len, sizeof(*s1));
 	if (!res)
 		return (NULL);
 	i = 0;
