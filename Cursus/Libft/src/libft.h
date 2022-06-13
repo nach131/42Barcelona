@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/09 09:35:59 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/13 17:47:40 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,5 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 
+void	ft_putchar_fd(char c, int fd);
 #endif
