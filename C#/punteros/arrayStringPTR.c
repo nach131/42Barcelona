@@ -14,59 +14,59 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-void	arrayBasico(void)
+void arrayBasico(void)
 {
-	char	str[5][10] = {
-		"42",
-		"Barcelona",
-		"is",
-		"the",
-		"best"
-	};
+	char str[5][10] = {
+			"42",
+			"Barcelona",
+			"is",
+			"the",
+			"best"};
 	int i;
-	
-	for(i = 0; i < 5; i++){
-	printf("[index %d] Adress: %u, %s\n", i, str[i], str[i]);
+
+	for (i = 0; i < 5; i++)
+	{
+		printf("[index %d] Address: %u, %s\n", i, str[i], str[i]);
 	}
 }
-void	arrayPuntero(void)
+void arrayPuntero(void)
 {
-	char	*str[5] = {
-		"42",
-		"Barcelona",
-		"is",
-		"the",
-		"best"
-	};
+	char *str[5] = {
+			"42",
+			"Barcelona",
+			"is",
+			"the",
+			"best"};
 	int i;
-	
-	for(i = 0; i < 5; i++){
-	printf("[index %d] Adress: %u, %s\n", i, str[i], str[i]);
+
+	for (i = 0; i < 5; i++)
+	{
+		printf("[index %d] Address: %u, %s\n", i, str[i], str[i]);
 	}
 }
 void arrayMalloc(void)
 {
-	char	**words;
-	words = (char **)malloc(5 * sizeof(*words)); 	
+	char **words;
+	words = (char **)malloc(5 * sizeof(*words));
 	words[0] = "42";
 	words[1] = "Barcelona";
 	words[2] = "is";
 	words[3] = "the";
 	words[4] = "best";
 
-	for (int i = 0; i < 5; i++) {
-//  		printf("%s\n",words[i]);
-  		printf("[index %d] Adress: %u, %p %s\n", i, words[i], words[i], words[i]);
+	for (int i = 0; i < 5; i++)
+	{
+		//  		printf("%s\n",words[i]);
+		printf("[index %d] Address: %u, %p %s\n", i, words[i], words[i], words[i]);
 	}
 	free(words);
 }
 
-
-int	main(void)
+int main(void)
 {
 	arrayBasico();
 	printf("-------Puntero---------\n");
