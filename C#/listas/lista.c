@@ -2,6 +2,8 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
+// https://www.youtube.com/watch?v=NPmwuR4VbKk
+
 #include <stdio.h>
 #include <stdlib.h>
 
