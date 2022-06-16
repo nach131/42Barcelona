@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/26 13:22:19 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/30 11:08:49 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/16 19:00:45 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/16 19:44:05 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,44 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "libft.h"
+#include"libft.h"
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+int	ft_lstsize(t_list *lst)
 {
-	size_t i;
-	size_t j;
+	int	i;
+	t_list *nAux;
+
+	nAux = lst;
+	while (nAux != NULL)
+	{
+	printf("%s\n", nAux->content);
+	nAux = nAux->next;
+	}
 
 	i = 0;
-	if (*needle == '\0')
-		return ((char *)haystack);
-	while (i < len && haystack[i] != '\0')
+	while (lst != NULL)
 	{
-		j = 0;
-		while ((i + j) < len && needle[j] == haystack[i + j])
-		{
-			if (needle[j + 1] == '\0')
-				return (&((char *)haystack)[i]);
-			j++;
-		}
-		i++;
+	i++;
+	lst = lst->next;
 	}
-	return (NULL);
+	return (i);
 }
+
+
+int	main(void)
+{
+	t_list *lista;
+	t_list *uno;
+	int		res;
+
+	lista = ft_lstnew("42 Barcelona");
+//	printf("%s\n", lista->content);	
+
+	uno->content = "42 Madrid";
+	ft_lstadd_front(&lista, uno);
+
+	printf("Numero elementos de la lista %d\n",ft_lstsize(lista));
+}
+//42 Madrid
+//42 Barcelona
+//Numero elementos de la lista 2
