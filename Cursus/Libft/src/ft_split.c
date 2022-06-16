@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/13 14:42:12 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/16 11:23:38 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ char	**ft_split(char const *s, char c)
 	}
 	return (words);
 }
+
+// HACER FUNCION FREE, de las las words[i] y de toda la words
 
 // int main(void)
 // {
