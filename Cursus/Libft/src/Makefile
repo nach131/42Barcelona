@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2022/06/15 20:59:36 by nmota-bu         ###   ########.fr        #
+#    Updated: 2022/06/16 15:50:28 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	   ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c \
 	   ft_strtrim.c ft_split.c ft_itoa.c ft_putchar_fd.c ft_putstr_fd.c \
 	   ft_putendl_fd.c ft_putnbr_fd.c
-SRCSBONUS = ft_lstnew.c
+SRCSBONUS = ft_lstnew.c ft_lstadd_front.c
 
 # Colors
 GREEN=\033[0;32m
