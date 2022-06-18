@@ -6,24 +6,27 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 16:24:16 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/17 23:40:45 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 10:15:14 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+//	Itera la lista ’lst’ y aplica la función ’f’ al contenido de cada elemento.
+// 	#1. Un puntero al primer elemento de una lista.
+//	#2. Un puntero a la función que se aplicará a cada
+//		elemento de la lista.
 
 #include"libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-
-		while (lst)
-		{
-			f(lst->content);
-			lst = lst->next;
-		}
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
 
 //void imprimir(void *c)

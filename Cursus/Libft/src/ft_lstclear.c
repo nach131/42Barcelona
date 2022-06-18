@@ -6,13 +6,19 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 16:01:43 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/17 23:29:21 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 10:13:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+//	Elimina y libera cada uno de los elementos de la lista dada, 
+//	utilizando la función ’del’ y free(3).
+//	Por último, el puntero a la lista debe ponerse a NULL.
+//	#1. La dirección del puntero a un elemento.
+//	#2. Un puntero a la función utilizada para eliminar el contenido de
+//		cada elemento.
 
 #include"libft.h"
 
@@ -52,22 +58,16 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 //	a = ft_lstnew(ft_strdup(argv[1]));
 //	b = ft_lstnew(ft_strdup(argv[2]));
 //	ft_lstadd_back(&a, b);
-//	printf("Primer elemento de la lista: \e[5;32m%s\e[0m\n", (char *)a->content);
-//	printf("Segundo elemento de la lista: \e[5;32m%s\e[0m\n", (char *)a->next->content);
+//	printf("Primer elemento: \e[5;32m%s\e[0m\n", (char *)a->content);
+//	printf("Segundo elemento: \e[5;32m%s\e[0m\n", (char *)a->next->content);
 //	printf("--------------------------\n");
 //	ft_lstclear(&a, del);
 ////	printf("%p\n", a);
 ////	printf("%p\n", &a);
 //	return (0);
 //}
-
-//Primer elemento de la lista: 42 Barcelona
-//Segundo elemento de la lista: 42 Malaga
+//Primer elemento: 42 Barcelona
+//Segundo elemento: 42 Madrid
 //--------------------------
 //✗ El elemento pasado ha sido borrado.
 //✗ El elemento pasado ha sido borrado.
-
-
-
-
-

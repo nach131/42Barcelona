@@ -6,13 +6,16 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 11:25:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/16 15:53:17 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 09:28:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+// Añade el elemento ’new’ al principio de la lista.
+// #1. La dirección de un puntero al primer elemento de una lista.
+// #2. La dirección de un puntero al elemento a añadir a la lista.
 
 #include "libft.h"
 

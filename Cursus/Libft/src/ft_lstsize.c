@@ -6,13 +6,16 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 19:00:45 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/16 19:46:15 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 09:30:41 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+//	Cuenta el número de elemento de una lista.
+//	#1. El principio de una lista.
+//	Valor devuelto: Longitud de la lista.
 
 #include"libft.h"
 

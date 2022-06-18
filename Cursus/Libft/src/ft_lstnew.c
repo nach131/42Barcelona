@@ -6,13 +6,17 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 20:06:47 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/16 15:59:28 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 09:27:20 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+//Reserva con malloc(3) y devuelve un elemento nuevo. La variable ’content’ se
+//inicializa con el valor del parámetro ’content’. La variable ’next’ se
+//inicializa a NULL.
+// #1. El contenido sobre el que crear un nuevo elemento.
 
 #include "libft.h"
 
