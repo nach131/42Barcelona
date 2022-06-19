@@ -1,51 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/16 19:00:45 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/18 09:30:41 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/15 20:06:47 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/20 00:02:34 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-//	Cuenta el número de elemento de una lista.
-//	#1. El principio de una lista.
-//	Valor devuelto: Longitud de la lista.
+//Reserva con malloc(3) y devuelve un elemento nuevo. La variable ’content’ se
+//inicializa con el valor del parámetro ’content’. La variable ’next’ se
+//inicializa a NULL.
+// #1. El contenido sobre el que crear un nuevo elemento.
 
-#include"libft.h"
+#include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+t_list	*ft_lstnew(void *content)
 {
-	int	i;
+	t_list	*new;
 
-	i = 0;
-	while (lst != NULL)
-	{
-		i++;
-		lst = lst->next;
-	}
-	return (i);
+	new = (t_list *)ft_calloc(sizeof(t_list), 1);
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
 
-//int	main(void)
+//////	new = (t_list *)malloc(sizeof(t_list));
+// int main(void)
 //{
-//	t_list *lista;
-//	t_list *uno;
-//	int		res;
-//
-//	lista = ft_lstnew("42 Barcelona");
-////	printf("%s\n", lista->content);	
-//
-//	uno->content = "42 Madrid";
-//	ft_lstadd_front(&lista, uno);
-//
-//	printf("Numero elementos de la lista %d\n",ft_lstsize(lista));
-//}
-//42 Madrid
-//42 Barcelona
-//Numero elementos de la lista 2
+//	t_list *nuevo;
+//	nuevo = ft_lstnew("42 Barcelona");
+//	printf("el nuevo nodo creado es: %s\n", nuevo->content);
+// }

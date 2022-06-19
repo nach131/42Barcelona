@@ -1,62 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 10:40:01 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/18 09:32:27 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/16 19:00:45 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/20 00:08:41 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-//	Añade el elemento ’new’ al final de una lista.
-//	#1. La dirección de un puntero al primer elemento de una lista.
-//	#2. Un puntero al elemento nuevo que añadir a la lista.
+//	Cuenta el número de elemento de una lista.
+//	#1. El principio de una lista.
+//	Valor devuelto: Longitud de la lista.
 
-#include "libft.h"
+#include"libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*l_aux;
+	int	i;
 
-	if (!(*lst))
-		*lst = new;
-	else
+	i = 0;
+	while (lst != NULL)
 	{
-	l_aux = ft_lstlast(*lst);
-	l_aux->next = new;
+		i++;
+		lst = lst->next;
 	}
+	return (i);
 }
 
-//void VerLista(t_list *lst)
-//{
-//	while (lst != NULL)
-//	{
-//		printf("\t%s\n", lst->content);
-////		if (lst != NULL)
-//			lst = lst->next;
-//	}	
-//}
-//
 //int	main(void)
 //{
-//	t_list	*a;
-//	t_list	*b;
-//	t_list	*c;
+//	t_list *lista;
+//	t_list *uno;
+//	int		res;
 //
-//	a = ft_lstnew("42 Barcelona");
-//	b = ft_lstnew("42 Madrid");
-//	c = ft_lstnew("42 Malaga");
-////	printf("nueva lista: %s\n", a->content);
-//	ft_lstadd_back(&a, b);
-//	ft_lstadd_front(&a, c);
-//	VerLista(a);
+//	lista = ft_lstnew("42 Barcelona");
+////	printf("%s\n", lista->content);	
+//
+//	uno->content = "42 Madrid";
+//	ft_lstadd_front(&lista, uno);
+//
+//	printf("Numero elementos de la lista %d\n",ft_lstsize(lista));
 //}
-////
-////	42 Malaga
-////	42 Barcelona
-////	42 Madrid
+//42 Madrid
+//42 Barcelona
+//Numero elementos de la lista 2

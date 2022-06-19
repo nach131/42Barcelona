@@ -1,47 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/16 19:51:25 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/18 09:31:42 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/16 11:25:54 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/20 00:03:45 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-//	Devuelve el último elemento de una lista.
-//	#1. El principio de una lista.
+// Añade el elemento ’new’ al principio de la lista.
+// #1. La dirección de un puntero al primer elemento de una lista.
+// #2. La dirección de un puntero al elemento a añadir a la lista.
 
-#include"libft.h"
+#include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (!lst)
-		return (NULL);
-	while (lst)
-	{
-		if (lst->next == NULL)
-			return (lst);
-		lst = lst->next;
-	}
-	return (lst);
+	new->next = *lst;
+	*lst = new;
 }
 
 //int main(void)
 //{
-//	t_list	*lista;
-//	t_list	*item;
-//	t_list	*res;
+//	t_list *toma;
 //
-//	lista =	ft_lstnew("42 Barcelona");
-////	printf("%s\n", lista->content);
-//	item->content = "42 Madrid";
-//	ft_lstadd_front(&lista, item);
-//
-//	res = ft_lstlast(lista);
-//	printf("Ultimo elemnto de la lista: %s\n", res->content);
+//	toma = ft_lstnew("42 Barcelona");
+//	printf("primer elemento de la lista: %s\n", toma->content);
+//	ft_lstadd_front(&toma, toma); 
+//	
 //}
