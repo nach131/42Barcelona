@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/16 11:23:38 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/19 18:17:31 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,20 @@ int	ft_count_words(char const *s, char c)
 	return (len_words);
 }
 
+char	**free_words(char **words)
+{
+	size_t	i;
+
+	i = 0;
+	while (words[i])
+	{
+		free(words[i]);
+		i++;
+	}
+	free(words);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**words;
@@ -64,7 +78,7 @@ char	**ft_split(char const *s, char c)
 			len_word = ft_len_words(s, c);
 			words[i] = (char *)ft_calloc((len_word + 1), sizeof(char));
 			if (!words[i])
-				return (NULL);
+				return (free_words(words));
 			ft_memcpy(words[i], s, (size_t)len_word);
 			s += len_word;
 			i++;
@@ -72,9 +86,6 @@ char	**ft_split(char const *s, char c)
 	}
 	return (words);
 }
-
-// HACER FUNCION FREE, de las las words[i] y de toda la words
-
 // int main(void)
 // {
 // 	char str[] = "42 Barcelona is the best";

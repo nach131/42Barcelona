@@ -6,14 +6,16 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 08:40:22 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/17 16:22:56 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:18:59 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-
+// Reserva con malloc(3) y devuelve una string que representa el número dado
+// como argumento. Los números negativos deben gestionarse correctamente.
+// #1. El entero a convertir.
 #include "libft.h"
 
 int	ft_num_digitos(int n)
@@ -64,8 +66,6 @@ char	*ft_itoa(int n)
 	numeros(res, n_digitos, n);
 	return (res);
 }
-
-// int	main(void)
 // {
 // // 	char	res;
 // //  	res = ft_itoa(4343);
@@ -73,3 +73,5 @@ char	*ft_itoa(int n)
 // 	printf("main : %s\n", ft_itoa(-1234567));	
 // 	printf("main : %s\n", ft_itoa(-2147483647 -1));	
 // }
+////main : -1234567
+////main : -2147483648

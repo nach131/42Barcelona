@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 20:49:42 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/19 22:14:23 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 12:16:37 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,14 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+//int	main(void)
+//{
+//	char	c;
+//	int		r;
+////	c = 'A';
+//    printf("Escribe una letra en Minuscula\n");
+//	scanf("%c", &c);
+//	r = ft_toupper(c);
+//
+//	printf("main: %c\n", r);
+//}

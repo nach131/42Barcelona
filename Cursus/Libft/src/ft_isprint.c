@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 20:33:55 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/12 21:22:39 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 11:51:43 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+// int	main(void)
+// {
+// 	char c;
+// 	printf("Escribe un caracter para comprobar si es imprimible\n");
+// 	scanf("%c", &c);
+// 	printf("el caracter '%c': %d\n", c, ft_isprint(c));
+// }

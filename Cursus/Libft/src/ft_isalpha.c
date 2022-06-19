@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 19:09:10 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/11 20:10:57 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 11:47:55 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,13 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+
+// int main(void)
+// {
+// 	char n;
+// 	int res;
+// 	printf("Escribe un caracter para comprobar si es Alfabeto: \n");
+// 	scanf("%c", &n);
+// 	res = ft_isalpha(n);
+// 	printf("Resultado: %d\n",res);
+// }

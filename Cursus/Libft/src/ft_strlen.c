@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 15:06:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/14 10:38:38 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 11:52:46 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,9 @@ int	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+// int	main(void)
+// {
+// 	char w[20]="42Barcelona";
+// 
+// 	printf("'%s' tiene %d caracteres\n",w, ft_strlen(w));
+// }

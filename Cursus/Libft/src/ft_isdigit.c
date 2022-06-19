@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:05:19 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/12 19:45:00 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 11:48:34 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,10 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+// int main(void)
+// {
+// 	char n;
+// 	printf("Escribe un caracter para comprobar si es digito:\n");
+// 	scanf("%c", &n);
+// 	printf("Resultado de '%c' es: %d\n",n,ft_isdigit(n));;
+// }

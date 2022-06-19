@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 20:46:23 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/18 10:53:06 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/19 18:51:20 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,25 +26,32 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*aux1;
-	t_list	*aux2;
+	t_list	*l_aux;
+	t_list	*elem;
+	t_list	*list;
 
-	if (!*f && !*del && !lst)
+	list = NULL;
+	if (!lst)
 		return (NULL);
-	aux1 = NULL;
 	while (lst)
 	{
-		aux2 = ft_lstnew((*f)(lst->content));
-		if (aux2 == NULL)
+		l_aux = f(lst->content);
+		elem = ft_lstnew(l_aux);
+		if (!elem)
 		{
-			ft_lstclear(&aux1, del);
+			del(l_aux);
+			ft_lstclear(&list, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&aux1, aux2);
-		lst = lst->next;
-	}
-	return (aux1);
+		else
+		{
+			ft_lstadd_back(&list, elem);
+			lst = lst->next;
+		}
+	}	
+	return (list);
 }
+
 //void	*f(void	*ptr)
 //{
 //	size_t	i = 0;

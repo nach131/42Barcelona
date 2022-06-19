@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 19:45:57 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/12 20:33:00 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 11:51:03 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,10 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+// int	main(void)
+// {
+// 	char c;
+// 	printf("Escribe un caracter para saber si es Ascii\n");
+// 	scanf("%c", &c);
+// 	printf("El caracter '%c': %d\n", c, ft_isascii(c));;
+// }

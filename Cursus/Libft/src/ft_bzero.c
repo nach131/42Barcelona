@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 09:36:50 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/17 16:22:25 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 12:00:05 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,12 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+// int	main(void)
+// {
+// 	char s[60] = "42 Barcelona es el campus de programación más innovador.";
+// 	printf("Original: %s\n", s);
+// 	ft_bzero(s, 5);
+// 	printf("Despues: %s\n", s);
+// }
+// // Original: 42 Barcelona es el campus de programación más innovador.
+// // Despues:

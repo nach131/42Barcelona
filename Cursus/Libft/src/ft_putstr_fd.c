@@ -6,13 +6,16 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 18:18:15 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/13 18:31:54 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:13:31 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+// Escribe la string ’s’ en el file descriptor indicado.
+//	#1. La string que imprimir.
+//	#2. El file descriptor sobre el que escribir.
 
 #include"libft.h"
 

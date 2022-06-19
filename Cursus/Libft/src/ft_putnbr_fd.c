@@ -6,13 +6,16 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 23:17:24 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/15 23:41:25 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/19 11:16:43 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+// Escribe el número ’n’ al file descriptor dado.
+//	#1. El número ’n’ a escribir.
+//	#2. El file descriptor en el que escribir.
 
 #include"libft.h"
 

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 09:35:41 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/05/12 19:44:24 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/06/18 11:49:56 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,11 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+// int main(void)
+// {
+// 	char n;
+// 	printf("Escribe un caracter para comprobar si es Alfanumérico:\n");
+// 	scanf("%c", &n);
+// 	printf("El resultado '%c' es: %d\n", n, ft_isalnum(n));
+// 	;
+// }

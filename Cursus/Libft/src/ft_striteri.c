@@ -1,36 +1,55 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/13 17:35:47 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/19 11:12:16 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/06/19 14:56:24 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/06/19 17:32:16 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// Envía el caracter ’c’ al file descriptor dado.
-//	#1. El caracter a enviar.
-//	#2. El file descriptor sobre el que escribir.
+//	Aplica la función ’f’ a cada caracter de la string dada como argumento, 
+//	pasando su índice como primer argumento. Cada caracter se pasa como
+//	una dirección a ’f’, por si hace falta modificarlo
+//	#1. La string que iterar.
+//	#2. La función a aplicar a cada caracter.
 
-#include "libft.h"
+#include"libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	write(fd, &c, sizeof(c));
+	int	i;
+
+	i = 0;
+	if (!s || !f)
+		return ;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 
-//int	main(void)
+//void	funcion(unsigned int i, char *c)
 //{
-////	write(1, "T", 1);
-////	write(1, "A", 1);
-//	ft_putchar_fd('4', 1);
-//	ft_putchar_fd('2', 1);
-//	ft_putchar_fd('\n', 1);
-//return (0);
+//	c[0] = c[0] +i;
+//	printf("%c\n", c[0]);
 //}
-// 42
+//
+//int main(void)
+//{
+//	char	str[] = "42 Barcelona";
+//	char	p[0];
+//
+//	p[0] = 'A';
+//
+//	funcion(1, p);
+//	printf("c: %c\n", p[0]);
+//
+//	ft_striteri(str, funcion);
+//}
