@@ -7,5 +7,5 @@ a.out
 *.swk
 *.swl
 *.swn
-
+.vscode
 *.o
