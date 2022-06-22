@@ -1,2 +1,1 @@
-# Libft
 ![libft](./libft.png)
