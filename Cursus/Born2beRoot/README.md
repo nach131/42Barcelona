@@ -8,6 +8,7 @@
 4. [*UFW*](#ufw)
 5. [*Contraseña*](#contraseña)
 6. [*Gestión de usuarios*](#gestión-de-usuarios)
+7. [*Bonus*](#bonus)
 
 
 ## *sudo*
@@ -73,8 +74,12 @@ Reiniciamos el servicio y comprobamos el estado:
 	sudo ufw enable
 	sudo ufw allow 4242
 	sudo ufw status
-Con Bonus
-	sudo ufw allow 80
+Listar los puertos y su numero.
+
+	sudo ufw status numbered
+Eliminar una regla de UFW
+
+	sudo ufw delete [numero]
 
 ## *Contraseña*
 
@@ -139,6 +144,70 @@ Ver todos los usuarios de un grupo.
 [monitoring.sh](./monitoring.sh)
 
 ## Bonus
+
+### Instalar lighttpd
+
+	sudo apt install lighttpd		
+	sudo ufw allow 80
+
+### instalar MariDB
+
+	sudo apt install mariadb-server
+	sudo mysql_secure_installation
+
+	Switch to unix_socket authentication [Y/n] N
+	Change the root password? [Y/n] N
+	Remove anonymous users? [Y/n] Y
+	Disallow root login remotely? [Y/n] Y
+	Remove test database and access to it? [Y/n] Y
+	Reload privilege tables now? [Y/n] Y
+
+### Instalar phpmyadmin
+
+	sudo apt install php-cgi php-mysql phpmyadmin
+
+Asignar permisos de administrador a la cuenta de phpmyadmin
+
+	GRANT ALL PRIVILEGES ON * . * TO 'phpmyadmin'@'localhost';
+
+Acceder a phpmyadmin mediante el navegador en la ruta ***[IP]/phpmyadmin***
+
+crear la Base de datos para usar en wordpress.
+
+### wordpress
+
+	sudo apt install wget zip
+	cd /var/www
+	sudo wget https://es.wordpress.org/latest-es_ES.zip
+	sudo unzip latest-es_ES.zip
+	sudo mv html/ html_old
+	sudo mv wordpress/ html
+	sudo chmod -R 755 html
+
+## Samba
+
+	apt install samba smbclient cifs-utils
+	sudo mkdir /media/compartido
+	sudo chmod -R 777 /media/compartido/
+	sudo chown nobody:nogroup /media/compartido/
+	sudo smbpasswd -a "usuario-windows"
+	sudo ufw allow Samba
+
+Compartir carpeta
+
+	sudo vim /etc/samba/smb.conf
+
+	[compartido]
+	comment = Compartido para todos...!!!
+	writeable = yes
+	valid users = <user>
+	public = yes
+	path = /media/compartido
+	write list =  <user>
+	admin users  = <user>
+
+[saber más](https://wiki.enunpimpam.com/pimpamwiki/index.php/Instalar_Samba)
+
 
 ## Extras
 Podemos generar un mensaje antes del login
