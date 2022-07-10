@@ -1,8 +1,12 @@
 {
   "makefile.extensionOutputFolder": "./.vscode",
   "cSpell.words": [
+    "desreferencia",
+    "desreferenciación",
+    "desreferenciar",
     "lstnew",
     "nmota",
+    "struct",
     "tokemo"
   ]
 }
