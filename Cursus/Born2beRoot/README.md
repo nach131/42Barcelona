@@ -1,5 +1,7 @@
 # Born2beroot
 
+![125](../../images/125.png)
+
 ## Indice
 
 1. [_sudo_](#sudo)

@@ -1,1 +1,1 @@
-![libft](./libft.png)
+![libft](../../images/125.png)
