@@ -21,12 +21,13 @@ Añadir grupo sudo al usuario
     systemctl reboot
 
 Comprobar versión de sudo
-sudo -V
-Sudo version 1.9.5p2
-Sudoers policy plugin version 1.9.5p2
-Sudoers file grammar version 48
-Sudoers I/O plugin version 1.9.5p2
-Sudoers audit plugin version 1.9.5p2
+
+    sudo -V
+    Sudo version 1.9.5p2
+    Sudoers policy plugin version 1.9.5p2
+    Sudoers file grammar version 48
+    Sudoers I/O plugin version 1.9.5p2
+    Sudoers audit plugin version 1.9.5p2
 Configurar las reglas para sudo
 sudo visudo -f /etc/sudoers.d/sudoregla
 
