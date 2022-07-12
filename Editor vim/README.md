@@ -12,7 +12,7 @@ Selecionamos todas las lineas con 'v'
     
     /<buscado>
     
-n: para seguiente.
+n: para siguiente.
 
 N: para anterior.
 
