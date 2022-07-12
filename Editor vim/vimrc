@@ -1,0 +1,12 @@
+syntax on
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set listchars=tab:\┊\ ,trail:·,extends:>,precedes:<,space:· 
+autocmd bufnewfile *.c so /Users/nacho/header131.txt
+let g:user42 = 'nmota-bu'
+let g:mail42 = 'nmota-bu@student.42barcel'
+set undofile                " Save undos after file closes
+set undodir=~/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
