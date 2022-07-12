@@ -8,6 +8,14 @@ Selecionamos todas las lineas con 'v'
 **Quitar "//"**
 
     :s%//
+**Buscar**
+    
+    /<buscado>
+    
+n: para seguiente.
+
+N: para anterior.
+
 **Buscar y remplazar**
 
     :%s/buscar/remplazar/g
