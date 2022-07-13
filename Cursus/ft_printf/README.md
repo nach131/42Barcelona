@@ -18,14 +18,14 @@ Ahí es cuando ocurre la magia: el siguiente argumento en la lista de argumentos
 	char ch = 'Z';
 
 	printf("%07d\n", valor);		/*0000042*/
-	printf("%s\n", s);				/*42 Barcelona is the Best*/
-	printf("%c\n", ch);				/*Z*/
+	printf("%s\n", s);			/*42 Barcelona is the Best*/
+	printf("%c\n", ch);			/*Z*/
 	printf("%.2f\n", pi);			/*3.14*/
-	printf("42%%\n");				/*42%*/
+	printf("42%%\n");			/*42%*/
 
-	printf("%*d\n", ancho, valor);   /*          42*/
-	printf("%-8dBarcelona\n", valor); /*42      Barcelona*/
-	printf("%7.3f\n", pi);          /*  3.142*/
+	printf("%*d\n", ancho, valor);   	/*          42*/
+	printf("%-8dBarcelona\n", valor); 	/*42      Barcelona*/
+	printf("%7.3f\n", pi);          	/*  3.142*/
 
-	printf("%hhd\n", ch);           /*90 <-- ASCII code de Z */
+	printf("%hhd\n", ch);           	/*90 <-- ASCII code de Z */
 }
