@@ -39,20 +39,12 @@ En C los especificadores de formatos son los que le dicen a las funciones variad
 
 *: Estos especificadores pueden estar fuera de estándar.
 
-https://docs.microsoft.com/es-es/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170
+
 ---
 
 [Librerias C#](https://conclase.net/c/librerias)
 
 
-***ft_strnstr.c***
-
-Hace lo mismo
-
-    *(const char *)(haystack +1)
-    haystack[1]
-pasar resultado de una opecacion de dos size_t a integer
-    
-    (int)(len - lent_dos)
+[Tipos numéricos enteros ](https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
 
 ---
