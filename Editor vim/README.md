@@ -1,5 +1,11 @@
 # Vim Cheat Sheet
 
+### 80 column
+
+    :set colorcolumn=80
+o
+    :set cc=80
+
 ### Añadir "// "
 Selecionamos todas las lineas con 'v'
     
