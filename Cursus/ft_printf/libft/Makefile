@@ -23,7 +23,7 @@ RM = rm -f
 GREEN=\033[0;32m
 BLUE=\033[0;34m
 RED=\033[0;31m
-YELLOW = \033[0;93m
+YELLOW = \033[0;33m
 WHITE= \033[0;37m
 
 #Sources
@@ -67,12 +67,12 @@ OBJSF		=	.cache_exists
 all: $(NAME)
 
 $(NAME) : $(OBJS)
-			$(AR) $(NAME) $(OBJS)
+			@$(AR) $(NAME) $(OBJS)
 			@ranlib $(NAME)
-			@echo "$(GREEN)\n ✓ $(NAME)\n$(WHITE)"
+			@echo "$(GREEN)\n ✓ Creado $(NAME)\n$(WHITE)"
 
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c | $(OBJSF)
-			@echo "$(GREEN) Compilando  ➟  $< $(WHITE)"
+			@echo "$(BLUE) Compilando  ➟  $< $(WHITE)"
 			@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 # ➤
@@ -87,16 +87,16 @@ $(OBJSF):
 			@mkdir -p $(OBJ_DIR)$(TO_DIR)
 
 clean : 
-			@$(RM) -r $(OBJ_DIR)
-			@$(RM) $(OBJSF)
-			@echo "$(RED)\n ✗  Archivos objetos libft borrados\n$(WHITE)";
+			@$(RM) -rf $(OBJ_DIR)
+			@$(RM) -f $(OBJSF)
+			@echo "$(RED)\n ✗ Archivos objetos libft borrados.‼️\n$(WHITE)";
 
 fclean : clean
-				 $(RM) $(NAME)
-				 @echo "$(BLUE) Todo Super limpito...✌🏼$(WHITE)"
+			@$(RM) -f $(NAME)
+			@echo "$(BLUE) Todo Super limpito...✌🏼$(WHITE)"
 
 re: fclean all
-				 @echo "$(BLUE) Borrado todo y recompilado...✌🏼$(WHITE)"
+			@echo "$(YELLOW) Borrado todo y recompilado...✌🏼$(WHITE)"
 
 norm:
 			@norminette $(SRCS) $(INCLUDES) | grep -v Norme -B1 || true

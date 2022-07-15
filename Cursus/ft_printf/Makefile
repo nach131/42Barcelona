@@ -11,47 +11,66 @@
 # **************************************************************************** #
 
 NAME = libftprintf.a
-HEADER = libftprintf.h
+INCLUDES = includes/
+LIBFT		= libft/
+SRC_DIR = src/
+OBJ_DIR = obj/
 
-# Dir
-SRC = src/
-INCLUDE = include/
-LIBS = libft/
+# Compilate
 
-OBJS = $(SRCS:.c=.o)
-SRCS = file.c
+CC= gcc
+CFLAGS = -Wall -Wextra -Werror -I
+AR = ar rcs
+RM = rm -f
 
 # Colors
 GREEN=\033[0;32m
 BLUE=\033[0;34m
 RED=\033[0;31m
-WHITE= @echo "\033[0;37m"
+YELLOW = \033[0;33m
+WHITE= \033[0;37m
 
-# Compilate
-CC=/usr/bin/gcc
-CFLAGS = -Wall -Wextra -Werror
-AR=/usr/bin/ar
-RM = rm -f
+#Sources
 
-# Rules
-%.o : %.c
-	$(CC) -c $(CFLAGS) $< -o $@
-	@echo "$(BLUE) ✓ Creado $(NAME)\n"
+SRC_FILES = file
 
-all: $(OBJ) $(NAME)
+SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
+OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
 
-$(NAME) : $(OBJS) $(HEADER)
-	$(AR) rcs $(NAME) $(OBJS)
-	@echo "$(GREEN) ✓ Creado $(NAME)\n"
-	$(WHITE)
+#Rules
 
-clean :
-	$(RM) $(OBJS) $(OBJSBONUS)
-	@echo "$(RED) ✗  Borrado de los archivos\n";
-	$(WHITE)
+OBJSF		=	.cache_exists
+
+all: $(NAME)
+
+$(NAME) : $(OBJS)
+			@make -C $(LIBFT)
+			@$(AR) $(NAME) $(OBJS)
+			@echo "$(GREEN)\n ✓ Creado $(NAME)\n$(WHITE)"
+
+$(OBJ_DIR)%.o : $(SRC_DIR)%.c | $(OBJSF)
+			@echo "$(BLUE) Compilando  ➟  $< $(WHITE)"
+			@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
+$(OBJSF):
+			@mkdir -p $(OBJ_DIR)
+
+clean : 
+			@$(RM) -r $(OBJ_DIR)
+			@$(RM) $(OBJSF)
+			@echo "$(RED)\n ✗ ft_printf borrados.‼️\n$(WHITE)";
 
 fclean : clean
-	$(RM) $(NAME)
+			@$(RM) $(NAME)
+			@make clean -C $(LIBFT)
+			@$(RM) -f $(LIBFT)/libft.a
+			@echo "$(YELLOW) Todo Super limpito...✌🏼$(WHITE)"
+
+re: fclean all
+			@echo "$(YELLOW) Borrado todo y recompilado...✌🏼$(WHITE)"
+
+norm:
+			@norminette $(SRCS) $(INCLUDES) | grep -v Norme -B1 || true
 
 # Non-file targets
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re norm
