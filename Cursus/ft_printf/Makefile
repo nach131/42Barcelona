@@ -32,7 +32,7 @@ WHITE= \033[0;37m
 
 #Sources
 
-SRC_FILES = file
+SRC_FILES = ft_printf
 
 SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
@@ -45,6 +45,8 @@ all: $(NAME)
 
 $(NAME) : $(OBJS)
 			@make -C $(LIBFT)
+			@cp libft/libft.a .
+			@mv libft.a $(NAME)
 			@$(AR) $(NAME) $(OBJS)
 			@echo "$(GREEN)\n ✓ Creado $(NAME)\n$(WHITE)"
 

@@ -15,10 +15,14 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include "ft_printf.h"
+#include "libft.h"
 
 void	file(char *sr)
 {
-	printf("%s\n", sr);
+	int	len;
+
+	len = strlen(sr);
+	printf("%s, tiene %d char\n", sr, len);
 }
 
 // int main(void){

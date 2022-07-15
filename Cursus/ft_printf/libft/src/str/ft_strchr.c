@@ -30,6 +30,19 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
+
+// char	*ft_strchr(const char *s)
+// {
+// 	while (*s)
+// 	{
+// 		if (*s == '%')
+// 			return ((char *)s);
+// 		s++;
+// 	}
+// 	if (!s)
+// 		return ((char *)s);
+// 	return (NULL);
+// }
 // int main(void)
 // {
 // 	const char str[] = "42 Barcelona @ campus de programación @ más innovador";
