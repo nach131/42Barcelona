@@ -6,62 +6,100 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2022/07/12 19:23:20 by nmota-bu         ###   ########.fr        #
+#    Updated: 2022/07/15 14:50:47 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC=/usr/bin/gcc
-AR=/usr/bin/ar
-HEADER = libft.h
 NAME = libft.a
+INCLUDES = ../includes/
+SRC_DIR = src/
+OBJ_DIR = obj/
+CC= gcc
+CFLAGS = -Wall -Wextra -Werror -I
+AR = ar rcs
 RM = rm -f
-
-OBJS = $(SRCS:.c=.o)
-OBJSBONUS = $(SRCSBONUS:.c=.o)
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
-	   ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
-	   ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
-	   ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
-	   ft_atoi.c ft_strmapi.c ft_striteri.c ft_calloc.c ft_strdup.c \
-	   ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
-	   ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-SRCSBONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
-		   	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
-		   	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 # Colors
 GREEN=\033[0;32m
 BLUE=\033[0;34m
 RED=\033[0;31m
-WHITE= @echo "\033[0;37m"
+YELLOW = \033[0;93m
+WHITE= \033[0;37m
 
-CFLAGS = -Wall -Wextra -Werror
+#Sources
 
-%.o : %.c
-	$(CC) -c $(CFLAGS) $< -o $@
-	@echo "$(BLUE) ✓ Creado $(NAME)\n"	
+IS_DIR = is/
+IS_FILES	= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint
 
-all: $(OBJS) $(NAME)
+LST_DIR = lst/
+LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
+			ft_lstdelone ft_lstclear ft_lstiter ft_lstmap
 
-$(NAME) : $(OBJS) $(HEADER)
-	$(AR) rcs $(NAME) $(OBJS)
-	@echo "$(GREEN) ✓ Creado $(NAME)\n"
-	$(WHITE)
+MEM_DIR = mem/
+MEM_FILES = ft_bzero ft_calloc ft_memcmp ft_memcpy ft_memchr ft_memmove \
+			ft_memset
 
-bonus:  $(OBJS) $(OBJSBONUS) $(HEADER)
-		$(AR) rcs $(NAME) $^
-				@touch $@
+PUT_DIR = put/
+PUT_FILES = ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_putstr_fd 
+
+STR_DIR = str/
+STR_FILES = ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat \
+			ft_strlcpy ft_strlen ft_strmapi ft_strncmp ft_strnstr ft_strrchr \
+			ft_strtrim ft_substr
+
+TO_DIR = to/
+TO_FILES = ft_atoi ft_itoa ft_tolower ft_toupper
+
+SRC_FILES+=$(addprefix $(IS_DIR),$(IS_FILES))
+SRC_FILES+=$(addprefix $(LST_DIR),$(LST_FILES))
+SRC_FILES+=$(addprefix $(MEM_DIR),$(MEM_FILES))
+SRC_FILES+=$(addprefix $(PUT_DIR),$(PUT_FILES))
+SRC_FILES+=$(addprefix $(STR_DIR),$(STR_FILES))
+SRC_FILES+=$(addprefix $(TO_DIR),$(TO_FILES))
+
+SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
+OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
+
+#Rules
+
+OBJSF		=	.cache_exists
+
+all: $(NAME)
+
+$(NAME) : $(OBJS)
+			$(AR) $(NAME) $(OBJS)
+			@ranlib $(NAME)
+			@echo "$(GREEN)\n ✓ $(NAME)\n$(WHITE)"
+
+$(OBJ_DIR)%.o : $(SRC_DIR)%.c | $(OBJSF)
+			@echo "$(GREEN) Compilando  ➟  $< $(WHITE)"
+			@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
+# ➤
+
+$(OBJSF):
+			@mkdir -p $(OBJ_DIR)
+			@mkdir -p $(OBJ_DIR)$(IS_DIR)
+			@mkdir -p $(OBJ_DIR)$(LST_DIR)
+			@mkdir -p $(OBJ_DIR)$(MEM_DIR)
+			@mkdir -p $(OBJ_DIR)$(PUT_DIR)
+			@mkdir -p $(OBJ_DIR)$(STR_DIR)
+			@mkdir -p $(OBJ_DIR)$(TO_DIR)
 
 clean : 
-				$(RM) $(OBJS) $(OBJSBONUS)
-	@echo "$(RED) ✗  Borrado de los archivos\n";
-	$(WHITE)
+			@$(RM) -r $(OBJ_DIR)
+			@$(RM) $(OBJSF)
+			@echo "$(RED)\n ✗  Archivos objetos libft borrados\n$(WHITE)";
 
 fclean : clean
 				 $(RM) $(NAME)
-				 $(RM) bonus
+				 @echo "$(BLUE) Todo Super limpito...✌🏼$(WHITE)"
 
 re: fclean all
+				 @echo "$(BLUE) Borrado todo y recompilado...✌🏼$(WHITE)"
+
+norm:
+			@norminette $(SRCS) $(INCLUDES) | grep -v Norme -B1 || true
 
 # Non-file targets
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re norm

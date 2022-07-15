@@ -111,3 +111,9 @@ char	**ft_split(char const *s, char c)
 // 		i++;
 // 	}
 // }
+
+// 42
+// 42Barcelona
+// is
+// the
+// best

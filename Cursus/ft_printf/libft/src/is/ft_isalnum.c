@@ -28,7 +28,7 @@ int	ft_isalnum(int c)
 // int main(void)
 // {
 // 	char n;
-// 	printf("Escribe un caracter para comprobar si es Alfanumérico:\n");
+// 	printf("Escribe un carácter para comprobar si es Alfanumérico:\n");
 // 	scanf("%c", &n);
 // 	printf("El resultado '%c' es: %d\n", n, ft_isalnum(n));
 // 	;

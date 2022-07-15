@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 22:10:17 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/18 09:54:43 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/07/15 14:27:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@
 #define FWHITE      "\033[7;"
 #define FCYAN       "\x1b[36m"
 
+#define ORANGE		"\033[40m"
+
 //background color
 #define BBLACK      "40m"
 #define BRED        "41m"
@@ -42,8 +44,12 @@
 
 int main(int argc, char *argv[])
 {
+	echo -e "\e[38;5;82mHello \e[38;5;198mWorld"
     printf(D_FGREEN BBLUE"Change color!\n"NONE);
     printf(FRED BWHITE"Change color!\n"NONE);
+    printf(ORANGE"Orange\n"NONE);
+	
+	printf("-----------------------\n");
 
 	printf ("\e[3;31mRED cursiva. \e[0m\n");
 	printf ("\e[1;30mGris Oscuro.\e[0m\n");
