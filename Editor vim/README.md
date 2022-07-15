@@ -3,7 +3,9 @@
 ### 80 column
 
     :set colorcolumn=80
+    
 o
+
     :set cc=80
 
 ### Añadir "// "
