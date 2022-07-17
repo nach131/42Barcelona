@@ -42,27 +42,6 @@
 
 <span style="color:gray">**get_next_line**</span>
 
-// resets
-s { text-decoration:none; } //strike-through
-em { font-style: normal; font-weight: bold; } //italic emphasis
-
-
-// colors
-s { color: green }
-em { color: blue }
-
-
-~~This is green~~
-_this is blue_
-
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
-
-# TODOs:
-
-- <r>TODO:</r> Important thing to do
-- <o>TODO:</o> Less important thing to do
-- <g>DONE:</g> Breath deeply and improve karma
+- ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) `#1589F0
