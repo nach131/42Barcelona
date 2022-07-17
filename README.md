@@ -35,7 +35,7 @@
 |                          Proyecto                         |                           Estado                                                |
 |-----------------------------------------------------------|---------------------------------------------------------------------------------|
 | [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="Born2beroot" src="https://badge42.vercel.app/api/v2/cl5ph3y9k029809l0webqg8sn/project/2646326">|
-| [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="license-MIT" src="https://img.shields.io/badge/-proceso...-blue">             |
-| **get_next_line**     |<img alt="ft_printf" src="https://img.shields.io/badge/-...-inactive">|
+| [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="license-MIT" src="https://img.shields.io/badge/-proceso...-blue?style=for-the-badge">             |
+| **get_next_line**     |<img alt="ft_printf" src="https://img.shields.io/badge/-...-inactive?style=for-the-badge">|
 
 </div>
