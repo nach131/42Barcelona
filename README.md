@@ -15,10 +15,10 @@
   
 	Circulo 0
 </h1>
-
+<p align="center">
 |   | Proyecto            | Estado             |
 |---|---------------------|--------------------|
 | 1 | **libft**           |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
- 
+</p>
  nm -u libft.a
 
