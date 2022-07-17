@@ -16,8 +16,8 @@
 	Circulo 0
 </h1>
 
-|   |                   Proyecto                    |                                      Estado                                     |
-|---|-----------------------------------------------|---------------------------------------------------------------------------------|
+|                   Proyecto                    |                                      Estado                                     |
+|-----------------------------------------------|---------------------------------------------------------------------------------|
 | 1 | [**libft**](https://github.com/nach131/libft) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
 
 <h1 align="center">
@@ -25,8 +25,8 @@
 	Circulo 1
 </h1>
 
-|   |                          Proyecto                         |                           Estado                                                |
-|---|-----------------------------------------------------------|---------------------------------------------------------------------------------|
-| 1 | [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
-| 2 | [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="license-MIT" src="https://img.shields.io/badge/-proceso...-blue">             |
-| 3 | **get_next_line**     |<img alt="license-MIT" src="https://img.shields.io/badge/-...-inactive">|
+|                          Proyecto                         |                           Estado                                                |
+|-----------------------------------------------------------|---------------------------------------------------------------------------------|
+| [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
+| [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="license-MIT" src="https://img.shields.io/badge/-proceso...-blue">             |
+| **get_next_line**     |<img alt="license-MIT" src="https://img.shields.io/badge/-...-inactive">|
