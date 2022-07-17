@@ -1,5 +1,6 @@
-[debugger](https://pythontutor.com/visualize.html#mode=edit)
+ nm -u libft.a
 
+[debugger](https://pythontutor.com/visualize.html#mode=edit)
 
 ## Secuencia de escape
 
