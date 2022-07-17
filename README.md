@@ -39,3 +39,33 @@
 |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-...-inactive?style=for-the-badge">|
 
 </div>
+
+<span style="color:gray">**get_next_line**</span>
+
+// resets
+s { text-decoration:none; } //strike-through
+em { font-style: normal; font-weight: bold; } //italic emphasis
+
+
+// colors
+s { color: green }
+em { color: blue }
+
+While Markdown doesn't support color, if you don't need too many, you could always sacrifice some of the supported styles and redefine the related tag using CSS to make it color, and also remove the formatting, or not.
+
+Example:
+
+// resets
+s { text-decoration:none; } //strike-through
+em { font-style: normal; font-weight: bold; } //italic emphasis
+
+
+// colors
+s { color: green }
+em { color: blue }
+See also: How to restyle em tag to be bold instead of italic
+
+Then in your markdown text
+
+~~This is green~~
+_this is blue_
