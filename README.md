@@ -1,16 +1,16 @@
 <div align="center">
 <img  width="120" alt="42logo"  src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
-<div align="center"
+<div style="margin-bottom: 30px;">
 <img alt="42born2code" src="https://img.shields.io/badge/42born2code-level%201%20--%2038%25-blue?style=for-the-badge">
 </div>
 </div>
 
-<div align="center">
+<p align="center">
 <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/nach131/42Barcelona?style=social">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
-</div>
+</p>
 
 <h1 align="center">
   
