@@ -51,21 +51,18 @@ em { font-style: normal; font-weight: bold; } //italic emphasis
 s { color: green }
 em { color: blue }
 
-While Markdown doesn't support color, if you don't need too many, you could always sacrifice some of the supported styles and redefine the related tag using CSS to make it color, and also remove the formatting, or not.
-
-Example:
-
-// resets
-s { text-decoration:none; } //strike-through
-em { font-style: normal; font-weight: bold; } //italic emphasis
-
-
-// colors
-s { color: green }
-em { color: blue }
-See also: How to restyle em tag to be bold instead of italic
-
-Then in your markdown text
 
 ~~This is green~~
 _this is blue_
+
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
+
+# TODOs:
+
+- <r>TODO:</r> Important thing to do
+- <o>TODO:</o> Less important thing to do
+- <g>DONE:</g> Breath deeply and improve karma
