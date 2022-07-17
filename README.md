@@ -39,31 +39,3 @@
 |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-...-inactive?style=for-the-badge">|
 
 </div>
-
-<span style="color:gray;">**get_next_line**</span>
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-
-```json
-   // code for coloring
-```
-```html
-   // code for coloring
-<span style="color:gray;">**get_next_line**</span>
-```
-```js
-   // code for coloring
-```
-```css
-   // code for coloring
-```
-<style>H1{color:Blue;}</style>
-<style>H2{color:DarkOrange;}</style>
-<style>p{color:Black;}</style>
-
