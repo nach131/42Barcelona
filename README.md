@@ -18,7 +18,7 @@
 
 |                   Proyecto                    |                                      Estado                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------|
-| 1 | [**libft**](https://github.com/nach131/libft) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
+| [**libft**](https://github.com/nach131/libft) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
 
 <h1 align="center">
   
