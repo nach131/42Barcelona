@@ -18,7 +18,7 @@
 
 <div align="center">
 
-|<div style="width:400px">Proyecto</div>        |<div style="width:100px">Estado</div>                                            |
+|                    Proyecto                   |                                Estado</div>                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------|
 | [**libft**](https://github.com/nach131/libft) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
 
