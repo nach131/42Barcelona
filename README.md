@@ -1,11 +1,9 @@
 <h1 align="center">
   <img  width="120" alt="42logo"  src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
-  
+  <img alt="42born2code" src="https://img.shields.io/badge/42born2code-level%201%20--%2038%25-blue?style=for-the-badge">
+
 	42cursus
 	
-<div align="center">
-<img alt="42born2code" src="https://img.shields.io/badge/42born2code-level%201%20--%2038%25-blue?style=for-the-badge">
-</div>
 </h1>
 
 <p align="center">
