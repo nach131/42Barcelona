@@ -42,10 +42,6 @@
 
 <span style="color:gray;">**get_next_line**</span>
 
-$`\textcolor{red}{\text{your text}}`$ 
-$`\textcolor{blue}{\text{your text}}`$ 
-$`\textcolor{green}{\text{your text}}`$ 
-
 ```diff
 - text in red
 + text in green
@@ -53,3 +49,18 @@ $`\textcolor{green}{\text{your text}}`$
 # text in gray
 @@ text in purple (and bold)@@
 ```
+
+```json
+   // code for coloring
+```
+```html
+   // code for coloring
+<span style="color:gray;">**get_next_line**</span>
+```
+```js
+   // code for coloring
+```
+```css
+   // code for coloring
+```
+
