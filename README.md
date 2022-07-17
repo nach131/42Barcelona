@@ -25,10 +25,10 @@
 	Circulo 1
 </h1>
 
-|   | Proyecto            | Estado             |
-|---|---------------------|--------------------|
-| 1 | **Born2beroot**     |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
-| 2 | **ft_printf**     |<img alt="license-MIT" src="https://img.shields.io/badge/-...-blue">|
+|   |                          Proyecto                         |                           Estado                                                |
+|---|-----------------------------------------------------------|---------------------------------------------------------------------------------|
+| 1 | [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
+| 2 | [**ft_printf**  ](git@github.com:nach131/ft_printf.git)   |<img alt="license-MIT" src="https://img.shields.io/badge/-...-blue">             |
 | 3 | **get_next_line**     |<img alt="license-MIT" src="https://img.shields.io/badge/-...-blue">|
 
  nm -u libft.a
