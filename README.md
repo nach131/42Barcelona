@@ -2,6 +2,7 @@
 <img  width="120" alt="42logo"  src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
 <div style="margin-bottom: 30px;">
 <img alt="42born2code" src="https://img.shields.io/badge/born2code-level%201%20--%2038%25-blue?style=for-the-badge">
+<img alt="42born2code" src="https://badge42.vercel.app/api/v2/cl5ph3y9k029809l0webqg8sn/stats?cursusId=21&coalitionId=205">
 </div>
 </div>
 
