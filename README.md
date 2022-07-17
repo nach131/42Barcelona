@@ -15,7 +15,15 @@
   
 	Circulo 0
 </h1>
+<style>
+table th:first-of-type {
+    width: 75%;
+}
+table th:nth-of-type(2) {
+    width: 30%;
+}
 
+</style>
 <div align="center">
 
 |                   Proyecto                    |                                      Estado                                     |
