@@ -40,7 +40,8 @@
 
 </div>
 
-<span style="color:gray">**get_next_line**</span>
+<span style="color:gray;">**get_next_line**</span>
+<span style="color: red;">text</span>
 
 ```diff
 - text in red
