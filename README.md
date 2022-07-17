@@ -11,8 +11,6 @@
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
----
-
 <h1 align="center">
   
 	Circulo 0
@@ -20,6 +18,7 @@
 
 |   | Proyecto            | Estado             |
 |---|---------------------|--------------------|
-| 1 | **libft**           | :white_check_mark: |
+| 1 | **libft**           |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
  
  nm -u libft.a
+
