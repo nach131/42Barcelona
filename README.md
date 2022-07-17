@@ -15,18 +15,10 @@
   
 	Circulo 0
 </h1>
-<style>
-table th:first-of-type {
-    width: 75%;
-}
-table th:nth-of-type(2) {
-    width: 30%;
-}
 
-</style>
 <div align="center">
 
-|                   Proyecto                    |                                      Estado                                     |
+|<div style="width:400px">Proyecto</div>        |<div style="width:100px">Estado</div>                                            |
 |-----------------------------------------------|---------------------------------------------------------------------------------|
 | [**libft**](https://github.com/nach131/libft) |<img alt="license-MIT" src="https://img.shields.io/badge/-125%2F100-brightgreen">|
 
