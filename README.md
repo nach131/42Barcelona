@@ -41,7 +41,10 @@
 </div>
 
 <span style="color:gray;">**get_next_line**</span>
-<span style="color: red;">text</span>
+
+$`\textcolor{red}{\text{your text}}`$ 
+$`\textcolor{blue}{\text{your text}}`$ 
+$`\textcolor{green}{\text{your text}}`$ 
 
 ```diff
 - text in red
