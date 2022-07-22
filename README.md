@@ -25,7 +25,7 @@
 
 <div align="center">
 
-|                    Proyecto                   |                                Estado</div>                                     |
+|                    Proyecto                   |                                Estado.                                          |
 |-----------------------------------------------|---------------------------------------------------------------------------------|
 | [**libft**](https://github.com/nach131/libft) |<img alt="libft" src="https://badge42.vercel.app/api/v2/cl5ph3y9k029809l0webqg8sn/project/2585537">|
 
