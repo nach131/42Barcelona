@@ -20,7 +20,7 @@
 
 <h1 align="center">
   
-	Circulo 0
+	Rank 1
 </h1>
 
 <div align="center">
@@ -33,7 +33,7 @@
 
 <h1 align="center">
   
-	Circulo 1
+	Rank 2
 </h1>
 
 <div align="center">
