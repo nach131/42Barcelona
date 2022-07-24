@@ -20,7 +20,7 @@
 
 <h1 align="center">
   
-	Rank 1
+	Rank 0
 </h1>
 
 <div align="center">
@@ -33,7 +33,7 @@
 
 <h1 align="center">
   
-	Rank 2
+	Rank 1
 </h1>
 
 <div align="center">
