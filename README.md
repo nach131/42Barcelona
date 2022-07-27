@@ -27,7 +27,7 @@
 
 |                    Proyecto                   |                                Estado.                                          |
 |-----------------------------------------------|---------------------------------------------------------------------------------|
-| [**libft**](https://github.com/nach131/libft) |[libft](https://github.com/nach131/42Barcelona/blob/main/images/125_len.png | width=60)|
+| [**libft**](https://github.com/nach131/libft) |![](https://github.com/nach131/42Barcelona/blob/main/images/125_len.png | width=60)|
 
 </div>
 
