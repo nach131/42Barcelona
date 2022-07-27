@@ -27,7 +27,7 @@
 
 |                    Proyecto                   |                                Estado.                                          |
 |-----------------------------------------------|---------------------------------------------------------------------------------|
-| [**libft**](https://github.com/nach131/libft) |<img alt="libft" src="https://badge42.vercel.app/api/v2/cl5ph3y9k029809l0webqg8sn/project/2585537">|
+| [**libft**](https://github.com/nach131/libft) |<img alt="libft" src="https://github.com/nach131/42Barcelona/blob/main/images/125_len.png">|
 
 </div>
 
@@ -40,7 +40,7 @@
 
 |                          Proyecto                         |                           Estado                                                |
 |-----------------------------------------------------------|---------------------------------------------------------------------------------|
-| [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="Born2beroot" src="https://badge42.vercel.app/api/v2/cl5ph3y9k029809l0webqg8sn/project/2646326">|
+| [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="Born2beroot" src="https://github.com/nach131/42Barcelona/blob/main/images/125_len.png">|
 | [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="license-MIT" src="https://img.shields.io/badge/-proceso...-blue?style=for-the-badge">             |
 |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-...-inactive?style=for-the-badge">|
 
