@@ -1,9 +1,9 @@
 # Variable Arguments
 - `va_arg()`	Conseguir siguiente argumento de la variable
 
-- `va_copy()`	Copiar la va_list y todo el trabajo realizado.
+- `va_copy()`	Copiar la `va_list` y todo el trabajo realizado.
 
-- `va_end()`	Final de procesar argumentos variables.
+- `va_end()`	Fin de procesar variables de argumentos.
 
 - `va_start()`	Inicializar una `va_list` para iniciar el procesamiento de argumentos variables.
 
