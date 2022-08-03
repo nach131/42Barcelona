@@ -1,13 +1,9 @@
 <div align="center">
 	<img  width="120" alt="42logo"  src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
-<div style="margin-bottom: 30px;">
 <div align="center">
 	<img src="https://img.shields.io/badge/Born2code-blue">
 	<img src="https://img.shields.io/badge/Level%201-blue">
 	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/38">
-<div style="margin-bottom: 30px;">
-</div>
-</div>
 </div>
 <!-- these values are automatically generated with github actions and github api -->
 
@@ -29,7 +25,6 @@
 <div align="center">
 
 |	|	|
-|-----------------------------------------------|---------------------------------------------------------------------------------|
 | [**libft**](https://github.com/nach131/libft) |<img alt="libft" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">|
 |	|	|
 
@@ -43,7 +38,6 @@
 <div align="center">
 
 |	|	|
-|-----------------------------------------------------------|---------------------------------------------------------------------------------|
 | [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="Born2beroot" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">
 | [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="license-MIT" src="https://img.shields.io/badge/-proceso...-blue?style=for-the-badge">             |
 |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">|
