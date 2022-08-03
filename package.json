@@ -1,0 +1,23 @@
+{
+  "name": "actions42barcelona",
+  "version": "1.0.0",
+  "description": "Update readme",
+  "main": "index.js",
+  "scripts": {
+    "update-readme": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nach131/42Barcelona.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nach131/42Barcelona/issues"
+  },
+  "homepage": "https://github.com/nach131/42Barcelona#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}

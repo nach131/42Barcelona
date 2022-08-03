@@ -10,3 +10,4 @@ a.out
 .vscode
 *.o
 .vscode
+node_modules/
