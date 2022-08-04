@@ -2,13 +2,13 @@
 ._.DS_Store
 *.swo
 *.swp
-a.out
+*.out
 *.swm
 *.swk
 *.swl
 *.swn
 .vscode
 *.o
-.vscode
 node_modules/
 .env
+*.dSYM

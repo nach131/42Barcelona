@@ -125,7 +125,7 @@ int main()
 	InsertarFinal(&cabeza, 19);
 	InsertarFinal(&cabeza, 23);
 	ImprimirLista(cabeza);
-	res = ExisteElemento(cabeza, 425);
+	res = ExisteElemento(cabeza, 19);
 	if (res == 1)
 		printf("Elemento encontrado\n");
 	else
