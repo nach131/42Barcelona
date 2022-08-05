@@ -3,11 +3,13 @@
 #
 name: Node.js CI
 
-# name: Do things at 10:00 and 22:00 every day UTC
-#on: push
-on:
-  schedule:
-  - cron: "00 22,10 * * *"
+# name: Do things every 5 minutes
+on: push
+#on:
+#  schedule:
+#  - cron: "0 17 * * *"
+env:
+  SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
 jobs:
   build:
@@ -19,6 +21,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '14'
+      env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
     - run: npm install
     - run: npm run update-readme
     - run: |
