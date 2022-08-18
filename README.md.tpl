@@ -2,7 +2,7 @@
 	<img  width="120" alt="42logo"  src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
 <div align="center">
 	<img src="https://img.shields.io/badge/Born2code-blue">
-	<img src="https://img.shields.io/badge/Level%201-blue">
+	<img src="https://img.shields.io/badge/Level%201-daa051">
 	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/38">
 </div>
 <!-- these values are automatically generated with github actions and github api -->
