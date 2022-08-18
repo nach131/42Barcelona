@@ -18,8 +18,7 @@
 </p>
 
 <h1 align="center">
-
-	Rank 0
+Common Core 00
 </h1>
 
 <div align="center">
@@ -31,8 +30,7 @@
 </div>
 
 <h1 align="center">
-
-	Rank 1
+Common Core 01
 </h1>
 
 <div align="center">
