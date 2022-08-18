@@ -1,7 +1,10 @@
 <div align="center">
 	<img  width="120" alt="42logo"  src="https://user-images.githubusercontent.com/19689770/129336866-169b0dc7-ea41-47d4-b50a-d466508031af.png">
 <div align="center">
-	<img src="https://img.shields.io/badge/Born2code-blue">
+	<img src="https://img.shields.io/badge/Born2code-000?style=for-the-badge">
+	</div>
+
+<div align="center">
 	<img src="https://img.shields.io/badge/Level%201-daa051">
 	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/38">
 </div>
