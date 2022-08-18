@@ -1,7 +1,4 @@
-:syntax on
-echo "syntax on" >> ~/.vimrc
-
-
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 # Tell ls to be colourful
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
