@@ -18,7 +18,8 @@
 </p>
 
 <h1 align="center">
-Common Core 00
+
+	Common Core 00
 </h1>
 
 <div align="center">
@@ -30,7 +31,8 @@ Common Core 00
 </div>
 
 <h1 align="center">
-Common Core 01
+
+	Common Core 01
 </h1>
 
 <div align="center">
