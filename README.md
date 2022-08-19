@@ -5,7 +5,8 @@
 	</div>
 
 <div align="center">
-	<img src="https://img.shields.io/badge/Level%201-daa051">
+	<img src="https://img.shields.io/badge/Level%201-57a756
+	">
 	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/78">
 </div>
 <!-- these values are automatically generated with github actions and github api -->
