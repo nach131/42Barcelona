@@ -1,0 +1,40 @@
+{
+	// Use IntelliSense para saber los atributos posibles.
+	// Mantenga el puntero para ver las descripciones de los existentes atributos.
+	// Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug lldb",
+			"program": "${workspaceFolder}/test/a.out",
+			"args": [],
+			"stopOnEntry": false,
+			"cwd": "${workspaceFolder}/test"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "lldb active file nach131",
+			"program": "${fileDirname}/${fileBasenameNoExtension}.out",
+			"args": [],
+			"stopOnEntry": false,
+			"cwd": "${fileDirname}"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "lldb internet",
+			"program": "${fileDirname}/${fileBasenameNoExtension}.out",
+			"args": [
+				"--vanilla",
+				"-e",
+				"sources('tools/debug.R')"
+			],
+			"terminal": "console",
+			"stopOnEntry": false,
+			"cwd": "${fileDirname}"
+		}
+	]
+}

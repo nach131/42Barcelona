@@ -7,7 +7,6 @@
 *.swk
 *.swl
 *.swn
-.vscode
 *.o
 node_modules/
 .env
