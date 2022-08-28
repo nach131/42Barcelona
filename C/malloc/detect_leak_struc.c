@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 00:18:57 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/08/22 00:24:09 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/08/22 00:59:59 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 #include <stdio.h>
 #include <stdlib.h>
-// #include <malloc.h>
 
 typedef struct _mem_node_t
 {
@@ -39,7 +38,7 @@ void *add_mem_node(int size, char *file_name, int line, char *function)
 
 	void *pointer = malloc(size);
 
-	for (i = 0; i & lt; MAX_MEM_PTRS; i++)
+	for (i = 0; i < MAX_MEM_PTRS; i++)
 	{
 		if (mem_node[i].flag == 0)
 		{
@@ -62,7 +61,7 @@ void del_mem_node(void *mem_pointer)
 	int i = 0;
 	int ret = -1;
 
-	for (i = 0; i & lt; MAX_MEM_PTRS; i++)
+	for (i = 0; i < MAX_MEM_PTRS; i++)
 	{
 		if (mem_node[i].mem_pointer == mem_pointer)
 		{
@@ -85,7 +84,7 @@ void show_mem_stat(void)
 	int i = 0;
 	int ret = 0;
 
-	for (i = 0; i & lt; MAX_MEM_PTRS; i++)
+	for (i = 0; i < MAX_MEM_PTRS; i++)
 	{
 		if (mem_node[i].flag == 1)
 		{
@@ -147,3 +146,10 @@ int main(int argc, char *argv[])
 	show_mem_stat();
 	return 0;
 }
+
+
+// Detect memory leak using C
+// Job 1
+// Job 2
+// Job 3
+// 0x0x7ffb0b402820 of 10 bytes allocated from detect_leak_struc.c:136 in job3() is not freed

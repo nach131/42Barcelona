@@ -9,7 +9,7 @@
         "-g",
         "-Og",
         "${file}",
-        "${workspaceFolder}/sources/libftprintf.a",
+        // "${workspaceFolder}/sources/libftprintf.a",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}.out"
       ],
