@@ -22,6 +22,10 @@
 ## Backtrace and Frames
 #### Backtrace
 	bt
+	breakpoint set --name main
+	breakpoint set --file test.c --line 12
+	br s -f test.c -l 12
+	b test.c:12
 #### Switching Frames
 	frame select o
 	f 2
