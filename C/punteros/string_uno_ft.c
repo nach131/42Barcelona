@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   string.c                                           :+:      :+:    :+:   */
+/*   string_uno_ft.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 18:15:48 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/09/04 15:54:06 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/09/03 00:40:54 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/09/04 15:52:54 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 
-void ft_job2(char **s)
+void job(char **s)
 {
-	char *str = "42 Barcelona";
-	*s = str;
+	char *tmp = "Esto devuelve";
+	*s = tmp;
+	printf("%s", s);
 }
 
 int main(void)
 {
-	char *str = (NULL);
+	char *str = "42 Barcelona";
 
-	ft_job2(&str);
-	printf("%s\n", str);
+	job(&str);
+	printf("%s", str);
 }
 
-// 42 Barcelona
+// Esto devuelve

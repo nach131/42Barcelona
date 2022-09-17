@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 18:15:48 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/09/02 19:25:28 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/09/04 13:59:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,5 @@ int main(void)
 	ft_job1(&str);
 	printf("%s\n", str);
 }
+
+// Asi es como se pasa
