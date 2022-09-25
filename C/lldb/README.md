@@ -39,6 +39,12 @@ Program must be running in order to set the watch point.
 #### Member Variable
 	b main
 	W S V d.memberVar
+	
+## List Array elements
+	parray <number_to_list> arr
+![List_Array](List_Array.png)
+
+
 ---
 ![frame_v.png](frame_v.png)
 

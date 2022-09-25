@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 21:05:18 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/07/21 23:33:12 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/09/25 11:19:50 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,11 +74,36 @@ int main(){
 // 	printf("fin %d\n", n);
 // 	return (0);
 // }
+////================ft_swap=======================
+
+// void    ft_swap(int *a, int *b)
+// {
+//     int c;
+
+//     c = *a;
+//     *a = *b;
+//     *b = c;
+
+// }
+
+// int main(void)
+// {
+
+//     int at, bt;
+//     int *aa = &at;
+//     int *bb = &bt;
+
+//     *aa = 100;
+//     *bb = 20;
+
+//     ft_swap(aa, bb);
+
+//     printf("aa: %p, bb: %p\n", &aa, &bb);
+//     printf("aa: %d, bb: %d\n", *aa, *bb);
+
+// }
+
 ////============================================
 // inicio 0
 // 	en función 10
 // fin 10
-
-
-
-
