@@ -22,11 +22,12 @@ async function getData(url){
 	const clone = await getData('https://api.github.com/repos/nach131/42Barcelona/traffic/clones');
 	const MarkdownTemplate = await fs.readFile('./README.md.tpl', { encoding: 'utf-8' })
 
-	// console.log(views,clone)
+	// console.log(views, clone)
+
 	const newMarkdown = MarkdownTemplate
 	.replace('total_views', views)
 	.replace('total_clone', clone)
- 	// console.log(newMarkdown);
+	// console.log(newMarkdown);
 	await fs.writeFile('./README.md', newMarkdown)
 })();
 
