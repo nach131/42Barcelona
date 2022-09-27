@@ -13,8 +13,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-total_views-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-total_clone-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-127-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-106-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
@@ -45,6 +45,21 @@
 | [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="Born2beroot" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
 | [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="ft_printf" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">   |
 | [**get_next_line**](https://github.com/nach131/get_next_line) |<img alt="get_next_line" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge">     |
+
+</div>
+
+<h1 align="center">
+
+	Common Core 02
+</h1>
+
+<div align="center">
+
+| <!-- --> | <!-- --> |
+|---|---|
+| [**minitalk**](https://github.com/nach131/minitalk) |<img alt="minital" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+|<span style="color:gray">**so_long**</span>|<img alt="so_long" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">   |
+|<span style="color:gray">**push_swap**</span>|<img alt="push_swap" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">     |
 <!-- |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  | -->
 
 </div>
