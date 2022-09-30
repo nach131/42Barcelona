@@ -5,8 +5,10 @@
 	</div>
 
 <div align="center">
-	<img src="https://img.shields.io/badge/Level%201-57a756">
-	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/78">
+<!-- Leve 42 -->
+<!-- para el color subir a github y pillar desde ahi -->
+	<img src="https://img.shields.io/badge/Level%202-c95653">
+	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/19">
 </div>
 <!-- these values are automatically generated with github actions and github api -->
 
