@@ -44,7 +44,11 @@ Program must be running in order to set the watch point.
 	parray <number_to_list> arr
 ![List_Array](List_Array.png)
 
+## Mostrar el valor de un puntero
 
+	(lldb) p (char*)0x0000000100000f9c
+	(char *) $1 = 0x0000000100000f9c "42 Barcelona"
+	
 ---
 ![frame_v.png](frame_v.png)
 
