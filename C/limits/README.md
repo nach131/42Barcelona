@@ -21,21 +21,21 @@
  `SHRT_MIN`    (-32768)    /* min value for a short */
 
 ---
- `UINT_MAX`    0xffffffff  /* max value for an unsigned int */
+ `UINT_MAX`    4294967295  /* max value for an unsigned int */
  
  `INT_MAX`     2147483647  /* max value for an int */
  
  `INT_MIN`     (-2147483647-1) /* min value for an int */
 
- `ULONG_MAX`   0xffffffffffffffffUL    /* max unsigned long */
+ `ULONG_MAX`   18446744073709551615    /* max unsigned long */
 
- `LONG_MAX`    0x7fffffffffffffffL /* max signed long */
+ `LONG_MAX`    9223372036854775807 /* max signed long */
 
- `LONG_MIN`    (-0x7fffffffffffffffL-1) /* min signed long */
+ `LONG_MIN`    9223372036854775808 /* min signed long */
 
 ---
 
- `ULONG_MAX`   0xffffffffUL    /* max unsigned long */
+ `ULONG_MAX`   18446744073709551615    /* max unsigned long */
 
  `LONG_MAX`    2147483647L /* max signed long */
 
@@ -43,11 +43,11 @@
 
 ---
 
- `ULLONG_MAX`  0xffffffffffffffffULL   /* max unsigned long long */
+ `ULLONG_MAX`  18446744073709551615   /* max unsigned long long */
 
- `LLONG_MAX`   0x7fffffffffffffffLL    /* max signed long long */
+ `LLONG_MAX`   9223372036854775807    /* max signed long long */
 
- `LLONG_MIN`   (-0x7fffffffffffffffLL-1) /* min signed long long */
+ `LLONG_MIN`   9223372036854775808 /* min signed long long */
 
  ## /usr/include/sys/syslimits.h
 
