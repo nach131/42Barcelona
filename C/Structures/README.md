@@ -10,24 +10,27 @@
  Es importante tener en cuenta que las variables miembro solo deben declararse y no inicializarse.
 
  ## Inicializar Structures
- 	struct Bottle {
- 	 char* name;
- 	 int maxCapacity;
- 	 int currentCapacity;
-	};
  
-	struct Bottle bottle1 = {"superBottle", 24, 0};
+ ```c
+struct Bottle {
+	char* name;
+	int maxCapacity;
+	int currentCapacity;
+};
+
+struct Bottle bottle1 = {"superBottle", 24, 0};
+```
 
 El orden de los valores asignados a las variables miembro coincide con el orden en que se definieron las variables en la estructura.
 
 Podemos iniciar los objetos desordenados.
-
-	struct Bottle bottle1 = {
-  	.maxCapacity = 24,
-  	.name = "superBottle",
-  	.currentCapacity = 0
-	};
-
+```c
+struct Bottle bottle1 = {
+	.maxCapacity = 24,
+	.name = "superBottle",
+	.currentCapacity = 0
+};
+```
 ## Accediendo a los datos
 La notación de puntos es un operador de C que permite acceder y modificar una variable miembro de una estructura.
 
@@ -59,9 +62,9 @@ Para mi la lo mas sencillo es realizar la notación de flecha, ya que implícita
 	aPointer->currentCapacity;
 
 ## Estructuras en Funciones
-
-	void myFunction(struct Bottle b, struct Bottle* bPointer)
-
+```c
+void myFunction(struct Bottle b, struct Bottle* bPointer)
+```
 Al pasar una estructura a una función:
 
 - Se hace una copia de la estructura, hay que tener cuidado con la memoria.
@@ -72,17 +75,18 @@ Al pasar un puntero a una estructura:
 
 - Debido a que el puntero es la dirección de la estructura original, se modificara el original.
 
+```c
+void bottleFunction(struct Bottle b, struct Bottle* bPointer){
+b.name = "Super Large";
+b.maxCapacity = 100;
+bPointer->name = "Super Small";
+bPointer->maxCapacity = 4;    
+}
 
-		void bottleFunction(struct Bottle b, struct Bottle* bPointer){
-		b.name = "Super Large";
-		b.maxCapacity = 100;
-		bPointer->name = "Super Small";
-		bPointer->maxCapacity = 4;    
-		}
-		
-		int main(){
-		struct Bottle b1 = {"Medium", 24, 9};
-		struct Bottle b2 = {"Large", 35, 9};
+int main(){
+struct Bottle b1 = {"Medium", 24, 9};
+struct Bottle b2 = {"Large", 35, 9};
 
-		bottleFunction(b1, &b2);
-		}
+bottleFunction(b1, &b2);
+}
+```

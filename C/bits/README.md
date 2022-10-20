@@ -69,4 +69,4 @@ Realiza la negación lógica en cada bit del número, los ceros se convierte en 
 	-----------------
 	1001 1110 ~a = 158
 
-## [`print_bit.c`](./and.c)
+## [`print_bit.c`](./print_bit.c)
