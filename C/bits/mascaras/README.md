@@ -19,10 +19,10 @@ podemos pasar como operacion los valores asignados a cada color,
 operacion(amarillo | azul | verder | blanco)
 ```
 ```
-7	amarillo		1 0 0 0 0 0 0 0
-5	azul			0 0 1 0 0 0 0 0
-4	verde			0 0 0 1 0 0 0 0
-3	blanco			0 0 0 0 1 0 0 0
-----------------------------------------
-					1 0 1 1 1 0 0 0
+7	amarillo	1 0 0 0 0 0 0 0
+5	azul		0 0 1 0 0 0 0 0
+4	verde		0 0 0 1 0 0 0 0
+3	blanco		0 0 0 0 1 0 0 0
+-------------------------------------------
+				1 0 1 1 1 0 0 0
 ```
