@@ -56,9 +56,9 @@ Para la comprobación que colores estan activos usamos el AND
 Se quiere saber si el color ROJO esta activo comparamos los colores enviados por la mascara del color rojo
 
 	ACTIVOS 	1 0 1 1  1 0 0 0
-	ROJO			0 1 0 0  0 0 0 0
-	--------------------------
-	ADN 			0 0 0 0  0 0 0 0
+	ROJO		0 1 0 0  0 0 0 0
+	--------------------------------
+	ADN 		0 0 0 0  0 0 0 0
 
 no esta activo.
 
