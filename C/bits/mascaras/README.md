@@ -11,7 +11,7 @@ char tiene 8 bits
 0	cian		0 0 0 0 0 0 0 1
 ```
 
-x OR 0 = x ***( 0 or 0 = 0, 0 or 1 = 1)***
+`x OR 0 = x` ***( 0 or 0 = 0, 0 or 1 = 1)***
 
 podemos pasar como operacion los valores asignados a cada color,
 
@@ -49,4 +49,6 @@ int main()
 }
 ```
 
-Para la comprobación
+Para la comprobación que colores se han enviado usamos el AND
+
+`x AND 1 = x` ***( 0 and 1 = 0, 1 and 1 = 0)***
