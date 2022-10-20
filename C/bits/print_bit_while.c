@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   or_bit.c                                           :+:      :+:    :+:   */
+/*   print_bit_while.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/20 09:47:50 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/10/20 19:43:32 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/10/20 11:42:44 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/10/20 19:19:33 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,37 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include <stdio.h>
+#include <limits.h>
 
-int main(void)
+void printBits(size_t const size, void const *const ptr)
 {
+	unsigned char *b = (unsigned char *)ptr;
+	unsigned char byte;
+	int i, j;
 
-	unsigned char a = 97;
-	unsigned char S = 83;
+	i = size - 1;
+	while (i >= 0)
+	{
+		j = 7;
+		while (j >= 0)
+		{
+			byte = (b[i] >> j) & 1;
+			printf("%u", byte);
+			j--;
+		}
+		i--;
+	}
 
-	unsigned char res = (unsigned char)a | (unsigned char)S;
+	puts(""); // output a line to a stream
+}
 
-	printf("0110 0001 %c = %u\n", a, (unsigned char)a);
-	printf("0100 0110 %c = %u\n", S, (unsigned char)S);
-	printf("0110 0111 %c = %u\n", res, res);
-	return (0);
+int main(int argv, char *argc[])
+{
+	int i = 64;
+	unsigned ui = UINT_MAX;
+	float f = 23.45f;
+	printBits(sizeof(i), &i);
+	printBits(sizeof(ui), &ui);
+	printBits(sizeof(f), &f);
+	return 0;
 }
