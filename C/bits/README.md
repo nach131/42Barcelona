@@ -70,14 +70,3 @@ Realiza la negación lógica en cada bit del número, los ceros se convierte en 
 	1001 1110 ~a = 158
 
 ## [`print_bit.c`](./print_bit.c)
-
-
-<code>
-
-01**10** 00**0**1  a = 97
-
-01**01** 00**1**1  S = 83
-
------------------
-0011 0010  2 = 50
-</code>
