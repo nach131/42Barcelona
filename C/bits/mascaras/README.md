@@ -24,5 +24,5 @@ operacion(amarillo | azul | verder | blanco)
 4	verde		0 0 0 1 0 0 0 0
 3	blanco		0 0 0 0 1 0 0 0
 -------------------------------------------
-				1 0 1 1 1 0 0 0
+			1 0 1 1 1 0 0 0
 ```
