@@ -70,4 +70,6 @@ Para desactivar un color que esta ativo utilizamos el AND y el complemtario del 
 	~ azul		1 1 0 1  1 1 1 1 // complementario de azul
 	ACTIVOS 	1 0 1 1  1 0 0 0
 	---------------------------------
-			1 0 0 1  1 0 0 0
+			1 0 0 1  1 0 0 0      // 
+
+`[mask desactiva azul](./mask_des_azul.c)`
