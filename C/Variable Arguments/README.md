@@ -11,9 +11,10 @@
 
 **Synopsis**
 
-	#include <stdarg.h>
-
-	type va_arg(va_list ap, type);
+```c
+#include <stdarg.h>
+type va_arg(va_list ap, type);
+```
 
 [va_start](va_start.c)
 
@@ -21,9 +22,10 @@
 
 **Synopsis**
 
-	#include <stdarg.h>
-
-	void va_copy(va_list dest, va_list src)
+```c
+#include <stdarg.h>
+void va_copy(va_list dest, va_list src)
+```
 
 El principal uso previsto de esto es guardar su estado a la mitad del procesamiento de argumentos variables para que pueda escanear hacia adelante y luego retroceder hasta el punto de guardado.
 
