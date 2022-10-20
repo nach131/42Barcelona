@@ -61,7 +61,7 @@ Solo 1 cuando hay uno solo, ningún doble 0 ni doble 1.
 
 ### [`xor_bit.c`](./xor_bit.c)
 
-## ~ (bit a bit not)
+### ~ (bit a bit not)
 
 Realiza la negación lógica en cada bit del número, los ceros se convierte en unos y os unos en ceros.
 
@@ -69,4 +69,7 @@ Realiza la negación lógica en cada bit del número, los ceros se convierte en 
 	-----------------
 	1001 1110 ~a = 158
 
-## [`print_bit.c`](./print_bit.c)
+### [`print_bit.c`](./print_bit.c)
+
+
+[Saber Más](https://es.wikipedia.org/wiki/Operador_a_nivel_de_bits)
