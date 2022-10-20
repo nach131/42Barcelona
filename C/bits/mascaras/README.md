@@ -61,7 +61,7 @@ Se quiere saber si el color ROJO esta activo comparamos los colores enviados por
 			0 0 0 0  0 0 0 0  // esta desactivado
 
 
-`[mask if](./mask_if.c)`
+### [mask if](./mask_if.c)
 
 Para desactivar un color que esta ativo utilizamos el AND y el complemtario del color a desactivar
 
@@ -72,4 +72,4 @@ Para desactivar un color que esta ativo utilizamos el AND y el complemtario del 
 	---------------------------------
 			1 0 0 1  1 0 0 0      // 
 
-`[mask desactiva azul](./mask_des_azul.c)`
+### [mask desactiva azul](./mask_des_azul.c)
