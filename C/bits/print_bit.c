@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 11:42:44 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/10/20 12:39:46 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:56:31 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void printBits(size_t const size, void const *const ptr)
 
 int main(int argv, char *argc[])
 {
-	int i = 50;
+	int i = 64;
 	unsigned ui = UINT_MAX;
 	float f = 23.45f;
 	printBits(sizeof(i), &i);
