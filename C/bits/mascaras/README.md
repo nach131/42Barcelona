@@ -49,6 +49,17 @@ int main()
 }
 ```
 
-Para la comprobación que colores se han enviado usamos el AND
+Para la comprobación que colores estan activos usamos el AND
 
-`x AND 1 = x` ***( 0 and 1 = 0, 1 and 1 = 0)***
+`x AND 1 = x` ***( 0 and 1 = 0, 1 and 1 = 1)***
+
+Se quiere saber si el color ROJO esta activo comparamos los colores enviados por la mascara del color rojo
+
+	ACTIVOS 	1 0 1 1  1 0 0 0
+	ROJO			0 1 0 0  0 0 0 0
+	--------------------------
+	ADN 			0 0 0 0  0 0 0 0
+
+no esta activo.
+
+[mask if](./mask_if.c)
