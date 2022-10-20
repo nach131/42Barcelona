@@ -42,7 +42,7 @@ El operador OR inclusivo bit a bit compara cada bit de su primer operando con el
 Si uno de los dos bits es 1, el bit del resultado correspondiente se establece en 1. De lo contrario, el bit del resultado correspondiente se establece en 0.
 
 	0110 0001 a = 97
-	0100 0110 S = 83
+	0101 0011  S = 83
 	-----------------
 	0111 0011 s = 115
 
