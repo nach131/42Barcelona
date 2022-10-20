@@ -23,7 +23,7 @@ operacion(amarillo | azul | verder | blanco)
 5	azul		0 0 1 0 0 0 0 0
 4	verde		0 0 0 1 0 0 0 0
 3	blanco		0 0 0 0 1 0 0 0
-----------------------------------------
+-------------------------------------------
 			1 0 1 1 1 0 0 0
 ```
 ```c
@@ -56,10 +56,19 @@ Para la comprobación que colores estan activos usamos el AND
 Se quiere saber si el color ROJO esta activo comparamos los colores enviados por la mascara del color rojo
 
 	ACTIVOS 	1 0 1 1  1 0 0 0
-	ROJO (mask)	0 1 0 0  0 0 0 0
-	---------------------------------
-	ADN 		0 0 0 0  0 0 0 0
+	ROJO			0 1 0 0  0 0 0 0
+	--------------------------
+			 		0 0 0 0  0 0 0 0
 
 no esta activo.
 
-[mask if](./mask_if.c)
+`[mask if](./mask_if.c)`
+
+Para desactivar un color que esta ativo utilizamos el AND y el complemtario del color a desactivar
+
+	AZUL		0 0 1 0  0 0 0 0
+	
+	~AZUL		1 1 0 1  1 1 1 1 // complementario de azul
+	ACTIVOS 	1 0 1 1  1 0 0 0
+	------------------------------
+				1 0 0 1  1 0 0 0
