@@ -33,7 +33,7 @@ Si ambos bits son 1, el bit del resultado correspondiente se establece en 1. De 
 	-----------------
 	0100 0001  A = 65
 
-[`and.c`](./and.c)
+### [`and.c`](./and.c)
 
 ## ~ (bit a bit not)
 
