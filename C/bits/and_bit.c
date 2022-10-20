@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_bit.c                                        :+:      :+:    :+:   */
+/*   and_bit.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/20 11:42:44 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/10/20 12:39:46 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/10/20 09:47:50 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/10/20 12:20:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,20 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include <stdio.h>
-#include <limits.h>
 
-void printBits(size_t const size, void const *const ptr)
+  #include <stdio.h>
+
+int	main(void)
 {
-	unsigned char *b = (unsigned char *)ptr;
-	unsigned char byte;
-	int i, j;
 
-	for (i = size - 1; i >= 0; i--)
-	{
-		for (j = 7; j >= 0; j--)
-		{
-			byte = (b[i] >> j) & 1;
-			printf("%u", byte);
-		}
-	}
-	puts("");
-}
+	unsigned char a = 97;
+	unsigned char S = 83;
 
-int main(int argv, char *argc[])
-{
-	int i = 50;
-	unsigned ui = UINT_MAX;
-	float f = 23.45f;
-	printBits(sizeof(i), &i);
-	printBits(sizeof(ui), &ui);
-	printBits(sizeof(f), &f);
-	return 0;
+	unsigned char res = (unsigned char)a & (unsigned char)S;
+	
+	printf("0110 0001  %c = %u\n",a, (unsigned char)a);   
+	printf("0110 0001  %c = %u\n",S, (unsigned char)S);   
+	printf("1000 0001  %c = %u\n",res, res);   
+	return(0);
+
 }
