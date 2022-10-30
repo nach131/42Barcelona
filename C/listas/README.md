@@ -10,7 +10,7 @@ struct s_list
 };
 ```
 
-Para mi lo más sencillo es utilizar ```calloc```, si no habra que definir como ultimo elemento de la lista con valor 0 o NULL.
+Para mi lo más sencillo es utilizar ```calloc```, si no habra que definir al ultimo elemento de la lista con valor 0 o NULL.
 
 
 ### lista de 3 elementos tipo ```INT```
