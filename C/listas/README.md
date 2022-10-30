@@ -54,7 +54,7 @@ Tendremos que declarar una varible del tipo necesario asignar valor e igualar la
 int main(void)
 {
     t_list *c = calloc(1, sizeof(t_list));
-    int n_c = 12; // Declarada y asignado valor de tipo ```INT```
+    int n_c = 12; // Declarada y asignado valor de tipo INT
     c->data = &n_c; // Igualamos la dirección del puntero a data
 
     t_list *b = calloc(1, sizeof(t_list));
