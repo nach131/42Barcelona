@@ -44,7 +44,7 @@ int main(void)
 typedef struct	s_list
 {
     struct s_list *next;
-    void          *data; // definida como ```VOID``` puntero
+    void          *data; // definida como VOID puntero
 }	t_list;
 ```
 Al definirla como ```VOID``` puntero podemos pasar cualquier tipo de valor.
