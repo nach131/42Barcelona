@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tipos.c                                            :+:      :+:    :+:   */
+/*   type_struct.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 10:49:08 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/04 11:07:53 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/11/04 11:07:00 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/11/04 12:09:10 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,48 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
+// https://clibre.io/blog/por-secciones/codigo/item/424-calcular-tamano-en-c-sizeof-strlen-uso-y-errores-comunes
+
 #include <stdio.h>
+#include <stdlib.h>
+
+typedef struct s_list
+{
+	struct s_list *next;
+	void *data;
+} t_list;
+
+void ft_print_lst(t_list *lst)
+{
+	while (lst)
+	{
+		printf("%i\n", *(int *)lst->data);
+		lst = lst->next;
+	}
+}
 
 int main(void)
 {
-	printf("<char> %zd bytes\n", sizeof(char));
-	printf("<short> %zd bytes\n", sizeof(short));
-	printf("<int> %zd bytes\n", sizeof(int));
-	printf("<float> %zd bytes\n", sizeof(float));
-	printf("<long> %zd bytes\n", sizeof(long));
-	printf("<long long> %zd bytes\n", sizeof(long long));
-	printf("<double> %zd bytes\n", sizeof(double));
-	printf("<long double> %zd bytes\n", sizeof(long double));
+	printf("<struct> t_list %zd bytes\n", sizeof(t_list));
+
+	t_list *c = calloc(1, sizeof(t_list));
+	int n_c = 12;
+	c->data = &n_c;
+
+	t_list *b = calloc(1, sizeof(t_list));
+	b->next = c;
+	int n_b = 6;
+	b->data = &n_b;
+
+	t_list *a = calloc(1, sizeof(t_list));
+	a->next = b;
+	int n_a = 42;
+	a->data = &n_a;
+
+	t_list *cur = a;
+	printf("<struct> list c %zd bytes\n", sizeof(c));
+	printf("<struct> list cur %zd bytes\n", sizeof(cur));
+
+	ft_print_lst(cur);
+	return (0);
 }

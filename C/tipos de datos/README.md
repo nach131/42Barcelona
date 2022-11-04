@@ -12,22 +12,25 @@ int main(void)
 	printf("<long long> %zd bytes\n", sizeof(long long));
 	printf("<double> %zd bytes\n", sizeof(double));
 	printf("<long double> %zd bytes\n", sizeof(long double));
-	printf("<struct> %zd bytes\n", sizeof(t_list));
 }
 ```
 	<char> 1 bytes			 0000 0000
 	<short> 2 bytes			 0000 0000 0000 0000
 	<int> 4 bytes			 0000 0000 0000 0000 0000 0000 0000 0000 
-	<float> 4 bytes
+	<float> 4 bytes			 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 
 	<long> 8 bytes
 	<long long> 8 bytes
 	<double> 8 bytes
 	<long double> 16 bytes
-	<struct> 16 bytes
 ### [tipos.c](./tipos.c)
 
+## Tamańos de las Estructuras
 
+### [listas](./type_struct.c)
 
+	<struct> t_list 16 bytes
+	<struct> list c 8 bytes		// es el TAMAÑO del PUNTERO
+	<struct> list cur 8 bytes	//
 ## Caracteres
 El char ocupa un byte (8 bits) puede tener signo y sin signo.
 
