@@ -1,76 +1,92 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   code_colors.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/07 22:56:19 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/11/07 23:14:53 by nmota-bu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-# Reset
-Color_Off='\033[0m'       # Text Reset
+#include "code_colors.h"
+#include <stdio.h>
 
-# Regular Colors
-Black='\033[0;30m'        # Black
-Red='\033[0;31m'          # Red
-Green='\033[0;32m'        # Green
-Yellow='\033[0;33m'       # Yellow
-Blue='\033[0;34m'         # Blue
-Purple='\033[0;35m'       # Purple
-Cyan='\033[0;36m'         # Cyan
-White='\033[0;37m'        # White
+int main(void)
+{
 
-# Bold
-BBlack='\033[1;30m'       # Black
-BRed='\033[1;31m'         # Red
-BGreen='\033[1;32m'       # Green
-BYellow='\033[1;33m'      # Yellow
-BBlue='\033[1;34m'        # Blue
-BPurple='\033[1;35m'      # Purple
-BCyan='\033[1;36m'        # Cyan
-BWhite='\033[1;37m'       # White
+	printf("=== Regular Colors === \n");
+	printf(Black "Black\n");
+	printf(Red "Red\n");
+	printf(Green "Green\n");
+	printf(Yellow "Yellow\n");
+	printf(Blue "Blue\n");
+	printf(Magenta "Magenta\n");
+	printf(Cyan "Cyan\n");
+	printf(White "White\n");
 
-# Underline
-UBlack='\033[4;30m'       # Black
-URed='\033[4;31m'         # Red
-UGreen='\033[4;32m'       # Green
-UYellow='\033[4;33m'      # Yellow
-UBlue='\033[4;34m'        # Blue
-UPurple='\033[4;35m'      # Purple
-UCyan='\033[4;36m'        # Cyan
-UWhite='\033[4;37m'       # White
+	printf("=== Bold === \n");
+	printf(BBlack "BBlack\n");
+	printf(BRed "BRed\n");
+	printf(BGreen "BGreen\n");
+	printf(BYellow "BYellow\n");
+	printf(BBlue "BBlue\n");
+	printf(BMagenta "BMagenta\n");
+	printf(BCyan "BCyan\n");
+	printf(BWhite "BWhite\n");
 
-# Background
-On_Black='\033[40m'       # Black
-On_Red='\033[41m'         # Red
-On_Green='\033[42m'       # Green
-On_Yellow='\033[43m'      # Yellow
-On_Blue='\033[44m'        # Blue
-On_Purple='\033[45m'      # Purple
-On_Cyan='\033[46m'        # Cyan
-On_White='\033[47m'       # White
+	printf("=== Underline === \n");
+	printf(UBlack "UBlack\n");
+	printf(URed "URed\n");
+	printf(UGreen "UGreen\n");
+	printf(UYellow "UYellow\n");
+	printf(UBlue "UBlue\n");
+	printf(UMagenta "UMagenta\n");
+	printf(UCyan "UCyan\n");
+	printf(UWhite "UWhite\n");
 
-# High Intensity
-IBlack='\033[0;90m'       # Black
-IRed='\033[0;91m'         # Red
-IGreen='\033[0;92m'       # Green
-IYellow='\033[0;93m'      # Yellow
-IBlue='\033[0;94m'        # Blue
-IPurple='\033[0;95m'      # Purple
-ICyan='\033[0;96m'        # Cyan
-IWhite='\033[0;97m'       # White
+	// printf("=== Background === \n");
+	// printf(On_Black "On_Black\n");
+	// printf(On_Red "On_Red\n");
+	// printf(On_Green "On_Green\n");
+	// printf(On_Yellow "On_Yellow\n");
+	// printf(On_Blue "On_Blue\n");
+	// printf(On_Magenta "On_Magenta\n");
+	// printf(On_Cyan "On_Cyan\n");
+	// printf(On_White "On_White\n");
 
-# Bold High Intensity
-BIBlack='\033[1;90m'      # Black
-BIRed='\033[1;91m'        # Red
-BIGreen='\033[1;92m'      # Green
-BIYellow='\033[1;93m'     # Yellow
-BIBlue='\033[1;94m'       # Blue
-BIPurple='\033[1;95m'     # Purple
-BICyan='\033[1;96m'       # Cyan
-BIWhite='\033[1;97m'      # White
+	printf("=== High Intensity === \n");
+	printf(IBlack "IBlack\n");
+	printf(IRed "IRed\n");
+	printf(IGreen "IGreen\n");
+	printf(IYellow "IYellow\n");
+	printf(IBlue "IBlue\n");
+	printf(IMagenta "IMagenta\n");
+	printf(ICyan "ICyan\n");
+	printf(IWhite "IWhite\n");
 
-# High Intensity backgrounds
-On_IBlack='\033[0;100m'   # Black
-On_IRed='\033[0;101m'     # Red
-On_IGreen='\033[0;102m'   # Green
-On_IYellow='\033[0;103m'  # Yellow
-On_IBlue='\033[0;104m'    # Blue
-On_IPurple='\033[0;105m'  # Purple
-On_ICyan='\033[0;106m'    # Cyan
-On_IWhite='\033[0;107m'   # White
+	printf("=== Bold High Intensity === \n");
+	printf(BIBlack "BIBlack\n");
+	printf(BIRed "BIRed\n");
+	printf(BIGreen "BIGreen\n");
+	printf(BIYellow "BIYellow\n");
+	printf(BIBlue "BIBlue\n");
+	printf(BIMagenta "BIMagenta\n");
+	printf(BICyan "BICyan\n");
+	printf(BIWhite "BIWhite\n");
+
+	// printf("=== High Intensity backgrounds=== \n");
+	// printf(On_Black "On_Black\n");
+	// printf(On_Red "On_Red\n");
+	// printf(On_Green "On_Green\n");
+	// printf(On_Yellow "On_Yellow\n");
+	// printf(On_Blue "On_Blue\n");
+	// printf(On_Magenta "On_Magenta\n");
+	// printf(On_Cyan "On_Cyan\n");
+	// printf(On_White "On_White\n");
+}

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 22:10:17 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/07/15 14:27:52 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/07 22:25:01 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,11 @@
 
 int main(int argc, char *argv[])
 {
-	echo -e "\e[38;5;82mHello \e[38;5;198mWorld"
-    printf(D_FGREEN BBLUE"Change color!\n"NONE);
+	// echo -e "\e[38;5;82mHello \e[38;5;198mWorld"
+	printf(D_FGREEN BBLUE"Change color!\n"NONE);
     printf(FRED BWHITE"Change color!\n"NONE);
     printf(ORANGE"Orange\n"NONE);
-	
+
 	printf("-----------------------\n");
 
 	printf ("\e[3;31mRED cursiva. \e[0m\n");
