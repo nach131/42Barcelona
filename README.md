@@ -15,8 +15,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-49-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-60-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-50-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-61-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
@@ -31,7 +31,7 @@
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**libft**](https://github.com/nach131/libft) |<img alt="libft" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">|
+| [**libft**](https://github.com/nach131/libft_original) |<img alt="libft" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">|
 
 </div>
 
