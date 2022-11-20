@@ -31,7 +31,7 @@
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**libft**](https://github.com/nach131/libft) |<img alt="libft" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">|
+| [**libft**](https://github.com/nach131/libft_original) |<img alt="libft" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">|
 
 </div>
 
