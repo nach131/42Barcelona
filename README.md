@@ -15,8 +15,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-44-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-57-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-51-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-56-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
