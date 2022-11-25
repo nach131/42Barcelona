@@ -7,16 +7,21 @@
 <div align="center">
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde ahi -->
-	<img src="https://img.shields.io/badge/Level%202-c95653">
-	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/63">
+	<img src="https://img.shields.io/badge/Level%202-daa051">
+	<!-- <img src="https://img.shields.io/badge/Level%202-c95653"> -->
+	<img src="https://progress-bar.dev/64/">
+	<!-- https://github.com/fredericojordan/progress-bar -->
+
 </div>
 <!-- these values are automatically generated with github actions and github api -->
 
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-51-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-56-blue">
+<!-- <img alt="total-views" src="https://img.shields.io/badge/views-51-blue"> -->
+<!-- <img alt="total-clone" src="https://img.shields.io/badge/clone-56-blue"> -->
+<img alt="total-views" src="https://img.shields.io/badge/views-total_views-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-total_clone-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
