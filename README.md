@@ -60,7 +60,7 @@
 | <!-- --> | <!-- --> |
 |---|---|
 | [**minitalk**](https://github.com/nach131/minitalk) |<img alt="minital" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
-|<span style="color:gray">**so_long**</span>|<img alt="so_long" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">   |
+| [**so_long**](https://github.com/nach131/so_long) |<img alt="minital" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
 |<span style="color:gray">**push_swap**</span>|<img alt="push_swap" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">     |
 <!-- |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  | -->
 
