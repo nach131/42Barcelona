@@ -8,7 +8,7 @@
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde ahi -->
 	<img src="https://img.shields.io/badge/Level%202-c95653">
-	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/19">
+	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/63">
 </div>
 <!-- these values are automatically generated with github actions and github api -->
 
@@ -59,7 +59,7 @@
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**minitalk**](https://github.com/nach131/minitalk) |<img alt="minital" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+| [**minitalk**](https://github.com/nach131/minitalk) |<img alt="minital" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
 | [**so_long**](https://github.com/nach131/so_long) |<img alt="minital" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
 |<span style="color:gray">**push_swap**</span>|<img alt="push_swap" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">     |
 <!-- |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  | -->
