@@ -5,14 +5,14 @@
       "label": "Compilar Nach",
       "command": "/usr/bin/gcc",
       "args": [
-        // "-fdiagnostics-color=always",
-        "-g",
-        "-Og",
-        "${file}",
-        // "${workspaceFolder}/sources/libftprintf.a",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.out"
-      ],
+			// "-fdiagnostics-color=always",
+			"-g3",
+			"-Og",
+			"${file}",
+			// "${workspaceFolder}/sources/libftprintf.a",
+			"-o",
+			"${fileDirname}/${fileBasenameNoExtension}.out"
+		],
       "options": {
         "cwd": "${fileDirname}"
       },

@@ -7,32 +7,9 @@
 		{
 			"type": "lldb",
 			"request": "launch",
-			"name": "Debug lldb",
-			"program": "${workspaceFolder}/test/a.out",
-			"args": [],
-			"stopOnEntry": false,
-			"cwd": "${workspaceFolder}/test"
-		},
-		{
-			"type": "lldb",
-			"request": "launch",
-			"name": "lldb active file nach131",
+			"name": "simple",
 			"program": "${fileDirname}/${fileBasenameNoExtension}.out",
-			"args": [],
-			"stopOnEntry": false,
-			"cwd": "${fileDirname}"
-		},
-		{
-			"type": "lldb",
-			"request": "launch",
-			"name": "lldb internet",
-			"program": "${fileDirname}/${fileBasenameNoExtension}.out",
-			"args": [
-				"--vanilla",
-				"-e",
-				"sources('tools/debug.R')"
-			],
-			"terminal": "console",
+			// "args": ["${workspaceFolder}/sources/maps/veinte.ber"],
 			"stopOnEntry": false,
 			"cwd": "${fileDirname}"
 		}
