@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 11:07:00 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/04 12:09:10 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/23 13:55:24 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,3 +59,10 @@ int main(void)
 	ft_print_lst(cur);
 	return (0);
 }
+
+// <struct> t_list 16 bytes
+// <struct> list c 8 bytes
+// <struct> list cur 8 bytes
+// 42
+// 6
+// 12

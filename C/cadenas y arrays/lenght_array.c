@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 21:23:59 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/21 21:35:49 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/23 09:01:56 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,7 @@ int main(void)
 	printf("intSize: %d\n", intSize);
 	printf("lenght: %d\n", lenght);
 }
+
+// arraySize: 126
+// intSize: 21
+// lenght: 6
