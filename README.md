@@ -47,9 +47,9 @@
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**Born2beroot**](https://github.com/nach131/Born2beroot) |<img alt="Born2beroot" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
-| [**ft_printf**](https://github.com/nach131/ft_printf)     |<img alt="ft_printf" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">   |
-| [**get_next_line**](https://github.com/nach131/get_next_line) |<img alt="get_next_line" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">     |
+| [**Born2beroot**](https://github.com/nach131/Born2beroot) |<a href="https://github.com/nach131/Born2beroot"><img alt="Born2beroot" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
+| [**ft_printf**](https://github.com/nach131/ft_printf)     |<a href="https://github.com/nach131/ft_printf"><img alt="ft_printf" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a>|
+| [**get_next_line**](https://github.com/nach131/get_next_line) |<a href="https://github.com/nach131/get_next_line"><img alt="get_next_line" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
 
 </div>
 
@@ -62,10 +62,11 @@
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**minitalk**](https://github.com/nach131/minitalk) |<img alt="minital" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
-| [**so_long**](https://github.com/nach131/so_long) |<img alt="so_long" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
+| [**minitalk**](https://github.com/nach131/minitalk) |<a href="https://github.com/nach131/minitalk"><img alt="minital" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
+| [**so_long**](https://github.com/nach131/so_long) |<a href="https://github.com/nach131/so_long"><img alt="so_long" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
 | [**push_swap**](https://github.com/nach131/push_swap)| <a href="https://github.com/nach131/push_swap"><img alt="push_swap" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
 <!-- | [**so_long**](https://github.com/nach131/so_long) |<img alt="minital" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> | -->
 <!-- |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  | -->
 
 </div>
+
