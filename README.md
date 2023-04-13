@@ -8,8 +8,7 @@
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde ahi -->
 	<img src="https://img.shields.io/badge/Level%203-c95653">
-	<!-- <img src="https://img.shields.io/badge/Level%203-c95653"> -->
-	<img src="https://progress-bar.dev/1/">
+	<img src="https://progress-bar.dev/41/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
 </div>
@@ -64,7 +63,7 @@
 |---|---|
 | [**minitalk**](https://github.com/nach131/minitalk) |<a href="https://github.com/nach131/minitalk"><img alt="minital" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
 | [**so_long**](https://github.com/nach131/so_long) |<a href="https://github.com/nach131/so_long"><img alt="so_long" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
-| [**push_swap**](https://github.com/nach131/push_swap)| <a href="https://github.com/nach131/push_swap"><img alt="push_swap" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
+| [**push_swap**](https://github.com/nach131/push_swap)| <a href="https://github.com/nach131/push_swap"><img alt="push_swap" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
 <!-- | [**so_long**](https://github.com/nach131/so_long) |<img alt="minital" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> | -->
 <!-- |<span style="color:gray">**get_next_line**</span>|<img alt="ft_printf" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  | -->
 
