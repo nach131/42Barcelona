@@ -24,6 +24,12 @@
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
+<p align="center">
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=nach131.42Barcelona&left_color=green&right_color=blue)
+
+</p>
+
 <h1 align="center">
 
 	Common Core 00
