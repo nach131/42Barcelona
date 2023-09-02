@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Volumes/1TB/Dropbox/00_42Barcelona/42Barcelona/_42Barcelona/C/global",
+      "program": "/Volumes/1TB/Dropbox/00_42Barcelona/42Barcelona/_42Barcelona/C/global/build/Debug/outDebug"
+    }
+  ]
+}
