@@ -7,7 +7,7 @@
 <div align="center">
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde ahi -->
-	<img src="https://img.shields.io/badge/Level%203-dfa14c">
+	<img src="https://img.shields.io/badge/Level%203-59ad59">
 	<img src="https://progress-bar.dev/88/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
@@ -17,8 +17,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-95-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-57-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-74-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-37-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
