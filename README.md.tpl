@@ -6,9 +6,9 @@
 
 <div align="center">
 <!-- Leve 42 -->
-<!-- para el color subir a github y pillar desde ahi -->
-	<img src="https://img.shields.io/badge/Level%203-59ad59">
-	<img src="https://progress-bar.dev/88/">
+<!-- para el color subir a github y pillar desde git -->
+	<img src="https://img.shields.io/badge/Level%204-cd534f">
+	<img src="https://progress-bar.dev/16/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
 </div>
@@ -84,9 +84,8 @@
 | <!-- --> | <!-- --> |
 |---|---|
 | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">|
-|[**philosophers**](https://github.com/nach131/Philosophers) |<img alt="Philosophers" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge">  |
+|[**philosophers**](https://github.com/nach131/Philosophers) |<img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 </div>
-
 
 <!-- 
 
