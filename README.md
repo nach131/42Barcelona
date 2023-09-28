@@ -85,6 +85,7 @@
 |---|---|
 | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">|
 |[**philosophers**](https://github.com/nach131/Philosophers) |<img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
+| [**Exam Rank 03**](https://github.com/nach131/ExamRank03)| <a href="https://github.com/nach131/ExamRank03"><img alt="ExamRank03" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
 </div>
 
 
