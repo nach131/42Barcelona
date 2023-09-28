@@ -17,7 +17,7 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-45-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-48-blue">
 <img alt="total-clone" src="https://img.shields.io/badge/clone-69-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
@@ -87,6 +87,7 @@
 |[**philosophers**](https://github.com/nach131/Philosophers) |<img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 | [**Exam Rank 03**](https://github.com/nach131/ExamRank03)| <a href="https://github.com/nach131/ExamRank03"><img alt="ExamRank03" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
 </div>
+
 
 <!-- 
 
