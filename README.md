@@ -87,12 +87,7 @@
 | [**Exam Rank 03**](https://github.com/nach131/ExamRank03)| <img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 </div>
 
-<<<<<<< HEAD
 <h1 align="center">
-=======
-
-<!-- 
->>>>>>> 903f6f8ba23c4046e0a82b86716b0cdd0352b87c
 
 	Common Core 04
 </h1>
