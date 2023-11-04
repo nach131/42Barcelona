@@ -71,7 +71,6 @@
 | [**so_long**](https://github.com/nach131/so_long) |<a href="https://github.com/nach131/so_long"><img alt="so_long" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
 | [**push_swap**](https://github.com/nach131/push_swap)| <a href="https://github.com/nach131/push_swap"><img alt="push_swap" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
 | [**Exam Rank 02**](https://github.com/nach131/ExamRank02)| <a href="https://github.com/nach131/ExamRank02"><img alt="ExamRank02" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
-
 </div>
 
 <h1 align="center">
@@ -85,17 +84,26 @@
 |---|---|
 | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">|
 |[**philosophers**](https://github.com/nach131/Philosophers) |<img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
-| [**Exam Rank 03**](https://github.com/nach131/ExamRank03)| <a href="https://github.com/nach131/ExamRank03"><img alt="ExamRank03" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
+| [**Exam Rank 03**](https://github.com/nach131/ExamRank03)| <img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 </div>
 
-<!-- 
+<h1 align="center">
 
-|Header1 |Header2  | Header3|
-|:--- | ---: | :---:|
-|Align left| Align right|center text|
-|cell data1|cell data2|cell data3| -->
+	Common Core 04
+</h1>
+
+<div align="center">
+
+| <!-- --> | <!-- --> |
+|---|---|
+| [**cub3d**](https://github.com/nach131/cub3d) |<img alt="minishell" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+|[**NetPractice**](https://github.com/nach131/NetPractice) |<img alt="NetPractice" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
+|[**CPP Module 00**](https://github.com/nach131/CPP_M00) |<img alt="CPPModule00" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
+| [**Exam Rank 04**](https://github.com/nach131/ExamRank03)| <a href="https://github.com/nach131/ExamRank03"><img alt="ExamRank04" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge"></a> |
+</div>
 
 
-<!-- | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> | -->
-<!-- |<span style="color:gray">**Philosophers**</span>|<img alt="Philosophers" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  | -->
 
+<!-- | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+|<span style="color:gray">**Philosophers**</span>|<img alt="Philosophers" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
+ -->
