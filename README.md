@@ -17,8 +17,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-45-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-69-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-3-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-34-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
@@ -87,7 +87,12 @@
 | [**Exam Rank 03**](https://github.com/nach131/ExamRank03)| <img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 </div>
 
+<<<<<<< HEAD
 <h1 align="center">
+=======
+
+<!-- 
+>>>>>>> 903f6f8ba23c4046e0a82b86716b0cdd0352b87c
 
 	Common Core 04
 </h1>
