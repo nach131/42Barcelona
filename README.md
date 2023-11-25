@@ -17,8 +17,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-378-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-44-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-397-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-49-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
@@ -102,6 +102,7 @@
 |[**CPP Module 00**](https://github.com/nach131/CPP_M00) |<img alt="CPPModule00" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
 | [**Exam Rank 04**](https://github.com/nach131/ExamRank04)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank04" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
 </div>
+
 
 
 
