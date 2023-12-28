@@ -8,7 +8,7 @@
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde git -->
 	<img src="https://img.shields.io/badge/Level%204-cd534f">
-	<img src="https://progress-bar.dev/16/">
+	<img src="https://progress-bar.dev/52/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
 </div>
@@ -91,13 +91,14 @@
 <h1 align="center">
 
 	Common Core 04
+	
 </h1>
 
 <div align="center">
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**cub3d**](https://github.com/nach131/cub3d) |<img alt="minishell" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+| [**cub3d**](https://github.com/nach131/cub3d) |<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20110/100-green?style=for-the-badge"> |
 |[**NetPractice**](https://github.com/nach131/NetPractice) |<img alt="NetPractice" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
 |[**CPP**](https://github.com/nach131/CPP_C4) |<img alt="CPPModule00" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge">  |
 | [**Exam Rank 04**](https://github.com/nach131/ExamRank04)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank04" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
