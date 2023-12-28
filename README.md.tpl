@@ -17,8 +17,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-total_views-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-total_clone-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-25-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-42-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
@@ -91,13 +91,14 @@
 <h1 align="center">
 
 	Common Core 04
+	
 </h1>
 
 <div align="center">
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**cub3d**](https://github.com/nach131/cub3d) |<img alt="minishell" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+| [**cub3d**](https://github.com/nach131/cub3d) |<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20110/100-green?style=for-the-badge"> |
 |[**NetPractice**](https://github.com/nach131/NetPractice) |<img alt="NetPractice" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
 |[**CPP**](https://github.com/nach131/CPP_C4) |<img alt="CPPModule00" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge">  |
 | [**Exam Rank 04**](https://github.com/nach131/ExamRank04)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank04" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
