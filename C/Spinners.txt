@@ -318,3 +318,7 @@ Incremental    " "   <--- the ideal 8 character increment bargraph
 Braille chars  "⡀⡄⡆⡇⣇⣧⣷⣿"   braille character each 8 increments
 
 -------------------------------------------------------------------------------
+
+=
+EQUALS SIGN
+Unicode: U+003D, UTF-8: 3D
