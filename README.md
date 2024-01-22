@@ -18,8 +18,8 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-8-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-51-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-9-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-53-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
@@ -124,3 +124,4 @@
 <!-- | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
 |<span style="color:gray">**Philosophers**</span>|<img alt="Philosophers" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
  -->
+
