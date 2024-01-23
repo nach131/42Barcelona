@@ -99,8 +99,8 @@
 | <!-- --> | <!-- --> |
 |---|---|
 | [**cub3d**](https://github.com/nach131/cub3d) |<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20110/100-green?style=for-the-badge"> |
-|[**NetPractice**](https://nach131.github.io/NetPractice) |<img alt="NetPractice" src="https://img.shields.io/badge/-%E2%88%9A%20110/100-green?style=for-the-badge">  |
-|[**CPP**](https://github.com/nach131/CPP_C4) |<img alt="CPP4" src="https://img.shields.io/badge/-%E2%88%9A%20110/100-green?style=for-the-badge">  |
+|[**NetPractice**](https://nach131.github.io/NetPractice) |<img alt="NetPractice" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
+|[**CPP**](https://github.com/nach131/CPP_C4) |<img alt="CPP4" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 | [**Exam Rank 04**](https://github.com/nach131/ExamRank04)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank04" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
 </div>
 
