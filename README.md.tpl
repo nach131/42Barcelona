@@ -8,8 +8,8 @@
 <div align="center">
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde git -->
-	<img src="https://img.shields.io/badge/Level%205-CC5450">
-	<img src="https://progress-bar.dev/26/">
+	<img src="https://img.shields.io/badge/Level%206-CC5450">
+	<img src="https://progress-bar.dev/00/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
 </div>
@@ -18,19 +18,19 @@
 <!-- buy me a coffee if you want to know how -->
 
 <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-total_views-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-total_clone-blue">
+<img alt="total-views" src="https://img.shields.io/badge/views-91-blue">
+<img alt="total-clone" src="https://img.shields.io/badge/clone-45-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/42Barcelona">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 
-<p align="center">
+<!-- <p align="center">
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=nach131.42Barcelona&left_color=green&right_color=blue)
 
-</p>
+</p> -->
 
 <h1 align="center">
 
@@ -113,11 +113,12 @@
 
 | <!-- --> | <!-- --> |
 |---|---|
-| [**Inception**](https://github.com/nach131/inception) |<img alt="Inception" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge"> |
+| **Inception**|<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">  |
 | [**Webserv**](https://github.com/nach131/webserv) |<img alt="Webserv" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge"> |
 |[**CPP_C5**](https://github.com/nach131/CPP_C5) |<img alt="CPP5" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge">  |
 | [**Exam Rank 05**](https://github.com/nach131/ExamRank04)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank04" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge"></a> |
 </div>
+
 
 
 

@@ -1,0 +1,324 @@
+-------------------------------------------------------------------------------
+Spinners, Heartbeats, Progress, Waiting, Idle, Loading Indicators
+
+Various character sequences that can be used to show a program is working, and
+has not stalled.  That is the program is still working (looping), or is waiting
+for some input of some kind.  Generally when you have no definate 'progress' so
+you don’t know how much longer it would take...
+
+I generally only list sequences of at least 4+ characters (see below)...
+
+Many of the following spinners I figured out myself, especially the longer
+'clock' and 'cycle' sequences, and are not found in any of the other sources of
+spinners I know about...
+
+I define a 'clock' as 2 'hands' which will tick the second hand when the first
+completes a circle. This also has a 'position' in the circle where the second
+hand 'ticks' over, such as the top or left side.
+
+A 'cycle' however ticks the second hand as the first passes the second hands
+position.  As such there is no 'fixed position'.  The 'cycle' is slightly
+longer than a 'clock' and while less logical, I found them more graphically
+pleasing.
+
+The longer Braille clock/cycle sequences can show this difference between the
+two styles a lot clearer.
+
+A 'patrol' is a animation that moved back-and-forth, like a guard on patrol.
+The Pacman 'munching spinner is a good example of a patrol animation.
+Such spinners are often twice as long as normal spinners to animate the
+'reverse' sequence, unless specifically coded to handle the 'patrol'.
+
+Other Sources...
+
+  https://stackoverflow.com/questions/2685435/cooler-ascii-spinners
+  https://gist.github.com/ellemenno/9489706
+  https://github.com/sindresorhus/cli-spinners/blob/HEAD/spinners.json
+  https://github.com/sindresorhus/cli-spinners/blob/master/spinners.json
+
+It looks like many of these copy from each other, which is hardly surprising.
+And some include multi-character cycles.
+
+WARNING: Some of these 'library' defined spinner providers run the spinner in
+a seperate process, external to the main loop the user use waiting on. This
+means they are not truely telling the user if the main program (loop) has
+stalled, only that it believed to be still running, or the machine itself is
+still running, creating a false response.
+
+NOTE: If the terminal is a remote ssh connection, then network delays can
+cause some fast (or longer) clocks to behave slightly erratic, as update
+sequences become grouped together by network delays.
+
+Anthony Thyssen, 19 August 2021
+
+-------------------------------------------------------------------------------
+Using a Spinner
+
+To really see or understand what many of these look like you need to
+demonstrate them.  This is especially true of some of longer 'Braille'
+sequences.
+
+Perl Spinner/Heartbeat demonstrator (Unicode complaint)
+
+  perl -CO -Mutf8 -e '$|=1; $c=" ▏▎▍▌▋▊▉█";
+    while(1){ for $i ($c=~/(.)/g) {
+      print "  $i\r"; select(undef,undef,undef,.1+1/length($c)); } };'
+
+
+Python version
+
+=======8<--------
+import time;
+while True:
+  for i in "-≻›⟩|⟨‹≺":
+    print("  "+i+"\r", end="")
+    time.sleep(.1)
+=======8<--------
+
+If there are many choices for a unicode character in a Spinner,
+it is often best to select from the same unicode block
+for widest glyph simularities in different fonts.
+
+A Reference for unicode characters
+   https://antofthy.gitlab.io/info/data/utf8-demo.txt
+
+
+Shell usage example (not unicode complient)...
+
+  =======8<--------
+  spinner='-\|/';
+  spinlen=${#spinner}
+  timeout=30    # timeout in seconds
+
+  printf -v start '%(%s)T' -1  # save the start time
+  while true; do
+    # wait for some contition
+    # if finished...
+    #   printf "Condition has been met\r"  # success, and clean wait line
+    #   break
+    # fi
+
+    # Timeout check
+    printf -v elapsed '%(%s)T' -1  # current time
+    elapsed=$(( elapsed - start )) # elapsed time
+    if (( elapsed > timeout )); then
+      echo "Timeout waiting for contition"  # timeout, and clean wait line
+      break
+    fi
+
+    # Wait line with spinner...
+    char=$(( (char+1)%spinlen ))
+    printf "Waiting... %c %d sec\r" "${spinner:$char:1}" $elapsed
+    sleep .2   # loop sleep, minimum spin rate
+  done
+  =======8<--------
+
+-------------------------------------------------------------------------------
+ASCII Spinner/Heartbeat Character Sequences
+
+Replace each character with next, in a loop
+A patrol is the same sequence going forward then reverse
+
+
+Spinning Line         "-\|/"     (for coding use... "-\\|/")
+(This was made famous by Sun Workstations Boot sequence)
+
+Pulsing Circle:       ".oOo"
+Balloon:              " .oO@*"
+
+Flip line:            "__\|/__"          (for coding "__\\|/__")
+Flip line (patrol):   "__\|/____/|\__"   (for coding "__\\|/____/|\\__")
+
+Folding Over:         "-<|>-"       patrol:  "->|<--<|>-"
+Pacman Muncher:       "->|>-"
+
+Bat and Ball:         "dqpb"
+
+-------------------------------------------------------------------------------
+Unicode Spinner/Heartbeat Character Sequences
+
+Unicode Spinning Line        "─╲│╱"      should just use ASCII version!
+
+Flip Line Quote:             "_-`'´-_"    I think it could be better!
+
+Pacman Muncher:              "-≻›⟩›≻-"
+Folding Over (left-right):   "-≻›⟩|⟨‹≺"
+Folding Over (right-left):   "-≺‹⟨|⟩›≻"
+iFolding Over (patrol):      "-≻›⟩|⟨‹≺-≺‹⟨|⟩›≻"
+
+Quarter Circle Spinner:      "◟◜◝◞"
+Extended Circle Spinner:     "◜◠◝◞◡◟"
+Corner Circle Spinner:       "◴◷◶◵"
+Half Circle Spinner:         "◐◓◑◒"        small in some fonts
+Half Circle Flip:            "◡⊙◠⊙"
+Ellipses:                    " ․‥…"
+
+Rain Circle:                 " ⋅∘○⨀"
+Pulsing Circle               "◌○⊙●⊙○"
+Pulsing Dot:                 "⋅∙●∙"
+Pulsing Heart:               "⋅•❤•"
+Pulsing Line:                "❘❙❚❙❘"
+Pulsing Heart:               "❘❙❚❤❚❙❘"     depends on font
+Pulsing Square:              "▪◼█◼▪"
+
+Corners:                     "⌞⌜⌝⌟"
+Large Corners:               "⎿⎾⏋⏌"
+Corner Box:                  "◰◳◲◱"
+Triangle:                    "◣◤◥◢"
+Triangle Pulse:              "▫◸◤◸▫◹◥◹▫◿◢◿▫◺◣◺"
+Triangle Pulse 2:            "■◤◸◤■◥◹◥■◢◿◢■◣◺◣"
+
+Moving Horizontal Bar:       "⎽⎼―⎻⎺ "       patrol: "⎽⎼―⎻⎺⎻―⎼"
+Moving Vertical Bar:         "▏⎢⎪⎥▕ "       patrol: "▏⎢⎪⎥▕⎥⎪⎢"
+Tone Bar:                    "˩˨˧˦˥"        patrol: "˩˨˧˦˥˦˧˨"
+Rising Vertical Bar:         "ˌ╷❘ﺍ╵ˈ"
+
+Growth & Decay:              "․|†¥∨⌄"
+Pulsing Star:                "⋅˖+⟡✧⟡+˖"
+Pulsing Plus:                "⋅˖+┼╋┼+˖"
+Bouncing Bubble:             "'°º¤ø,¸¸,ø¤º°'"
+Mathematical Equals:         "−=≡"
+Mathematical Compares:       "≑≒≑≓"
+Arrow:                       "←↖↑↗→↘↓↙"
+Dingbat Arrow:               "➵➴➵➶"    bold:   "➸➷➸➹"
+
+Noise Fading:                "█▓▒░ "
+Quarter Block Spinner:       "▘▝▗▖"
+Half Block Spinner:          "▄▌▀▐"
+Quarter Block Worm:          "▘▀▝▐▗▄▖▌"
+Diagonally Moving Block:     " ▖◼▝ ▗◼▘"
+
+Box Bar Horizontal:          " ▏▎▍▌▋▊▉█"    patrol: " ▏▎▍▌▋▊▉█▉▊▋▌▍▎▏"
+Box Bar Vertical:            " ▁▂▃▄▅▆▇█"    patrol: " ▁▂▃▄▅▆▇█▇▆▅▄▃▂▁"
+(with some reverse video these can be made fancier)
+
+Half Line Spinner:           "╷╴╵╶"
+Half Line Spinner Bold:      "╻╸╹╺"
+Half Line Spinner Pulsed:    "╷╴╹╶"
+Pulsing Half Line Spinner:   "╷╴╵╶╻╸╹╺"
+Moving Line:                 "╴━╶ "
+Rotating Moving Line:        "╴━╶╷┃╵╶━╴╵┃╷"
+Wind-shield Wiper Patrol:    "╷╴╵╶╷╷╷╶╵╴╷╷"
+Pipe Spinner:                "┤┘┴└├┌┬┐"
+Pipe Spinner Bold:           "┫┛┻┗┣┏┳┓"
+Pipe Spinner Mixed:          "┤┙┚┴┖┕├┍┎┬┒┑"
+Two Handed Clock (16):       "╹┖╿┚┕╺┍╼╽┎╻┒┙╾┑╸"
+Two Handed Cycle (20):       "╹┖╿┚╹╺┍╼┕╺╻┒╽┎╻╸┙╾┑╸"
+
+---
+NOTE: Braille Glyphs work well as spinners, but the glyphs are not good when
+used with most True Type fonts as 'Braille Space', ('⠀') is not blank, but a
+set of empty circles, making the use of them, even for braille, problematical!
+
+Braille Circling Dot:        "⡀⠄⠂⠁⠈⠐⠠⢀"
+Braille Circling Hole:       "⢿⣻⣽⣾⣷⣯⣟⡿"
+Braille Twin Circling Dots:  "⡈⠔⠢⢁"
+Braille Leapfrog:            "⣀⢄⢂⢁⡈⡐⡠"
+Braille Bouncing Dot:        "⡀⠄⠂⠁⠁⠂⠄"    right-side:  "⢀⠠⠐⠈⠈⠐⠠"
+Braille Bounce Side-Side:    "⡀⠄⠂⠁⠈⠐⠠⢀⠠⠐⠈⠁⠂⠄"
+Braille Bouncing Ball:       "⣤⠶⠛⠛⠶"
+Braille Climber:             "⣀⡠⠤⠢⠒⠊⠉⠑⠒⠔⠤⢄"
+Braille Coveyer Belt:        "⢸⣸⢼⢺⢹⡏⡗⡧⣇⡇"
+Braille Up-Down Belt:        "⢸⣸⢼⢺⢹⢺⢼⣸⢸⡇⣇⡧⡗⡏⡗⡧⣇⡇"
+
+___Braille 6 dot___
+Braille 6 Circle Worm:       "⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
+Braille 6 Bounce Worm:       "⠄⠆⠇⠋⠙⠸⠰⠠⠰⠸⠙⠋⠇⠆"
+Braille Zigzag Worm:         "⠋⠙⠚⠞⠖⠦⠴⠲⠳⠓"
+Braille Zigzag Stop:         "⠋⠙⠚⠒⠂⠂⠒⠲⠴⠦⠖⠒⠐⠐⠒⠓"
+Braille 6 Step Left (24):    "⠁⠉⠙⠚⠒⠂⠂⠒⠲⠴⠤⠄⠄⠤⠴⠲⠒⠂⠂⠒⠚⠙⠉⠁"
+Braille 6 Step Right (24):   "⠈⠉⠋⠓⠒⠐⠐⠒⠖⠦⠤⠠⠠⠤⠦⠖⠒⠐⠐⠒⠓⠋⠉⠈"
+Braille 6 Step Both (30):    "⠁⠁⠉⠙⠚⠒⠂⠂⠒⠲⠴⠤⠄⠄⠤⠠⠠⠤⠦⠖⠒⠐⠐⠒⠓⠋⠉⠈⠈⠉"
+Braille Two Dot Clock (top 36):  "⠈⠘⠨⠌⠊⠉⠘⠐⠰⠔⠒⠑⠨⠰⠠⠤⠢⠡⠌⠔⠤⠠⠆⠅⠊⠒⠢⠆⠂⠃⠉⠑⠡⠅⠃⠁"
+Braille Two Dot Clock (left 36): "⠂⠃⠊⠒⠢⠆⠃⠁⠉⠑⠡⠅⠊⠉⠈⠘⠨⠌⠒⠑⠘⠐⠰⠔⠢⠡⠨⠰⠠⠤⠆⠅⠌⠔⠤⠄"
+Braille Two Dot Cycle (42):      "⠂⠃⠊⠒⠢⠆⠂⠁⠉⠑⠡⠅⠃⠁⠈⠘⠨⠌⠊⠉⠈⠐⠰⠔⠒⠑⠘⠐⠠⠤⠢⠡⠨⠰⠠⠄⠆⠅⠌⠔⠤⠄"
+
+
+___Braille 8 dot___
+Braille Circle Worm:             "⠋⠙⠹⠸⢰⣰⣠⣄⣆⡆⠇⠏"
+Braille Bounce Worm:             "⡀⡄⡆⠇⠋⠙⠸⢰⢠⢀⢠⢰⠸⠙⠋⠇⡆⡄"
+Braille Worm Uturn:              "⠋⠙⠹⠸⢰⣰⣠⣄⣆⡆⡖⠖⠚⠙⠋⠏⠇⡆⣆⣄⣠⣰⢰⢲⠲"
+Braille Step Left (36):          "⠁⠉⠙⠚⠒⠂⠂⠒⠲⠴⠤⠄⠄⠤⢤⣠⣀⢀⢀⣀⣠⢤⠤⠄⠄⠤⠴⠲⠒⠂⠂⠒⠚⠙⠉⠁"
+Braille Step Right (36):         "⠈⠉⠋⠓⠒⠐⠐⠒⠖⠦⠤⠠⠠⠤⡤⣄⣀⢀⢀⣀⣄⡤⠤⠠⠠⠤⠦⠖⠒⠐⠐⠒⠓⠋⠉⠈"
+Braille Step Both (40):          "⠁⠁⠉⠙⠚⠒⠂⠂⠒⠲⠴⠤⠄⠄⠤⢤⣠⡀⡀⣀⢀⢀⣄⡤⠤⠠⠠⠤⠦⠖⠒⠐⠐⠒⠓⠋⠉⠈⠈⠉"
+Braille Stacking (40):           "⠀⡀⠄⠂⠁⠈⠐⠠⢀⣀⢄⢂⢁⢈⢐⢠⣠⢤⢢⢡⢨⢰⣰⢴⢲⢱⢸⣸⢼⢺⢹⣹⢽⢻⣻⢿⣿⣶⣤⣀"
+Braille Two Dot Clock (top, 64):
+   "⠈⠘⠨⢈⡈⠌⠊⠉⠘⠐⠰⢐⡐⠔⠒⠑⠨⠰⠠⢠⡠⠤⠢⠡⢈⢐⢠⢀⣀⢄⢂⢁⡈⡐⡠⣀⡀⡄⡂⡁⠌⠔⠤⢄⡄⠠⠆⠅⠊⠒⠢⢂⡂⠆⠂⠃⠉⠑⠡⢁⡁⠅⠃⠁"
+Braille Two Dot Clock (left, 64):
+   "⠂⠃⠊⠒⠢⢂⡂⠆⠃⠁⠉⠑⠡⢁⡁⠅⠊⠉⠈⠘⠨⢈⡈⠌⠒⠑⠘⠐⠰⢐⡐⠔⠢⠡⠨⠰⠠⢠⡠⠤⢂⢁⢈⢐⢠⢀⣀⢄⡂⡁⡈⡐⡠⣀⡀⡄⠆⠅⠌⠔⠤⢄⡄⠄"
+Braille Two Dot Cycle (72):
+   "⠂⠃⠊⠒⠢⢂⡂⠆⠂⠁⠉⠑⠡⢁⡁⠅⠃⠁⠈⠘⠨⢈⡈⠌⠊⠉⠈⠐⠰⢐⡐⠔⠒⠑⠘⠐⠠⢠⡠⠤⠢⠡⠨⠰⠠⢀⣀⢄⢂⢁⢈⢐⢠⢀⡀⡄⡂⡁⡈⡐⡠⣀⡀⠄⠆⠅⠌⠔⠤⢄⡄⠄"
+
+-------------------------------------------------------------------------------
+Special 2 Character, Braille "Circling Dots" Loading Sequence...
+
+  perl -CO -Mutf8 -e '$|=1;
+    $c="⢀⠀⡀⠀⠄⠀⢂⠀⡂⠀⠅⠀⢃⠀⡃⠀⠍⠀⢋⠀⡋⠀⠍⠁⢋⠁⡋⠁⠍⠉⠋⠉⠋⠉";
+    $c.="⠉⠙⠉⠙⠉⠩⠈⢙⠈⡙⢈⠩⡀⢙⠄⡙⢂⠩⡂⢘⠅⡘⢃⠨⡃⢐⠍⡐⢋⠠⡋⢀⠍⡁⢋⠁⡋⠁⠍⠉⠋⠉⠋⠉";
+    $c.="⠉⠙⠉⠙⠉⠩⠈⢙⠈⡙⠈⠩⠀⢙⠀⡙⠀⠩⠀⢘⠀⡘⠀⠨⠀⢐⠀⡐⠀⠠⠀⢀⠀⡀";
+    while(1){ for $i ($c=~/(..)/g) {
+      print "  $i\r"; select(undef,undef,undef,.2); } };'
+
+-------------------------------------------------------------------------------
+Line Sequences
+
+Sonar
+   "    .    "
+   "    o    "
+   "   (O)   "
+   "  (( ))  "
+   " ((( ))) "
+   "(((   )))"
+   "((     ))"
+   "(       )"
+   "         "
+
+Scrolling arrows and bouncing balls are straight forward to implement.
+The individual characters interchangeable, So I only represent a example frame,
+to give you the idea.  They are all reversable and you can mix and match as
+needed.
+
+   "▐ ⋅     ▌"
+   "|  •    |"
+   "(   ●   )"
+
+   " ──▷       "
+   "  ══➤      "
+   "   ──➤     "
+   "    ⋅•●    "
+   "    ⸫⸪>=-  "
+
+   "▹▸▹▹▹"
+   "▰▰▰▱▱▱▱▱▱"
+
+   "  ●        "
+
+   "⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⣺"     braille dots falling into a stack (tetris-like)
+
+   "▐⠀⠀⠁⠂⠄⡀⠄⠀⠀▌"     bouncing like a game "Pong" (bad with true type fonts)
+
+   "______|\___"     shark fin swiming back and forth
+
+
+Also see Bar Graphing, next...
+
+-------------------------------------------------------------------------------
+Bar Graphs and Progess Reporting...
+
+These are not spinners, but use for generating horizontal bar graphs.
+See Unicode percent script
+  https://antofthy.gitlab.io/software/#percent_utf
+
+ASCII Only     "-" "=", "#" "▒"   (single character graphs)
+ASCII Seq      "-=#"              (not great)
+Hash Chars     "░▒▓█"
+Half chars     "▌█",
+Quarter chars  "▖▌▛█"
+Incremental    " "   <--- the ideal 8 character increment bargraph
+Braille chars  "⡀⡄⡆⡇⣇⣧⣷⣿"   braille character each 8 increments
+
+-------------------------------------------------------------------------------
+
+=
+EQUALS SIGN
+Unicode: U+003D, UTF-8: 3D
