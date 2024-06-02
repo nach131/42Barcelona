@@ -8,7 +8,7 @@
 <div align="center">
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde git -->
-	<img src="https://img.shields.io/badge/Level%208-5caf5c">
+	<img src="https://img.shields.io/badge/Level%208-E0A44F">
 	<img src="https://progress-bar.dev/81/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
@@ -130,6 +130,7 @@
 | [**ft_transcendence**](https://github.com/nach131/ft_transcendence) |<img alt="ft_transcendence" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
 | [**Exam Rank 06**](https://github.com/nach131/ExamRank06)| <a href="https://github.com/nach131/ExamRank06"><img alt="ExamRank06" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
 </div>
+
 
 
 <!-- | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
