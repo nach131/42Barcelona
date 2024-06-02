@@ -8,8 +8,8 @@
 <div align="center">
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde git -->
-	<img src="https://img.shields.io/badge/Level%206-E0A44F">
-	<img src="https://progress-bar.dev/58/">
+	<img src="https://img.shields.io/badge/Level%208-E0A44F">
+	<img src="https://progress-bar.dev/81/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
 </div>
@@ -114,9 +114,21 @@
 | <!-- --> | <!-- --> |
 |---|---|
 | **Inception**|<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">  |
-| [**Webserv**](https://github.com/nach131/webserv) |<img alt="Webserv" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+| [**Webserv**](https://github.com/nach131/webserv) |<img alt="Webserv" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
 |[**CPP_C5**](https://github.com/nach131/CPP_C5) |<img alt="CPP5" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 | [**Exam Rank 05**](https://github.com/nach131/ExamRank05)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank05" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
+</div>
+
+<h1 align="center">
+
+	Common Core 06
+</h1>
+<div align="center">
+
+| <!-- --> | <!-- --> |
+|---|---|
+| [**ft_transcendence**](https://github.com/nach131/ft_transcendence) |<img alt="ft_transcendence" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
+| [**Exam Rank 06**](https://github.com/nach131/ExamRank06)| <a href="https://github.com/nach131/ExamRank06"><img alt="ExamRank06" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
 </div>
 
 
