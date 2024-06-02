@@ -8,7 +8,7 @@
 <div align="center">
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde git -->
-	<img src="https://img.shields.io/badge/Level%208-E0A44F">
+	<img src="https://img.shields.io/badge/Level%208-5caf5c">
 	<img src="https://progress-bar.dev/81/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
