@@ -47,7 +47,8 @@
 
 <h1 align="center">
 
-	Common Core 01
+[![1][1]][1]
+
 </h1>
 
 <div align="center">
@@ -62,7 +63,8 @@
 
 <h1 align="center">
 
-	Common Core 02
+[![2][2]][2]
+
 </h1>
 
 <div align="center">
@@ -77,7 +79,8 @@
 
 <h1 align="center">
 
-	Common Core 03
+[![3][3]][3]
+
 </h1>
 
 <div align="center">
@@ -91,7 +94,8 @@
 
 <h1 align="center">
 
-	Common Core 04
+[![4][4]][4]
+
 </h1>
 
 <div align="center">
@@ -107,7 +111,8 @@
 
 <h1 align="center">
 
-	Common Core 05
+[![5][5]][5]
+
 </h1>
 <div align="center">
 
@@ -121,7 +126,8 @@
 
 <h1 align="center">
 
-	Common Core 06
+[![6][6]][6]
+
 </h1>
 <div align="center">
 
@@ -136,3 +142,18 @@
 |<span style="color:gray">**Philosophers**</span>|<img alt="Philosophers" src="https://img.shields.io/badge/-.%20.%20.-inactive?style=for-the-badge">  |
  -->
 
+
+<!-- [![1][1]][1]
+[![1][2]][2]
+[![6][6]][6] -->
+
+
+<!-- [1]: https://custom-icon-badges.demolab.com/badge/-Common%20Core%2001-gold?style=for-the-badge&logoColor=black&logo=issue-opened
+[2]: https://custom-icon-badges.demolab.com/badge/-Open%20Issue-palegreen?style=for-the-badge&logoColor=black&logo=issue-opened -->
+
+[1]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2001-grey?style=for-the-badge&logo=issue-opened
+[2]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2002-grey?style=for-the-badge&logo=issue-opened
+[3]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2003-grey?style=for-the-badge&logo=issue-opened
+[4]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2004-grey?style=for-the-badge&logo=issue-opened
+[5]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2005-grey?style=for-the-badge&logo=issue-opened
+[6]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2006-grey?style=for-the-badge&logo=issue-opened
