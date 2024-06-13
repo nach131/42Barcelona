@@ -130,8 +130,6 @@
 [![6][6]][6] -->
 
 
-<!-- [1]: https://custom-icon-badges.demolab.com/badge/-Common%20Core%2001-gold?style=for-the-badge&logoColor=black&logo=issue-opened
-[2]: https://custom-icon-badges.demolab.com/badge/-Open%20Issue-palegreen?style=for-the-badge&logoColor=black&logo=issue-opened -->
 
 [0]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2000-grey?style=for-the-badge&logo=issue-opened
 [1]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2001-grey?style=for-the-badge&logo=issue-opened
@@ -140,3 +138,6 @@
 [4]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2004-grey?style=for-the-badge&logo=issue-opened
 [5]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2005-grey?style=for-the-badge&logo=issue-opened
 [6]: https://custom-icon-badges.demolab.com/badge/Common%20Core%2006-grey?style=for-the-badge&logo=issue-opened
+
+<!-- [1]: https://custom-icon-badges.demolab.com/badge/-Common%20Core%2001-gold?style=for-the-badge&logoColor=black&logo=issue-opened
+[2]: https://custom-icon-badges.demolab.com/badge/-Open%20Issue-palegreen?style=for-the-badge&logoColor=black&logo=issue-opened -->
