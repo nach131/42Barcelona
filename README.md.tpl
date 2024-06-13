@@ -128,7 +128,7 @@
 | <!-- --> | <!-- --> |
 |---|---|
 | [**ft_transcendence**](https://github.com/nach131/ft_transcendence) |<img alt="ft_transcendence" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
-| [**Exam Rank 06**](https://github.com/nach131/ExamRank06)| <a href="https://github.com/nach131/ExamRank06"><img alt="ExamRank06" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"></a> |
+| [**Exam Rank 06**](https://github.com/nach131/ExamRank06)| <a href="https://github.com/nach131/ExamRank06"><img alt="ExamRank06" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
 </div>
 
 
