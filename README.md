@@ -24,6 +24,7 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
+<h1 align="center"></h1>
 
 
 <!-- <p align="center">
@@ -32,27 +33,21 @@
 
 </p> -->
 
-<h1 align="center">
-
-[![0][0]][0]
-
-</h1>
 
 <div align="center">
 
+[![0][0]][0]
 | <!-- --> | <!-- --> |
 |---|---|
 | [**libft**](https://github.com/nach131/libft_original) |<a href="https://github.com/nach131/libft_original"><img alt="libft" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a>|
 
 </div>
 
-<h1 align="center">
-
-[![1][1]][1]
-
-</h1>
+<h1 align="center"></h1>
 
 <div align="center">
+
+[![1][1]][1]
 
 | <!-- --> | <!-- --> |
 |---|---|
@@ -62,14 +57,11 @@
 
 </div>
 
-<h1 align="center">
-
-[![2][2]][2]
-
-</h1>
+<h1 align="center"></h1>
 
 <div align="center">
 
+[![2][2]][2]
 | <!-- --> | <!-- --> |
 |---|---|
 | [**minitalk**](https://github.com/nach131/minitalk) |<a href="https://github.com/nach131/minitalk"><img alt="minital" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"></a> |
@@ -78,14 +70,11 @@
 | [**Exam Rank 02**](https://github.com/nach131/ExamRank02)| <a href="https://github.com/nach131/ExamRank02"><img alt="ExamRank02" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
 </div>
 
-<h1 align="center">
-
-[![3][3]][3]
-
-</h1>
+<h1 align="center"></h1>
 
 <div align="center">
 
+[![3][3]][3]
 | <!-- --> | <!-- --> |
 |---|---|
 | [**minishell**](https://github.com/nach131/minishell) |<img alt="minishell" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">|
@@ -93,14 +82,11 @@
 | [**Exam Rank 03**](https://github.com/nach131/ExamRank03)| <img alt="Philosophers" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 </div>
 
-<h1 align="center">
-
-[![4][4]][4]
-
-</h1>
+<h1 align="center"></h1>
 
 <div align="center">
 
+[![4][4]][4]
 | <!-- --> | <!-- --> |
 |---|---|
 | [**cub3d**](https://github.com/nach131/cub3d) |<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20110/100-green?style=for-the-badge"> |
@@ -109,14 +95,11 @@
 | [**Exam Rank 04**](https://github.com/nach131/ExamRank04)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank04" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
 </div>
 
+<h1 align="center"></h1>
 
-<h1 align="center">
-
-[![5][5]][5]
-
-</h1>
 <div align="center">
 
+[![5][5]][5]
 | <!-- --> | <!-- --> |
 |---|---|
 | **Inception**|<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">  |
@@ -125,13 +108,11 @@
 | [**Exam Rank 05**](https://github.com/nach131/ExamRank05)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank05" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
 </div>
 
-<h1 align="center">
+<h1 align="center"></h1>
 
-[![6][6]][6]
-
-</h1>
 <div align="center">
 
+[![6][6]][6]
 | <!-- --> | <!-- --> |
 |---|---|
 | [**ft_transcendence**](https://github.com/nach131/ft_transcendence) |<img alt="ft_transcendence" src="https://img.shields.io/badge/-process...-blue?style=for-the-badge"> |
