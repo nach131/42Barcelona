@@ -8,7 +8,7 @@
 <div align="center">
 <!-- Leve 42 -->
 <!-- para el color subir a github y pillar desde git -->
-	<img src="https://img.shields.io/badge/Level%208-5caf5c">
+	<img src="https://img.shields.io/badge/Level%208-E0A44F">
 	<img src="https://progress-bar.dev/81/">
 	<!-- https://github.com/fredericojordan/progress-bar -->
 
@@ -24,7 +24,6 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/42Barcelona">
 <img alt="license-MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
-<h1 align="center"></h1>
 
 
 <!-- <p align="center">
