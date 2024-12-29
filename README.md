@@ -105,7 +105,7 @@
 | <!-- --> | <!-- --> |
 |---|---|
 | [**Inception**](https://github.com/nach131/Inception)|<img alt="cub3d" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge">  |
-| [**Webserv**](https://github.com/nach131/webserv) |<img alt="Webserv" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
+| [**Webserv**](https://github.com/nach131/webserver) |<img alt="Webserver" src="https://img.shields.io/badge/-%E2%88%9A%20125/100-green?style=for-the-badge"> |
 |[**CPP_C5**](https://github.com/nach131/CPP_C5) |<img alt="CPP5" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge">  |
 | [**Exam Rank 05**](https://github.com/nach131/ExamRank05)| <a href="https://github.com/nach131/ExamRank04"><img alt="ExamRank05" src="https://img.shields.io/badge/-%E2%88%9A%20100/100-green?style=for-the-badge"></a> |
 </div>
